@@ -4,11 +4,49 @@
 // live in /_includes. Everything renders to /_site, which Netlify serves.
 //
 // Three content collections feed into Decap CMS:
-//   - content/pages/   → generic pages (homepage, about, pricing, etc.)
-//   - content/coaches/ → individual coach bio pages
-//   - content/areas/   → service-area pages (Wheat Ridge, Arvada, etc.)
+//   - content/pages/   -> generic pages (homepage, about, pricing, etc.)
+//   - content/coaches/ -> individual coach bio pages
+//   - content/areas/   -> service-area pages (Wheat Ridge, Arvada, etc.)
 
 export default function (eleventyConfig) {
+  // ----- Files / dirs to ignore (replaces .eleventyignore) -----
+  // Doing this in code (instead of a dotfile) is more robust on Windows,
+  // where File Explorer hides files that start with "." by default.
+  const originalPages = [
+    "index.html",
+    "intro-standalone.html",
+    "about/index.html",
+    "beginners/index.html",
+    "coaches/index.html",
+    "coaches/annie-brunner/index.html",
+    "coaches/dean-weeks/index.html",
+    "coaches/lisa-arcangel/index.html",
+    "coaches/liz-kushner/index.html",
+    "coaches/megan-markee/index.html",
+    "crossfit/index.html",
+    "faq/index.html",
+    "free-intro/index.html",
+    "gym/applewood/index.html",
+    "gym/arvada/index.html",
+    "gym/golden/index.html",
+    "gym/lakewood/index.html",
+    "gym/wheat-ridge/index.html",
+    "hyrox/index.html",
+    "intro/index.html",
+    "personal-training/index.html",
+    "pricing/index.html",
+    "prime-vitality/index.html",
+    "schedule/index.html",
+    "visit/index.html",
+    "wellness/index.html",
+  ];
+  for (const p of originalPages) eleventyConfig.ignores.add(p);
+  eleventyConfig.ignores.add("sitemap.xml");
+  eleventyConfig.ignores.add("CMS-SETUP.md");
+  eleventyConfig.ignores.add("DEPLOY.md");
+  eleventyConfig.ignores.add("_backup/**");
+  eleventyConfig.ignores.add("README.md");
+
   // ----- Passthrough copy: assets and CMS files served as-is -----
   eleventyConfig.addPassthroughCopy("assets");
   eleventyConfig.addPassthroughCopy("admin");
@@ -41,7 +79,6 @@ export default function (eleventyConfig) {
       .filter((item) => {
         if (item.data.eleventyExcludeFromCollections) return false;
         if (item.data.sitemap === false) return false;
-        // Only HTML output
         if (!item.url || !item.url.endsWith("/")) {
           if (item.url && !item.url.endsWith(".html")) return false;
         }
