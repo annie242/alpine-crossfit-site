@@ -21,16 +21,33 @@ finalCta:
     <span class="eyebrow">Book your intro</span>
     <h2>Pick a time that works.</h2>
 
-    <!-- Gymnetics / GoHighLevel booking widget -->
+    <!--
+      Gymnetics / GoHighLevel booking widget.
+
+      The iframe `src` is set by the inline script below so query params
+      from the parent page URL (e.g. ?first_name=Annie&email=...) get
+      forwarded into the widget URL for prefill. This avoids the
+      duplicate-data-entry friction when visitors arrive here from the
+      /free-intro/ optin form.
+    -->
     <div class="form-wrap" style="margin-top:var(--space-6); background:#fff; border-radius:var(--radius-lg); overflow:hidden;">
       <iframe
-        src="https://link.gymntx.com/widget/booking/G2tY5mJrTvIXowv2ZcyX"
         id="G2tY5mJrTvIXowv2ZcyX_1777058045577"
         style="width:100%; min-height:700px; border:none; display:block;"
         scrolling="no"
-        title="Book your No Sweat Intro">
+        title="Book your No Sweat Intro"
+        data-base-src="https://link.gymntx.com/widget/booking/G2tY5mJrTvIXowv2ZcyX">
       </iframe>
     </div>
+    <script>
+      (function () {
+        var iframe = document.getElementById("G2tY5mJrTvIXowv2ZcyX_1777058045577");
+        if (!iframe) return;
+        var base = iframe.getAttribute("data-base-src");
+        var qs = window.location.search; // includes leading "?"
+        iframe.src = base + (qs && qs.length > 1 ? qs : "");
+      })();
+    </script>
 
     <p class="text-muted mt-6" style="font-size:0.9rem;">
       Widget slow to load? <a href="sms:+17209641505">Text us (720) 964-1505</a> and we'll book it for you.
