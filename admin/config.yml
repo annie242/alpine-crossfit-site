@@ -1,38 +1,768 @@
+# ----------------------------------------------------------------------
+# Decap CMS configuration for Alpine CrossFit
+# ----------------------------------------------------------------------
+# Lisa logs in at https://alpinecrossfit.com/admin/ (Netlify Identity)
+# and edits content here. Saving commits the change to GitHub via Git
+# Gateway, which triggers a Netlify rebuild and republishes the site.
+#
+# Field labels are written in plain English so a non-developer can use
+# this without needing to know what the underlying JSON-LD or template
+# fields are called.
+# ----------------------------------------------------------------------
+
 backend:
   name: git-gateway
   branch: main
 
-# Where CMS-uploaded images go.
+# Default location for new uploads. Per-field media_folder overrides
+# this for organized subfolders (coaches/, members/, gym-photos/).
 media_folder: "assets/img/uploads"
 public_folder: "/assets/img/uploads"
 
 site_url: https://alpinecrossfit.com
 display_url: https://alpinecrossfit.com
+logo_url: https://alpinecrossfit.com/assets/img/logo.png
+
+# Lisa's edits commit straight to main and auto-publish. We can flip
+# this on later if she wants a draft/review step before going live:
+#   publish_mode: editorial_workflow
 
 collections:
-  # ===== IMAGE BLOCKS =====
-  # Upload new gym photos from the admin without touching file paths.
-  # Each entry maps to a named slot the HTML reads via data-image-slot.
+
+  # ====================================================================
+  # IMAGE BLOCKS — preserved from the original CMS pattern
+  # Hero photos that auto-swap on the homepage, about, and wellness
+  # pages via /assets/js/images.js.
+  # ====================================================================
   - name: "images"
     label: "Image Blocks"
     label_singular: "Image Block"
-    description: "Upload new gym photos for specific sections of the site. The image auto-swaps on the live site within a minute."
+    description: "Quick way to swap the big hero photos on the homepage, about page, and wellness page without touching the rest of the page. Auto-publishes within a minute."
+    delete: false
     files:
       - name: "homepage_hero"
         label: "Homepage Hero"
         file: "content/images/homepage_hero.json"
         fields:
-          - {label: "Image", name: "image", widget: "image", hint: "Shows in the right half of the homepage hero section. Portrait orientation looks best."}
-          - {label: "Alt text", name: "alt", widget: "string", default: "Alpine CrossFit member mid-lift in front of the Alpine mountain wall mural", hint: "One sentence describing the photo — for accessibility and SEO."}
+          - {label: "Image", name: "image", widget: "image", media_folder: "/assets/img/uploads/gym-photos", hint: "Shows in the right half of the homepage hero section. Portrait orientation looks best."}
+          - {label: "Alt text", name: "alt", widget: "string", default: "Alpine CrossFit member mid-lift in front of the Alpine mountain wall mural", hint: "One sentence describing the photo — helps with accessibility and SEO."}
       - name: "about_hero"
         label: "About Page Hero"
         file: "content/images/about_hero.json"
         fields:
-          - {label: "Image", name: "image", widget: "image", hint: "Shows in the right half of the About page hero. Portrait or landscape both work."}
+          - {label: "Image", name: "image", widget: "image", media_folder: "/assets/img/uploads/gym-photos", hint: "Shows in the right half of the About page hero. Portrait or landscape both work."}
           - {label: "Alt text", name: "alt", widget: "string", default: "Alpine CrossFit members training during a coached class"}
       - name: "wellness_hero"
         label: "Wellness Page Hero"
         file: "content/images/wellness_hero.json"
         fields:
-          - {label: "Image", name: "image", widget: "image", hint: "Shows in the right half of the Wellness Center page hero."}
+          - {label: "Image", name: "image", widget: "image", media_folder: "/assets/img/uploads/gym-photos", hint: "Shows in the right half of the Wellness Center page hero."}
           - {label: "Alt text", name: "alt", widget: "string", default: "Alpine member training during wellness center hours"}
+
+  # ====================================================================
+  # HOMEPAGE — single page, lots of structured sections
+  # ====================================================================
+  - name: "homepage"
+    label: "Homepage"
+    label_singular: "Homepage"
+    description: "The main alpinecrossfit.com landing page. Every section here is editable as a form."
+    delete: false
+    files:
+      - file: "content/pages/homepage.md"
+        name: "homepage"
+        label: "Homepage"
+        fields:
+          - {label: "Browser title", name: "title", widget: "string", hint: "Shown in the browser tab and as the link in Google search results."}
+          - {label: "Search snippet", name: "description", widget: "text", hint: "1–2 sentences shown under the title in Google. ~155 characters works best."}
+          - {label: "Social share title", name: "ogTitle", widget: "string", required: false, hint: "Title shown when the page is shared on Facebook, Twitter, etc. Leave blank to use the browser title."}
+          - {label: "Social share description", name: "ogDescription", widget: "text", required: false}
+          - label: "Hero (top section)"
+            name: "hero"
+            widget: "object"
+            fields:
+              - {label: "Eyebrow line", name: "eyebrow", widget: "string", hint: "Small text above the headline."}
+              - {label: "Headline", name: "heading", widget: "string", hint: "The big H1. Wrap an accent word in <span class=\"accent\">…</span> to color it green."}
+              - {label: "Subheadline paragraph", name: "dek", widget: "text"}
+              - label: "Hero buttons"
+                name: "ctas"
+                widget: "list"
+                fields:
+                  - {label: "Button label", name: "label", widget: "string"}
+                  - {label: "Link target", name: "href", widget: "string"}
+                  - {label: "Button style", name: "style", widget: "string", default: "btn-primary btn-lg", required: false}
+              - label: "Trust strip items"
+                name: "trustItems"
+                widget: "list"
+                required: false
+                summary: "{{fields.text}}"
+                fields:
+                  - {label: "Type", name: "type", widget: "select", options: ["text", "stars"], default: "text", required: false, hint: "'stars' shows ★★★★★, 'text' shows whatever you type below."}
+                  - {label: "Text", name: "text", widget: "string", required: false}
+              - label: "Hero image"
+                name: "image"
+                widget: "object"
+                fields:
+                  - {label: "Image file", name: "src", widget: "image", media_folder: "/assets/img/uploads/gym-photos"}
+                  - {label: "Alt text (for accessibility)", name: "alt", widget: "string"}
+                  - {label: "Image slot ID (don't change)", name: "slot", widget: "hidden"}
+          - label: "Affiliations row (CrossFit / HYROX badges)"
+            name: "affiliations"
+            widget: "list"
+            required: false
+            summary: "{{fields.label}}"
+            fields:
+              - {label: "Badge image", name: "image", widget: "image", media_folder: "/assets/img/uploads/gym-photos"}
+              - {label: "Alt text", name: "alt", widget: "string"}
+              - {label: "Label (line breaks with <br>)", name: "label", widget: "string"}
+          - label: "Who Alpine is for (the 'Not another big-box gym' section)"
+            name: "whoSection"
+            widget: "object"
+            required: false
+            fields:
+              - {label: "Eyebrow", name: "eyebrow", widget: "string"}
+              - {label: "Section heading", name: "heading", widget: "string"}
+              - label: "Intro paragraphs (left side)"
+                name: "intro"
+                widget: "list"
+                summary: "{{fields.p}}"
+                fields:
+                  - {label: "Paragraph", name: "p", widget: "text"}
+              - label: "Right-side cards"
+                name: "cards"
+                widget: "list"
+                summary: "{{fields.heading}}"
+                fields:
+                  - {label: "Card heading", name: "heading", widget: "string"}
+                  - {label: "Card body", name: "body", widget: "string"}
+          - label: "How to start section ('Getting started is easy')"
+            name: "howToStart"
+            widget: "object"
+            required: false
+            fields:
+              - {label: "Eyebrow", name: "eyebrow", widget: "string"}
+              - {label: "Section heading", name: "heading", widget: "string"}
+              - label: "Steps"
+                name: "steps"
+                widget: "list"
+                summary: "{{fields.heading}}"
+                fields:
+                  - {label: "Step heading", name: "heading", widget: "string"}
+                  - {label: "Step body", name: "body", widget: "text"}
+              - {label: "Section button label", name: "ctaLabel", widget: "string"}
+              - {label: "Section button link", name: "ctaHref", widget: "string"}
+          - label: "Services section (the 6 service cards)"
+            name: "services"
+            widget: "object"
+            required: false
+            fields:
+              - {label: "Eyebrow", name: "eyebrow", widget: "string"}
+              - {label: "Section heading", name: "heading", widget: "string"}
+              - label: "Service cards"
+                name: "items"
+                widget: "list"
+                summary: "{{fields.heading}}"
+                fields:
+                  - {label: "Card heading", name: "heading", widget: "string"}
+                  - {label: "Card body", name: "body", widget: "text"}
+                  - {label: "Card link (optional)", name: "link", widget: "string", required: false}
+          - label: "Pricing teaser section"
+            name: "pricing"
+            widget: "object"
+            required: false
+            fields:
+              - {label: "Eyebrow", name: "eyebrow", widget: "string"}
+              - {label: "Section heading", name: "heading", widget: "string"}
+              - {label: "Intro paragraph", name: "intro", widget: "text"}
+              - label: "Pricing tiers"
+                name: "tiers"
+                widget: "list"
+                summary: "{{fields.heading}} — {{fields.price}}"
+                fields:
+                  - {label: "Tier name", name: "heading", widget: "string"}
+                  - {label: "Price", name: "price", widget: "string", hint: "Include the dollar sign, e.g. $69"}
+                  - {label: "Unit", name: "unit", widget: "string", default: "/month"}
+                  - {label: "Featured tier?", name: "featured", widget: "boolean", default: false, hint: "Only one tier should be featured."}
+                  - {label: "CTA button label", name: "ctaLabel", widget: "string"}
+                  - {label: "CTA button link", name: "ctaHref", widget: "string"}
+                  - label: "Features list"
+                    name: "features"
+                    widget: "list"
+                    summary: "{{fields.text}}"
+                    fields:
+                      - {label: "Feature text", name: "text", widget: "string"}
+                      - {label: "Greyed out (not included in this tier)?", name: "muted", widget: "boolean", default: false, required: false}
+              - label: "More-pricing link"
+                name: "moreLink"
+                widget: "object"
+                required: false
+                fields:
+                  - {label: "Label", name: "label", widget: "string"}
+                  - {label: "URL", name: "href", widget: "string"}
+          - label: "Reviews / testimonials section"
+            name: "reviews"
+            widget: "object"
+            required: false
+            fields:
+              - {label: "Eyebrow", name: "eyebrow", widget: "string"}
+              - {label: "Section heading", name: "heading", widget: "string"}
+              - label: "Testimonials"
+                name: "testimonials"
+                widget: "list"
+                summary: "{{fields.attribution}}"
+                fields:
+                  - {label: "Quote", name: "quote", widget: "text"}
+                  - {label: "Attribution (e.g. 'Monica G. · New to CrossFit')", name: "attribution", widget: "string"}
+                  - {label: "Stars", name: "stars", widget: "number", default: 5, min: 1, max: 5}
+              - label: "Stat boxes (numbers below testimonials)"
+                name: "stats"
+                widget: "list"
+                summary: "{{fields.value}} — {{fields.label}}"
+                fields:
+                  - {label: "Big number", name: "value", widget: "string"}
+                  - {label: "Label below number", name: "label", widget: "string"}
+          - label: "Schedule teaser section"
+            name: "scheduleSection"
+            widget: "object"
+            required: false
+            fields:
+              - {label: "Eyebrow", name: "eyebrow", widget: "string"}
+              - {label: "Section heading", name: "heading", widget: "string"}
+              - label: "Schedule blocks"
+                name: "blocks"
+                widget: "list"
+                summary: "{{fields.heading}}"
+                fields:
+                  - {label: "Block heading", name: "heading", widget: "string"}
+                  - label: "Lines (HTML allowed for bolded days)"
+                    name: "lines"
+                    widget: "list"
+                    summary: "{{fields.line}}"
+                    fields:
+                      - {label: "Line", name: "line", widget: "string"}
+              - {label: "Note (small text under schedule)", name: "note", widget: "string", required: false}
+              - label: "Schedule 'see more' link"
+                name: "moreLink"
+                widget: "object"
+                required: false
+                fields:
+                  - {label: "Label", name: "label", widget: "string"}
+                  - {label: "URL", name: "href", widget: "string"}
+              - label: "Location card (right side)"
+                name: "locationCard"
+                widget: "object"
+                required: false
+                fields:
+                  - {label: "Card heading", name: "heading", widget: "string"}
+                  - label: "Detail rows (Address / Phone / Parking)"
+                    name: "rows"
+                    widget: "list"
+                    summary: "{{fields.label}}"
+                    fields:
+                      - {label: "Label", name: "label", widget: "string"}
+                      - {label: "Value (HTML allowed)", name: "value", widget: "string"}
+                  - {label: "CTA button label", name: "ctaLabel", widget: "string"}
+                  - {label: "CTA button link", name: "ctaHref", widget: "string"}
+          - label: "Homepage FAQ teaser (5 questions, drives FAQ schema)"
+            name: "faqs"
+            widget: "list"
+            required: false
+            summary: "{{fields.question}}"
+            fields:
+              - {label: "Question", name: "question", widget: "string"}
+              - {label: "Answer (HTML allowed)", name: "answer", widget: "text"}
+          - {label: "FAQ 'see all' link target", name: "faqMoreLink", widget: "string", required: false, default: "/faq/"}
+          - label: "Final call-to-action (green section at bottom)"
+            name: "finalCta"
+            widget: "object"
+            required: false
+            fields:
+              - {label: "Heading", name: "heading", widget: "string"}
+              - {label: "Body paragraph (optional)", name: "body", widget: "text", required: false}
+              - label: "Buttons"
+                name: "ctas"
+                widget: "list"
+                fields:
+                  - {label: "Label", name: "label", widget: "string"}
+                  - {label: "Link", name: "href", widget: "string"}
+                  - {label: "Inline style", name: "inlineStyle", widget: "string", required: false, hint: "Advanced: custom CSS for the button."}
+          # ----- Hidden technical fields (preserved on save, never shown) -----
+          - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/homepage.njk"}
+          - {label: "Permalink", name: "permalink", widget: "hidden", default: "/"}
+          - {label: "Canonical", name: "canonical", widget: "hidden", default: "https://alpinecrossfit.com/"}
+          - {label: "OG image", name: "ogImage", widget: "hidden", default: "https://alpinecrossfit.com/assets/img/hero-alpine-wall.jpg"}
+          - {label: "OG type", name: "ogType", widget: "hidden", default: "website"}
+          - {label: "Load images.js", name: "loadImagesScript", widget: "hidden", default: true}
+          - {label: "Schema types", name: "schemaTypes", widget: "hidden", default: ["organization", "healthclub", "faq"]}
+
+  # ====================================================================
+  # COACHES & OWNERS — folder collection (Lisa can add new coaches)
+  # ====================================================================
+  - name: "coaches"
+    label: "Coaches & Owners"
+    label_singular: "Coach or Owner"
+    description: "Individual bio pages for each coach and owner. Each one becomes a page at /coaches/<slug>/."
+    folder: "content/coaches"
+    create: true
+    delete: false
+    slug: "{{slug}}"
+    summary: "{{name}}"
+    media_folder: "/assets/img/uploads/coaches"
+    public_folder: "/assets/img/uploads/coaches"
+    fields:
+      - {label: "Coach name", name: "name", widget: "string", hint: "Full first + last name."}
+      - {label: "Role tagline", name: "credentialsLine", widget: "string", hint: "Shown under the name. e.g., 'Owner · CF-L2 · Former Pro Soccer Player · 4× CrossFit Quarterfinalist'"}
+      - {label: "Bio paragraph", name: "bio", widget: "text", hint: "1–2 sentences shown in the hero section."}
+      - label: "Credentials list"
+        name: "credentials"
+        widget: "list"
+        summary: "{{fields.credential}}"
+        field: {label: "Credential", name: "credential", widget: "string"}
+      - label: "Athletic profile (optional)"
+        name: "athlete"
+        widget: "object"
+        required: false
+        collapsed: true
+        fields:
+          - {label: "Section heading", name: "heading", widget: "string", default: "As an athlete"}
+          - {label: "Body paragraph (HTML allowed)", name: "body", widget: "text"}
+          - label: "Benchmark numbers"
+            name: "benchmarks"
+            widget: "list"
+            summary: "{{fields.benchmark}}"
+            field: {label: "Benchmark", name: "benchmark", widget: "string"}
+            required: false
+      - label: "Where to find this coach online (optional)"
+        name: "findCoach"
+        widget: "list"
+        required: false
+        summary: "{{fields.label}}"
+        fields:
+          - {label: "Link label", name: "label", widget: "string"}
+          - {label: "URL", name: "href", widget: "string"}
+      - {label: "Final CTA heading (optional)", name: "finalCtaHeading", widget: "string", required: false, hint: "Defaults to 'Train where {first name} trains.' if blank."}
+      - {label: "Browser title", name: "title", widget: "string"}
+      - {label: "Search snippet", name: "description", widget: "text"}
+      - {label: "Display order on /coaches/ index", name: "order", widget: "number", default: 99, required: false, hint: "Lower numbers appear first."}
+      # ----- Hidden technical fields -----
+      - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/coach.njk"}
+      - {label: "Canonical", name: "canonical", widget: "hidden"}
+      - {label: "Permalink", name: "permalink", widget: "hidden"}
+      - {label: "Person schema (auto-generated)", name: "personSchema", widget: "hidden"}
+
+  # ====================================================================
+  # SERVICE AREAS — folder collection
+  # ====================================================================
+  - name: "areas"
+    label: "Service Areas"
+    label_singular: "Service Area"
+    description: "Local-SEO landing pages for each city Alpine serves. Each one becomes /gym/<slug>/."
+    folder: "content/areas"
+    create: true
+    delete: false
+    slug: "{{slug}}"
+    summary: "{{city}}"
+    media_folder: "/assets/img/uploads/gym-photos"
+    public_folder: "/assets/img/uploads/gym-photos"
+    fields:
+      - {label: "City name", name: "city", widget: "string"}
+      - {label: "Eyebrow text (optional)", name: "eyebrow", widget: "string", required: false, hint: "Small text above the H1. Defaults to city name if blank."}
+      - {label: "Page headline (HTML allowed)", name: "heading", widget: "string", hint: "Wrap accent words in <span class=\"accent\">...</span>. e.g., 'CrossFit in <span class=\"accent\">Wheat Ridge</span>, Colorado.'"}
+      - {label: "Subheadline paragraph", name: "dek", widget: "text"}
+      - label: "Hero buttons"
+        name: "heroCtas"
+        widget: "list"
+        required: false
+        summary: "{{fields.label}}"
+        fields:
+          - {label: "Button label", name: "label", widget: "string"}
+          - {label: "Link target", name: "href", widget: "string"}
+          - {label: "Button style", name: "style", widget: "string", default: "btn-primary btn-lg", required: false}
+      - {label: "Trust strip (HTML allowed)", name: "trustStrip", widget: "string", required: false}
+      - {label: "Final CTA heading (optional)", name: "finalCtaHeading", widget: "string", required: false}
+      - {label: "Page body", name: "body", widget: "markdown", hint: "The bulk of the page content. Wrap each section in <section class=\"section\"> for visual rhythm. You can edit visually (rich text) or as raw HTML — toggle in the top-right of the editor."}
+      - {label: "Browser title", name: "title", widget: "string"}
+      - {label: "Search snippet", name: "description", widget: "text"}
+      - {label: "Display order", name: "order", widget: "number", default: 99, required: false}
+      # ----- Hidden technical fields -----
+      - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/area.njk"}
+      - {label: "Canonical", name: "canonical", widget: "hidden"}
+      - {label: "Permalink", name: "permalink", widget: "hidden"}
+      - {label: "Service schema (auto-generated)", name: "serviceSchema", widget: "hidden"}
+
+  # ====================================================================
+  # PAGES — files collection (everything else: about, pricing, FAQ, etc.)
+  # Each entry is one of the existing markdown files. Lisa edits them
+  # but can't add new ones (those would need a new layout / template).
+  # ====================================================================
+  - name: "pages"
+    label: "Pages"
+    label_singular: "Page"
+    description: "All other site pages: About, Pricing, FAQ, Visit, Schedule, service pages (CrossFit, HYROX, Wellness, etc.), and the Free Intro funnel."
+    delete: false
+    files:
+
+      # ----- About -----
+      - file: "content/pages/about.md"
+        name: "about"
+        label: "About page"
+        fields:
+          - {label: "Browser title", name: "title", widget: "string"}
+          - {label: "Search snippet", name: "description", widget: "text"}
+          - {label: "Hero eyebrow", name: "eyebrow", widget: "string"}
+          - {label: "Page H1", name: "heading", widget: "string"}
+          - {label: "Hero subheadline", name: "dek", widget: "text"}
+          - label: "Hero buttons"
+            name: "heroCtas"
+            widget: "list"
+            required: false
+            fields:
+              - {label: "Label", name: "label", widget: "string"}
+              - {label: "Link", name: "href", widget: "string"}
+              - {label: "Style", name: "style", widget: "string", default: "btn-primary btn-lg", required: false}
+          - {label: "Trust strip (HTML)", name: "trustStrip", widget: "string", required: false}
+          - {label: "Show with hero image?", name: "heroWithImage", widget: "boolean", default: true, required: false}
+          - label: "Hero image (right side)"
+            name: "heroImage"
+            widget: "object"
+            required: false
+            fields:
+              - {label: "Image", name: "src", widget: "image", media_folder: "/assets/img/uploads/gym-photos"}
+              - {label: "Alt text", name: "alt", widget: "string"}
+              - {label: "Image slot ID (don't change)", name: "slot", widget: "hidden"}
+          - {label: "Page body", name: "body", widget: "markdown", hint: "The page content beneath the hero. Wrap each section in <section class=\"section\">."}
+          - label: "Final CTA section"
+            name: "finalCta"
+            widget: "object"
+            required: false
+            fields:
+              - {label: "Heading", name: "heading", widget: "string"}
+              - {label: "Body", name: "body", widget: "text", required: false}
+              - label: "Buttons"
+                name: "ctas"
+                widget: "list"
+                fields:
+                  - {label: "Label", name: "label", widget: "string"}
+                  - {label: "Link", name: "href", widget: "string"}
+                  - {label: "Inline style", name: "inlineStyle", widget: "string", required: false}
+          - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/page.njk"}
+          - {label: "Permalink", name: "permalink", widget: "hidden", default: "/about/"}
+          - {label: "Canonical", name: "canonical", widget: "hidden"}
+          - {label: "Load images.js", name: "loadImagesScript", widget: "hidden", default: true}
+          - {label: "Extra schemas", name: "extraSchemas", widget: "hidden"}
+
+      # ----- Pricing -----
+      - file: "content/pages/pricing.md"
+        name: "pricing"
+        label: "Pricing page"
+        fields:
+          - {label: "Browser title", name: "title", widget: "string"}
+          - {label: "Search snippet", name: "description", widget: "text"}
+          - {label: "Hero eyebrow", name: "eyebrow", widget: "string"}
+          - {label: "Page H1", name: "heading", widget: "string"}
+          - {label: "Hero subheadline", name: "dek", widget: "text"}
+          - label: "Hero buttons"
+            name: "heroCtas"
+            widget: "list"
+            required: false
+            fields:
+              - {label: "Label", name: "label", widget: "string"}
+              - {label: "Link", name: "href", widget: "string"}
+              - {label: "Style", name: "style", widget: "string", default: "btn-primary btn-lg", required: false}
+          - {label: "Trust strip (HTML)", name: "trustStrip", widget: "string", required: false}
+          - {label: "Page body (pricing tier cards + FAQ — HTML)", name: "body", widget: "markdown"}
+          - label: "Final CTA"
+            name: "finalCta"
+            widget: "object"
+            required: false
+            fields:
+              - {label: "Heading", name: "heading", widget: "string"}
+              - {label: "Body", name: "body", widget: "text", required: false}
+              - label: "Buttons"
+                name: "ctas"
+                widget: "list"
+                fields:
+                  - {label: "Label", name: "label", widget: "string"}
+                  - {label: "Link", name: "href", widget: "string"}
+                  - {label: "Inline style", name: "inlineStyle", widget: "string", required: false}
+          - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/page.njk"}
+          - {label: "Permalink", name: "permalink", widget: "hidden", default: "/pricing/"}
+          - {label: "Canonical", name: "canonical", widget: "hidden"}
+          - {label: "Extra schemas", name: "extraSchemas", widget: "hidden"}
+
+      # ----- FAQ -----
+      - file: "content/pages/faq.md"
+        name: "faq"
+        label: "FAQ page"
+        fields:
+          - {label: "Browser title", name: "title", widget: "string"}
+          - {label: "Search snippet", name: "description", widget: "text"}
+          - {label: "Hero eyebrow", name: "eyebrow", widget: "string", default: "FAQ"}
+          - {label: "Page H1", name: "heading", widget: "string"}
+          - {label: "Hero subheadline", name: "dek", widget: "text"}
+          - label: "Hero buttons"
+            name: "heroCtas"
+            widget: "list"
+            required: false
+            fields:
+              - {label: "Label", name: "label", widget: "string"}
+              - {label: "Link", name: "href", widget: "string"}
+              - {label: "Style", name: "style", widget: "string", default: "btn-primary btn-lg", required: false}
+          - label: "FAQ groups (each becomes a section on the page)"
+            name: "faqGroups"
+            widget: "list"
+            summary: "{{fields.heading}} ({{fields.items.length}})"
+            fields:
+              - {label: "Group heading", name: "heading", widget: "string"}
+              - {label: "Section style", name: "sectionStyle", widget: "select", options: ["", "section-dark"], default: "", required: false, hint: "Empty = light, 'section-dark' = dark. Alternate to create visual rhythm."}
+              - label: "Questions in this group"
+                name: "items"
+                widget: "list"
+                summary: "{{fields.question}}"
+                fields:
+                  - {label: "Question", name: "question", widget: "string"}
+                  - {label: "Answer (HTML allowed)", name: "answer", widget: "text"}
+          - label: "Schema FAQ list (drives FAQPage structured data)"
+            name: "faqs"
+            widget: "list"
+            required: false
+            summary: "{{fields.question}}"
+            hint: "Plain-text version of the most important Q&As. Used for Google's FAQ rich-result. Keep this in sync with the groups above."
+            fields:
+              - {label: "Question", name: "question", widget: "string"}
+              - {label: "Answer (plain text, no HTML)", name: "answer", widget: "text"}
+          - label: "Final CTA"
+            name: "finalCta"
+            widget: "object"
+            required: false
+            fields:
+              - {label: "Heading", name: "heading", widget: "string"}
+              - label: "Buttons"
+                name: "ctas"
+                widget: "list"
+                fields:
+                  - {label: "Label", name: "label", widget: "string"}
+                  - {label: "Link", name: "href", widget: "string"}
+                  - {label: "Inline style", name: "inlineStyle", widget: "string", required: false}
+          - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/faq.njk"}
+          - {label: "Permalink", name: "permalink", widget: "hidden", default: "/faq/"}
+          - {label: "Canonical", name: "canonical", widget: "hidden"}
+          - {label: "Schema types", name: "schemaTypes", widget: "hidden", default: ["faq"]}
+          - {label: "Extra schemas", name: "extraSchemas", widget: "hidden"}
+
+      # ----- Free intro -----
+      - file: "content/pages/free-intro.md"
+        name: "free-intro"
+        label: "Free Intro (No Sweat Intro) page"
+        fields:
+          - {label: "Browser title", name: "title", widget: "string"}
+          - {label: "Search snippet", name: "description", widget: "text"}
+          - {label: "Hero eyebrow", name: "eyebrow", widget: "string"}
+          - {label: "Page H1", name: "heading", widget: "string"}
+          - {label: "Hero subheadline", name: "dek", widget: "text"}
+          - label: "Hero buttons"
+            name: "heroCtas"
+            widget: "list"
+            required: false
+            fields:
+              - {label: "Label", name: "label", widget: "string"}
+              - {label: "Link", name: "href", widget: "string"}
+              - {label: "Style", name: "style", widget: "string", default: "btn-primary btn-lg", required: false}
+          - {label: "Trust strip (HTML)", name: "trustStrip", widget: "string", required: false}
+          - {label: "Page body", name: "body", widget: "markdown"}
+          - label: "Final CTA"
+            name: "finalCta"
+            widget: "object"
+            required: false
+            fields:
+              - {label: "Heading", name: "heading", widget: "string"}
+              - label: "Buttons"
+                name: "ctas"
+                widget: "list"
+                fields:
+                  - {label: "Label", name: "label", widget: "string"}
+                  - {label: "Link", name: "href", widget: "string"}
+                  - {label: "Inline style", name: "inlineStyle", widget: "string", required: false}
+          - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/page.njk"}
+          - {label: "Permalink", name: "permalink", widget: "hidden", default: "/free-intro/"}
+          - {label: "Canonical", name: "canonical", widget: "hidden"}
+
+      # ----- Visit -----
+      - file: "content/pages/visit.md"
+        name: "visit"
+        label: "Visit page"
+        fields:
+          - {label: "Browser title", name: "title", widget: "string"}
+          - {label: "Search snippet", name: "description", widget: "text"}
+          - {label: "Hero eyebrow", name: "eyebrow", widget: "string"}
+          - {label: "Page H1", name: "heading", widget: "string"}
+          - {label: "Hero subheadline", name: "dek", widget: "text"}
+          - label: "Hero buttons"
+            name: "heroCtas"
+            widget: "list"
+            required: false
+            fields:
+              - {label: "Label", name: "label", widget: "string"}
+              - {label: "Link", name: "href", widget: "string"}
+              - {label: "Style", name: "style", widget: "string", default: "btn-primary btn-lg", required: false}
+          - {label: "Page body", name: "body", widget: "markdown"}
+          - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/page.njk"}
+          - {label: "Permalink", name: "permalink", widget: "hidden", default: "/visit/"}
+          - {label: "Canonical", name: "canonical", widget: "hidden"}
+          - {label: "Extra schemas", name: "extraSchemas", widget: "hidden"}
+
+      # ----- Schedule -----
+      - file: "content/pages/schedule.md"
+        name: "schedule"
+        label: "Schedule page"
+        fields:
+          - {label: "Browser title", name: "title", widget: "string"}
+          - {label: "Search snippet", name: "description", widget: "text"}
+          - {label: "Hero eyebrow", name: "eyebrow", widget: "string"}
+          - {label: "Page H1", name: "heading", widget: "string"}
+          - {label: "Hero subheadline", name: "dek", widget: "text"}
+          - label: "Hero buttons"
+            name: "heroCtas"
+            widget: "list"
+            required: false
+            fields:
+              - {label: "Label", name: "label", widget: "string"}
+              - {label: "Link", name: "href", widget: "string"}
+              - {label: "Style", name: "style", widget: "string", default: "btn-primary btn-lg", required: false}
+          - {label: "Page body (schedule tables — HTML)", name: "body", widget: "markdown"}
+          - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/page.njk"}
+          - {label: "Permalink", name: "permalink", widget: "hidden", default: "/schedule/"}
+          - {label: "Canonical", name: "canonical", widget: "hidden"}
+
+      # ----- Coaches index -----
+      - file: "content/pages/coaches.md"
+        name: "coaches-index"
+        label: "Coaches index page (lists all coaches)"
+        fields:
+          - {label: "Browser title", name: "title", widget: "string"}
+          - {label: "Search snippet", name: "description", widget: "text"}
+          - {label: "Hero eyebrow", name: "eyebrow", widget: "string"}
+          - {label: "Page H1", name: "heading", widget: "string"}
+          - {label: "Hero subheadline", name: "dek", widget: "text"}
+          - label: "Hero buttons"
+            name: "heroCtas"
+            widget: "list"
+            required: false
+            fields:
+              - {label: "Label", name: "label", widget: "string"}
+              - {label: "Link", name: "href", widget: "string"}
+              - {label: "Style", name: "style", widget: "string", default: "btn-primary btn-lg", required: false}
+          - {label: "Page body (coach cards grid — HTML)", name: "body", widget: "markdown"}
+          - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/page.njk"}
+          - {label: "Permalink", name: "permalink", widget: "hidden", default: "/coaches/"}
+          - {label: "Canonical", name: "canonical", widget: "hidden"}
+          - {label: "Body container width", name: "bodyContainer", widget: "hidden", default: "wide"}
+          - {label: "Extra schemas", name: "extraSchemas", widget: "hidden"}
+
+      # ----- Service pages: CrossFit -----
+      - file: "content/pages/crossfit.md"
+        name: "crossfit"
+        label: "CrossFit service page"
+        fields: &service_page_fields
+          - {label: "Browser title", name: "title", widget: "string"}
+          - {label: "Search snippet", name: "description", widget: "text"}
+          - {label: "Hero eyebrow", name: "eyebrow", widget: "string"}
+          - {label: "Page H1", name: "heading", widget: "string"}
+          - {label: "Hero subheadline", name: "dek", widget: "text"}
+          - label: "Hero buttons"
+            name: "heroCtas"
+            widget: "list"
+            required: false
+            fields:
+              - {label: "Label", name: "label", widget: "string"}
+              - {label: "Link", name: "href", widget: "string"}
+              - {label: "Style", name: "style", widget: "string", default: "btn-primary btn-lg", required: false}
+          - {label: "Trust strip (HTML)", name: "trustStrip", widget: "string", required: false}
+          - {label: "Page body", name: "body", widget: "markdown"}
+          - label: "Final CTA"
+            name: "finalCta"
+            widget: "object"
+            required: false
+            fields:
+              - {label: "Heading", name: "heading", widget: "string"}
+              - {label: "Body", name: "body", widget: "text", required: false}
+              - label: "Buttons"
+                name: "ctas"
+                widget: "list"
+                fields:
+                  - {label: "Label", name: "label", widget: "string"}
+                  - {label: "Link", name: "href", widget: "string"}
+                  - {label: "Inline style", name: "inlineStyle", widget: "string", required: false}
+          - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/page.njk"}
+          - {label: "Permalink", name: "permalink", widget: "hidden"}
+          - {label: "Canonical", name: "canonical", widget: "hidden"}
+          - {label: "Extra schemas", name: "extraSchemas", widget: "hidden"}
+
+      - file: "content/pages/hyrox.md"
+        name: "hyrox"
+        label: "HYROX service page"
+        fields: *service_page_fields
+
+      - file: "content/pages/personal-training.md"
+        name: "personal-training"
+        label: "Personal Training service page"
+        fields: *service_page_fields
+
+      - file: "content/pages/wellness.md"
+        name: "wellness"
+        label: "Wellness Center service page"
+        fields: *service_page_fields
+
+      - file: "content/pages/prime-vitality.md"
+        name: "prime-vitality"
+        label: "Prime Vitality (55+) service page"
+        fields: *service_page_fields
+
+      - file: "content/pages/beginners.md"
+        name: "beginners"
+        label: "Beginners / Foundations service page"
+        fields: *service_page_fields
+
+      # ----- Intro funnel pages -----
+      - file: "content/pages/intro.md"
+        name: "intro"
+        label: "Intro scheduling page (/intro/)"
+        fields:
+          - {label: "Browser title", name: "title", widget: "string"}
+          - {label: "Search snippet", name: "description", widget: "text"}
+          - {label: "Hero eyebrow", name: "eyebrow", widget: "string"}
+          - {label: "Page H1", name: "heading", widget: "string"}
+          - {label: "Hero subheadline", name: "dek", widget: "text"}
+          - {label: "Page body (booking iframe + steps)", name: "body", widget: "markdown"}
+          - label: "Final CTA"
+            name: "finalCta"
+            widget: "object"
+            required: false
+            fields:
+              - {label: "Heading", name: "heading", widget: "string"}
+              - {label: "Body", name: "body", widget: "text", required: false}
+              - label: "Buttons"
+                name: "ctas"
+                widget: "list"
+                fields:
+                  - {label: "Label", name: "label", widget: "string"}
+                  - {label: "Link", name: "href", widget: "string"}
+                  - {label: "Inline style", name: "inlineStyle", widget: "string", required: false}
+          - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/page.njk"}
+          - {label: "Permalink", name: "permalink", widget: "hidden", default: "/intro/"}
+          - {label: "Canonical", name: "canonical", widget: "hidden"}
+          - {label: "Extra head HTML", name: "extraHead", widget: "hidden"}
+
+      - file: "content/pages/intro-standalone.md"
+        name: "intro-standalone"
+        label: "Intro standalone page (/intro-standalone.html — for embeds)"
+        fields:
+          - {label: "Browser title", name: "title", widget: "string"}
+          - {label: "Search snippet", name: "description", widget: "text"}
+          - {label: "Hero eyebrow", name: "eyebrow", widget: "string"}
+          - {label: "Page H1 (HTML allowed)", name: "heading", widget: "string"}
+          - {label: "Hero subheadline", name: "dek", widget: "text"}
+          - {label: "Page body (booking iframe + steps)", name: "body", widget: "markdown"}
+          - {label: "Footer text", name: "footerText", widget: "string"}
+          - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/intro-standalone.njk"}
+          - {label: "Permalink", name: "permalink", widget: "hidden", default: "/intro-standalone.html"}
+          - {label: "Sitemap", name: "sitemap", widget: "hidden", default: false}
