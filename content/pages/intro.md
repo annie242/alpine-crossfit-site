@@ -21,31 +21,22 @@ finalCta:
     <span class="eyebrow">Book your intro</span>
     <h2>Pick a time that works.</h2>
 
-    <!--
-      Gymnetics / GoHighLevel booking widget.
-
-      The iframe `src` is set by the inline script below so query params
-      from the parent page URL (e.g. ?first_name=Annie&email=...) get
-      forwarded into the widget URL for prefill. This avoids the
-      duplicate-data-entry friction when visitors arrive here from the
-      /free-intro/ optin form.
-    -->
     <div class="form-wrap" style="margin-top:var(--space-6); background:#fff; border-radius:var(--radius-lg); overflow:hidden;">
       <iframe
         id="G2tY5mJrTvIXowv2ZcyX_1777058045577"
+        src="https://link.gymntx.com/widget/booking/G2tY5mJrTvIXowv2ZcyX"
         style="width:100%; min-height:700px; border:none; display:block;"
         scrolling="no"
-        title="Book your No Sweat Intro"
-        data-base-src="https://link.gymntx.com/widget/booking/G2tY5mJrTvIXowv2ZcyX">
+        title="Book your No Sweat Intro">
       </iframe>
     </div>
     <script>
       (function () {
+        var qs = window.location.search;
+        if (!qs || qs.length < 2) return;
         var iframe = document.getElementById("G2tY5mJrTvIXowv2ZcyX_1777058045577");
         if (!iframe) return;
-        var base = iframe.getAttribute("data-base-src");
-        var qs = window.location.search; // includes leading "?"
-        iframe.src = base + (qs && qs.length > 1 ? qs : "");
+        iframe.src = "https://link.gymntx.com/widget/booking/G2tY5mJrTvIXowv2ZcyX" + qs;
       })();
     </script>
 
