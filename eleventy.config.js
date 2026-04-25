@@ -102,6 +102,10 @@ export default function (eleventyConfig) {
 
   eleventyConfig.addFilter("jsonStringify", (value) => JSON.stringify(value));
 
+  // Custom Nunjucks "split" filter — used by coach.njk to derive a
+  // first name from the full name. Some Nunjucks builds don't ship it.
+  eleventyConfig.addFilter("split", (value, sep) => String(value).split(sep));
+
   // ----- Directory layout -----
   return {
     dir: {
