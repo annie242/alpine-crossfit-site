@@ -1,0 +1,14 @@
+<header class="site-header">
+  <nav class="nav" aria-label="Primary">
+    <a href="/" class="nav-brand" aria-label="Alpine CrossFit"><img src="/assets/img/logo.png" alt="Alpine CrossFit" class="logo-primary"></a>
+    <ul class="nav-links">
+    {%- for item in site.primaryNav %}
+      <li><a href="{{ item.url }}">{{ item.label }}</a></li>
+    {%- endfor %}
+    </ul>
+    <div class="nav-cta">
+      <a class="btn btn-primary" href="/free-intro/">Book Free Intro</a>
+    </div>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false">☰</button>
+  </nav>
+</header>

@@ -1,0 +1,84 @@
+---
+layout: layouts/base.njk
+schemaTypes: ["person"]
+---
+{# Coach bio page. Frontmatter expected:
+   - title, description (browser title + meta)
+   - name (coach full name) — required
+   - role (e.g., "Owner", "Head Coach")
+   - credentialsLine (string under H1, e.g., "Owner · CF-L2 · ...")
+   - bio (markdown intro paragraph for the hero)
+   - credentials: [strings]
+   - athlete: { heading, body, benchmarks: [strings] }   (optional)
+   - findCoach: [{label, href}]   (optional)
+   - finalCtaHeading (string, defaults "Train where {name} trains.")
+   - personSchema (full Person JSON-LD object)
+#}
+<section class="hero">
+  <div class="container">
+    <p class="hero-eyebrow"><a href="/coaches/" style="color:var(--color-alpine-green);">← All coaches &amp; owners</a></p>
+    <h1>{{ name }}.</h1>
+    {% if credentialsLine %}<p class="text-muted" style="text-transform:uppercase;letter-spacing:0.1em;font-weight:700;font-size:0.9rem;margin-bottom:var(--space-6);color:var(--color-alpine-green);">{{ credentialsLine }}</p>{% endif %}
+    {% if bio %}<p class="hero-dek">{{ bio | safe }}</p>{% endif %}
+  </div>
+</section>
+
+{% if credentials %}
+<section class="section">
+  <div class="container container-narrow">
+    <h4>Credentials</h4>
+    <ul class="feature-list">
+    {%- for c in credentials %}
+      <li>{{ c | safe }}</li>
+    {%- endfor %}
+    </ul>
+  </div>
+</section>
+{% endif %}
+
+{% if athlete %}
+<section class="section section-dark">
+  <div class="container container-narrow">
+    <h4>{{ athlete.heading or 'As an athlete' }}</h4>
+    {% if athlete.body %}{{ athlete.body | safe }}{% endif %}
+    {% if athlete.benchmarks %}
+    <h4 class="mt-8">Benchmarks</h4>
+    <ul class="feature-list">
+    {%- for b in athlete.benchmarks %}
+      <li>{{ b | safe }}</li>
+    {%- endfor %}
+    </ul>
+    {% endif %}
+  </div>
+</section>
+{% endif %}
+
+{% if content %}
+<section class="section">
+  <div class="container container-narrow">
+    {{ content | safe }}
+  </div>
+</section>
+{% endif %}
+
+{% if findCoach %}
+<section class="section">
+  <div class="container container-narrow">
+    <h4>Find {{ name | split(' ') | first }}</h4>
+    <ul class="feature-list">
+    {%- for link in findCoach %}
+      <li><a href="{{ link.href }}">{{ link.label }}</a></li>
+    {%- endfor %}
+    </ul>
+  </div>
+</section>
+{% endif %}
+
+<section class="section section-green">
+  <div class="container text-center">
+    <h2>{{ finalCtaHeading or ('Train where ' + (name | split(' ') | first) + ' trains.') }}</h2>
+    <div class="hero-cta" style="justify-content:center;">
+      <a class="btn btn-lg" style="background:#000;color:#fff;" href="/free-intro/">Book my free No Sweat Intro</a>
+    </div>
+  </div>
+</section>

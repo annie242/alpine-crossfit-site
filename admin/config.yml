@@ -1,0 +1,38 @@
+backend:
+  name: git-gateway
+  branch: main
+
+# Where CMS-uploaded images go.
+media_folder: "assets/img/uploads"
+public_folder: "/assets/img/uploads"
+
+site_url: https://alpinecrossfit.com
+display_url: https://alpinecrossfit.com
+
+collections:
+  # ===== IMAGE BLOCKS =====
+  # Upload new gym photos from the admin without touching file paths.
+  # Each entry maps to a named slot the HTML reads via data-image-slot.
+  - name: "images"
+    label: "Image Blocks"
+    label_singular: "Image Block"
+    description: "Upload new gym photos for specific sections of the site. The image auto-swaps on the live site within a minute."
+    files:
+      - name: "homepage_hero"
+        label: "Homepage Hero"
+        file: "content/images/homepage_hero.json"
+        fields:
+          - {label: "Image", name: "image", widget: "image", hint: "Shows in the right half of the homepage hero section. Portrait orientation looks best."}
+          - {label: "Alt text", name: "alt", widget: "string", default: "Alpine CrossFit member mid-lift in front of the Alpine mountain wall mural", hint: "One sentence describing the photo — for accessibility and SEO."}
+      - name: "about_hero"
+        label: "About Page Hero"
+        file: "content/images/about_hero.json"
+        fields:
+          - {label: "Image", name: "image", widget: "image", hint: "Shows in the right half of the About page hero. Portrait or landscape both work."}
+          - {label: "Alt text", name: "alt", widget: "string", default: "Alpine CrossFit members training during a coached class"}
+      - name: "wellness_hero"
+        label: "Wellness Page Hero"
+        file: "content/images/wellness_hero.json"
+        fields:
+          - {label: "Image", name: "image", widget: "image", hint: "Shows in the right half of the Wellness Center page hero."}
+          - {label: "Alt text", name: "alt", widget: "string", default: "Alpine member training during wellness center hours"}

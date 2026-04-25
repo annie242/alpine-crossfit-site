@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ title }}</title>
+  <meta name="description" content="{{ description }}">
+  {% if canonical %}<link rel="canonical" href="{{ canonical }}">{% else %}<link rel="canonical" href="{{ site.url }}{{ page.url }}">{% endif %}
+  <link rel="icon" type="image/png" href="/assets/img/favicon.png">
+  <link rel="apple-touch-icon" href="/assets/img/favicon.png">
+  <meta property="og:image" content="{{ ogImage or (site.url + '/assets/img/hero-alpine-wall.jpg') }}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="og:title" content="{{ ogTitle or title }}">
+  <meta property="og:description" content="{{ ogDescription or description }}">
+  <meta property="og:type" content="{{ ogType or 'website' }}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Barlow+Condensed:ital,wght@1,700;1,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  {% include "partials/schema-org.njk" %}
+  {% if extraHead %}{{ extraHead | safe }}{% endif %}
+</head>
+<body>
+
+{% include "partials/header.njk" %}
+
+<main>
+{{ content | safe }}
+</main>
+
+{% include "partials/footer.njk" %}
+
+<div class="sticky-cta"><a class="btn btn-primary" href="/free-intro/">Book Free Intro</a></div>
+
+<!-- Netlify Identity widget — loaded sitewide so password-recovery and
+     invitation links work no matter what page the user lands on. -->
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", function (user) {
+      if (!user) {
+        window.netlifyIdentity.on("login", function () {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
+
+<script src="/assets/js/main.js" defer></script>
+{% if loadImagesScript %}<script src="/assets/js/images.js" defer></script>{% endif %}
+</body>
+</html>

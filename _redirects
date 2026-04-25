@@ -1,0 +1,20 @@
+# Netlify redirects file
+# Format: from-path   to-path   status-code
+#
+# When you switch DNS, add redirects here for any old URLs that should
+# forward to new paths. Examples below are placeholders — replace with
+# actual old URLs from your current Big Little Gyms site before launch.
+
+# /old-about-page/   /about/   301
+# /get-started/      /free-intro/   301
+# /member-reviews/   /#reviews   301
+
+# Consolidation: alpinecrossfit.com pages
+# (These redirects only activate if alpinecrossfit.com is pointed at
+# this Netlify site or a redirect rule is set at the domain registrar.)
+# /blog/*     /#   301
+# /personnel/* /coaches/*   301
+
+# Trailing slash normalization (Netlify handles this automatically
+# for folders with index.html, but uncomment if needed)
+# /about  /about/   301!

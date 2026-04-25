@@ -1,0 +1,54 @@
+---
+layout: layouts/base.njk
+schemaTypes: ["faq"]
+---
+{# FAQ page layout. Frontmatter expected:
+   - title, description, canonical
+   - eyebrow (defaults "FAQ")
+   - heading (H1)
+   - dek (lead paragraph)
+   - heroCtas: [{label, href, style}]
+   - faqGroups: [ { heading, sectionStyle, items: [{question, answer}] } ]
+       — sectionStyle is "" or "section-dark" to alternate the visual sections
+   - faqs: full flat list (drives FAQPage schema; auto-derive if missing)
+   - extraSchemas: any additional JSON-LD blocks (e.g., BreadcrumbList)
+   - finalCta: { heading, ctas[] }
+#}
+<section class="hero">
+  <div class="container container-narrow">
+    <div class="hero-eyebrow">{{ eyebrow or 'FAQ' }}</div>
+    <h1>{{ heading | safe }}</h1>
+    {% if dek %}<p class="hero-dek">{{ dek | safe }}</p>{% endif %}
+    {% if heroCtas %}
+    <div class="hero-cta">
+      {%- for cta in heroCtas %}
+      <a class="btn {{ cta.style or 'btn-primary btn-lg' }}" href="{{ cta.href }}">{{ cta.label }}</a>
+      {%- endfor %}
+    </div>
+    {% endif %}
+  </div>
+</section>
+
+{%- for g in faqGroups %}
+<section class="section{% if g.sectionStyle %} {{ g.sectionStyle }}{% endif %}">
+  <div class="container container-narrow">
+    <h4>{{ g.heading | safe }}</h4>
+    {%- for item in g.items %}
+    <details class="faq-item"><summary>{{ item.question }}</summary><div class="faq-answer">{{ item.answer | safe }}</div></details>
+    {%- endfor %}
+  </div>
+</section>
+{%- endfor %}
+
+{% if finalCta %}
+<section class="section section-green">
+  <div class="container text-center">
+    <h2>{{ finalCta.heading }}</h2>
+    <div class="hero-cta" style="justify-content:center;">
+      {%- for cta in finalCta.ctas %}
+      <a class="btn btn-lg" style="{{ cta.inlineStyle or 'background:#000;color:#fff;' }}" href="{{ cta.href }}">{{ cta.label }}</a>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}

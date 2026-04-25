@@ -1,0 +1,57 @@
+---
+layout: layouts/base.njk
+---
+{# Generic content page. Frontmatter expected:
+   - title (browser title)
+   - description (meta)
+   - heading (H1)
+   - eyebrow (text above H1, optional)
+   - dek (lead paragraph, optional)
+   - heroCtas: [{label, href, style}]  (optional)
+   - heroImage: { src, alt, slot }  (optional, slot enables image-block JS swap)
+   - bodyContainer: "narrow" | "wide" (defaults narrow)
+   - The markdown body becomes the main content beneath the hero. #}
+<section class="hero">
+  <div class="container{% if heroWithImage %} hero-with-image{% endif %}">
+    {% if heroWithImage %}<div class="hero-text">{% endif %}
+    {% if eyebrow %}<div class="hero-eyebrow">{{ eyebrow }}</div>{% endif %}
+    <h1>{{ heading | safe }}</h1>
+    {% if dek %}<p class="hero-dek">{{ dek | safe }}</p>{% endif %}
+    {% if heroCtas %}
+    <div class="hero-cta">
+      {%- for cta in heroCtas %}
+      <a class="btn {{ cta.style or 'btn-primary btn-lg' }}" href="{{ cta.href }}">{{ cta.label }}</a>
+      {%- endfor %}
+    </div>
+    {% endif %}
+    {% if trustStrip %}
+    <div class="trust-strip">{{ trustStrip | safe }}</div>
+    {% endif %}
+    {% if heroWithImage %}</div>
+    <div class="hero-media">
+      <img src="{{ heroImage.src }}" alt="{{ heroImage.alt }}" class="hero-image"{% if heroImage.slot %} data-image-slot="{{ heroImage.slot }}"{% endif %} loading="eager" fetchpriority="high">
+    </div>
+    {% endif %}
+  </div>
+</section>
+
+{# Body content already includes its own <section> wrappers (extracted from
+   the original HTML pages), so it's emitted as-is without an extra wrapper.
+   When you author a NEW page from scratch, wrap each block in its own
+   <section class="section"> (or section-dark / section-green) so the
+   visual rhythm matches the rest of the site. #}
+{% if content %}{{ content | safe }}{% endif %}
+
+{% if finalCta %}
+<section class="section section-green">
+  <div class="container text-center">
+    <h2>{{ finalCta.heading }}</h2>
+    {% if finalCta.body %}<p class="hero-dek" style="margin-left:auto;margin-right:auto;color:rgba(0,0,0,0.8);">{{ finalCta.body | safe }}</p>{% endif %}
+    <div class="hero-cta" style="justify-content:center;">
+      {%- for cta in finalCta.ctas %}
+      <a class="btn btn-lg" style="{{ cta.inlineStyle or 'background:#000;color:#fff;' }}" href="{{ cta.href }}">{{ cta.label }}</a>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}

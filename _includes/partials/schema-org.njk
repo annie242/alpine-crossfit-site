@@ -1,0 +1,121 @@
+{#
+  Page-specific schema.org JSON-LD blocks.
+
+  Each page's frontmatter sets `schemaTypes` (an array) listing which schemas
+  it should emit. Possible values:
+    - "organization"  → Organization (homepage only)
+    - "healthclub"    → HealthClub / LocalBusiness with full address, hours, ratings (homepage, area pages, contact-heavy pages)
+    - "faq"           → FAQPage built from `faqs` frontmatter array (homepage teaser, FAQ page)
+    - "service"       → Service entity (area pages, service-specific pages like /crossfit/, /hyrox/)
+    - "person"        → Person markup (coach pages — built from `personSchema` frontmatter)
+
+  This keeps structured data accurate AND human-editable: Lisa can update
+  the FAQ entries and the JSON-LD updates automatically.
+#}
+
+{% if schemaTypes and 'organization' in schemaTypes %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "{{ site.url }}/#organization",
+  "name": "{{ site.name }}",
+  "url": "{{ site.url }}/",
+  "foundingDate": "{{ site.founded }}",
+  "sameAs": ["{{ site.instagram }}"],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "{{ site.phone }}",
+    "contactType": "customer service",
+    "areaServed": "US",
+    "availableLanguage": "en"
+  }
+}
+</script>
+{% endif %}
+
+{% if schemaTypes and 'healthclub' in schemaTypes %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HealthClub",
+  "@id": "{{ site.url }}/#healthclub",
+  "name": "{{ site.name }}",
+  "foundingDate": "{{ site.founded }}",
+  "url": "{{ site.url }}/",
+  "telephone": "{{ site.phone }}",
+  "priceRange": "$69-$999/month",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "{{ site.address.street }}",
+    "addressLocality": "{{ site.address.city }}",
+    "addressRegion": "{{ site.address.region }}",
+    "postalCode": "{{ site.address.postalCode }}",
+    "addressCountry": "{{ site.address.country }}"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": "{{ site.geo.latitude }}", "longitude": "{{ site.geo.longitude }}" },
+  "openingHoursSpecification": [
+    {%- for slot in site.hours %}
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": {{ slot.days | jsonStringify | safe }}, "opens": "{{ slot.opens }}", "closes": "{{ slot.closes }}" }{% if not loop.last %},{% endif %}
+    {%- endfor %}
+  ],
+  "areaServed": [
+    {%- for area in site.serviceAreas %}
+    { "@type": "City", "name": "{{ area }}" }{% if not loop.last %},{% endif %}
+    {%- endfor %}
+  ],
+  "sameAs": ["{{ site.instagram }}"],
+  "amenityFeature": [
+    { "@type": "LocationFeatureSpecification", "name": "Free parking", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "Showers", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "24/7 member access", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "Wellness center", "value": true }
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "{{ site.rating.value }}",
+    "reviewCount": "{{ site.rating.count }}",
+    "bestRating": "5",
+    "worstRating": "1"
+  }
+}
+</script>
+{% endif %}
+
+{% if schemaTypes and 'faq' in schemaTypes and faqs %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {%- for f in faqs %}
+    {
+      "@type": "Question",
+      "name": {{ f.question | jsonStringify | safe }},
+      "acceptedAnswer": { "@type": "Answer", "text": {{ f.answer | jsonStringify | safe }} }
+    }{% if not loop.last %},{% endif %}
+    {%- endfor %}
+  ]
+}
+</script>
+{% endif %}
+
+{% if schemaTypes and 'service' in schemaTypes and serviceSchema %}
+<script type="application/ld+json">
+{{ serviceSchema | jsonStringify | safe }}
+</script>
+{% endif %}
+
+{% if schemaTypes and 'person' in schemaTypes and personSchema %}
+<script type="application/ld+json">
+{{ personSchema | jsonStringify | safe }}
+</script>
+{% endif %}
+
+{% if extraSchemas %}
+{%- for s in extraSchemas %}
+<script type="application/ld+json">
+{{ s | jsonStringify | safe }}
+</script>
+{%- endfor %}
+{% endif %}

@@ -1,0 +1,47 @@
+---
+layout: layouts/base.njk
+schemaTypes: ["service", "healthclub"]
+---
+{# Service-area page (Wheat Ridge, Arvada, Lakewood, Applewood, Golden).
+   Frontmatter expected:
+   - title, description
+   - city (e.g., "Wheat Ridge") — used in headings
+   - eyebrow (defaults to city)
+   - heading (e.g., "CrossFit in <span class=accent>Wheat Ridge</span>, Colorado.")
+   - dek (lead paragraph)
+   - heroCtas: [{label, href, style}]
+   - trustLine (string of pipe-separated trust items)
+   - bodyContainer: "narrow" or "wide" (defaults narrow)
+   - serviceSchema (Service JSON-LD object)
+   - finalCtaHeading
+   - The markdown body becomes the main content.
+#}
+<section class="hero">
+  <div class="container">
+    <div class="hero-eyebrow">{{ eyebrow or city }}</div>
+    <h1>{{ heading | safe }}</h1>
+    {% if dek %}<p class="hero-dek">{{ dek | safe }}</p>{% endif %}
+    {% if heroCtas %}
+    <div class="hero-cta">
+      {%- for cta in heroCtas %}
+      <a class="btn {{ cta.style or 'btn-primary btn-lg' }}" href="{{ cta.href }}">{{ cta.label }}</a>
+      {%- endfor %}
+    </div>
+    {% endif %}
+    {% if trustStrip %}<div class="trust-strip">{{ trustStrip | safe }}</div>{% endif %}
+  </div>
+</section>
+
+{% if content %}
+{{ content | safe }}
+{% endif %}
+
+<section class="section section-green">
+  <div class="container text-center">
+    <h2>{{ finalCtaHeading or ('Visit Alpine in ' + city + '.') }}</h2>
+    <div class="hero-cta" style="justify-content:center;">
+      <a class="btn btn-lg" style="background:#000;color:#fff;" href="/free-intro/">Book my free No Sweat Intro</a>
+      <a class="btn btn-lg" style="background:transparent;color:#000;border-color:#000;" href="sms:{{ site.phoneSms }}">Or text {{ site.phoneDisplay }}</a>
+    </div>
+  </div>
+</section>

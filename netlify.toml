@@ -1,0 +1,31 @@
+# Netlify build configuration for the 11ty-rendered Alpine CrossFit site.
+# When Decap CMS commits a change, Netlify runs this build and republishes.
+
+[build]
+  command = "npm install && npx @11ty/eleventy"
+  publish = "_site"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+# Cache headers for static assets — keep CSS/JS/images cached for a year
+# (filename-based busting if they ever change).
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Don't cache HTML — Lisa's edits should appear within seconds of the
+# Netlify rebuild finishing.
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+# Netlify Identity widget needs to load on every page so invitation /
+# password-recovery links work. The script tag is added to the base layout
+# so this header is just for completeness.
+[[headers]]
+  for = "/admin/*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"
