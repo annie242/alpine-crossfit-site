@@ -102,7 +102,7 @@ finalCta:
   page (configured inside GHL's form settings). The redirect target
   should be set to https://alpinecrossfit.com/intro/.
 -->
-<section class="section" id="book-form">
+<section class="section" id="book-form" style="scroll-margin-top:80px;">
   <div class="container container-narrow">
     <span class="eyebrow">Book your intro</span>
     <h2>Tell us a bit about you.</h2>
