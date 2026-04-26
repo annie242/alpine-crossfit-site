@@ -25,7 +25,7 @@ finalCta:
       <iframe
         id="G2tY5mJrTvIXowv2ZcyX_1777058045577"
         src="https://link.gymntx.com/widget/booking/G2tY5mJrTvIXowv2ZcyX"
-        style="width:100%; min-height:700px; border:none; display:block;"
+        style="width:100%; min-height:900px; border:none; display:block;"
         scrolling="no"
         title="Book your No Sweat Intro">
       </iframe>
