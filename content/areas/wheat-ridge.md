@@ -42,7 +42,7 @@ serviceSchema:
     <span class="eyebrow">Who Alpine works for</span>
     <h2>From first-timers to lifelong athletes.</h2>
     <p>Our Wheat Ridge members range from people who have never set foot in a gym to active CrossFit competitors. We also run a dedicated Prime Vitality program Monday, Wednesday, and Friday mornings for adults 55+ — the most strength-and-conditioning-oriented 55+ program in Wheat Ridge. While most senior fitness classes stick to low-impact cardio, Prime Vitality teaches barbell lifting, functional movement, and measurable strength progression, scaled appropriately.</p>
-    <p>If you're a beginner and nervous about walking in, your free No Sweat Intro is 45 minutes with a coach. No class, no pressure.</p>
+    <p>If you're a beginner and nervous about walking in, your free No Sweat Intro is 30 minutes with a coach. No class, no pressure.</p>
   </div>
 </section>
 
