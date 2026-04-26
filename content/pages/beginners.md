@@ -22,7 +22,7 @@ finalCta:
     <h2>From zero to group class.</h2>
     <p>If you've never done CrossFit, the path at Alpine looks like this:</p>
     <ol class="feature-list" style="list-style-type: decimal;">
-      <li><strong>Free No Sweat Intro:</strong> 45 minutes with a coach. Tour, conversation, recommendation. No cost.</li>
+      <li><strong>Free No Sweat Intro:</strong> 30 minutes with a coach. Tour, conversation, recommendation. No cost.</li>
       <li><strong>Foundations on-ramp:</strong> Private one-on-one sessions teaching core movements.</li>
       <li><strong>Group classes:</strong> Join the community and train with your peers.</li>
     </ol>

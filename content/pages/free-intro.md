@@ -2,11 +2,11 @@
 layout: layouts/page.njk
 permalink: /free-intro/
 title: "Free No Sweat Intro — Alpine CrossFit in Wheat Ridge"
-description: "Your free 45-minute intro with a CF-L2 coach at Alpine CrossFit, Wheat Ridge. Tour, conversation, recommendation. Zero cost, zero pressure."
+description: "Your free 30-minute intro with a CF-L2 coach at Alpine CrossFit, Wheat Ridge. Tour, conversation, recommendation. Zero cost, zero pressure."
 canonical: "https://alpinecrossfit.com/free-intro/"
-eyebrow: "Free · 45 Minutes · No Pressure"
+eyebrow: "Free · 30 Minutes · No Pressure"
 heading: "Your free No Sweat Intro."
-dek: "A free 45-minute conversation with a CF-L2 coach at Alpine CrossFit in Wheat Ridge, Colorado. You'll tour the gym, talk through your goals, and leave with a clear recommendation — no class, no pressure, and no cost."
+dek: "A free 30-minute conversation with a CF-L2 coach at Alpine CrossFit in Wheat Ridge, Colorado. You'll tour the gym, talk through your goals, and leave with a clear recommendation — no class, no pressure, and no cost."
 heroCtas:
   - { label: "Book my free intro", href: "#book-form", id: "open-popup", style: "btn-primary btn-lg" }
   - { label: "Or text (720) 964-1505", href: "sms:+17209641505", style: "btn-secondary btn-lg" }
@@ -21,7 +21,7 @@ finalCta:
   <div class="container container-narrow">
     <span class="eyebrow">What it is</span>
     <h2>A conversation. Not a class.</h2>
-    <p>The No Sweat Intro is exactly what it sounds like — no workout, no physical assessment, no jumping into a class you don't yet know the rules of. It's 45 minutes of conversation with one of our CF-L2 coaches, in the gym, at a time that works for you.</p>
+    <p>The No Sweat Intro is exactly what it sounds like — no workout, no physical assessment, no jumping into a class you don't yet know the rules of. It's 30 minutes of conversation with one of our CF-L2 coaches, in the gym, at a time that works for you.</p>
     <p>You walk in. You get shown around. You sit down and talk through:</p>
     <ul class="feature-list">
       <li>What you're looking to change about your fitness, your body, or your routine</li>
@@ -91,49 +91,4 @@ finalCta:
       </div>
     </div>
   </div>
-</section>
-
-<!--
-  Lead-capture optin section. The "Book my free intro" buttons in the
-  hero and final CTA target #book-form so they scroll here.
-
-  Flow: visitor fills out this WEBSITE - Getting Started Optin form,
-  GoHighLevel captures their info, then redirects them to the schedule
-  page (configured inside GHL's form settings). The redirect target
-  should be set to https://alpinecrossfit.com/intro/.
--->
-<section class="section" id="book-form" style="scroll-margin-top:80px;">
-  <div class="container container-narrow">
-    <span class="eyebrow">Book your intro</span>
-    <h2>Tell us a bit about you.</h2>
-    <p class="hero-dek">Fill out the short form below and we'll send you to our scheduling page to pick a time. Takes less than a minute.</p>
-
-    <!-- GoHighLevel "WEBSITE - Getting Started Optin" form -->
-    <div class="form-wrap" style="margin-top:var(--space-6); background:#fff; border-radius:var(--radius-lg); overflow:hidden; min-height:700px;">
-      <iframe
-        src="https://link.gymntx.com/widget/form/fuN8TBp0xX4G0Sv6lmdo"
-        style="width:100%; height:700px; border:none; border-radius:4px; display:block;"
-        id="inline-fuN8TBp0xX4G0Sv6lmdo"
-        data-layout="{'id':'INLINE'}"
-        data-trigger-type="alwaysShow"
-        data-trigger-value=""
-        data-activation-type="alwaysActivated"
-        data-activation-value=""
-        data-deactivation-type="neverDeactivate"
-        data-deactivation-value=""
-        data-form-name="WEBSITE - Getting Started Optin*"
-        data-height="658"
-        data-layout-iframe-id="inline-fuN8TBp0xX4G0Sv6lmdo"
-        data-form-id="fuN8TBp0xX4G0Sv6lmdo"
-        title="WEBSITE - Getting Started Optin*">
-      </iframe>
-    </div>
-
-    <p class="text-muted mt-6" style="font-size:0.9rem;">
-      Form not loading? <a href="sms:+17209641505">Text us at (720) 964-1505</a> and we'll get you in.
-    </p>
-  </div>
-</section>
-
-<!-- GoHighLevel form-resize script (auto-fits the iframe to its content). -->
-<script src="https://link.gymntx.com/js/form_embed.js" type="text/javascript"></script>
+</sect

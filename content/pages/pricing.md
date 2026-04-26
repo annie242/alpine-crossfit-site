@@ -18,7 +18,7 @@ extraSchemas:
       "mainEntity": [
         { "@type": "Question", "name": "Is there an initiation or signup fee?", "acceptedAnswer": { "@type": "Answer", "text": "No. The price you see is the price you pay. No initiation fee, no annual fee, no equipment maintenance charge." } },
         { "@type": "Question", "name": "Is there a contract?", "acceptedAnswer": { "@type": "Answer", "text": "No. All memberships are month-to-month. Cancel anytime with 30 days written notice." } },
-        { "@type": "Question", "name": "What's the No Sweat Intro?", "acceptedAnswer": { "@type": "Answer", "text": "A free 45-minute meeting with a coach. You'll tour the gym, talk through your goals, and we'll recommend the best starting point. Zero pressure and zero cost." } },
+        { "@type": "Question", "name": "What's the No Sweat Intro?", "acceptedAnswer": { "@type": "Answer", "text": "A free 30-minute meeting with a coach. You'll tour the gym, talk through your goals, and we'll recommend the best starting point. Zero pressure and zero cost." } },
         { "@type": "Question", "name": "Can I freeze my membership?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Members can freeze for up to 90 days per year for travel, injury, or life events. No charge during a freeze." } },
         { "@type": "Question", "name": "Do you offer military, first responder, or student discounts?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Reach out and we'll share current offers." } },
         { "@type": "Question", "name": "How do I cancel?", "acceptedAnswer": { "@type": "Answer", "text": "Email us or tell your coach in person. 30 days notice and you're done — no cancellation fee." } },
@@ -35,7 +35,7 @@ extraSchemas:
     }
 finalCta:
   heading: "Still have questions?"
-  body: "The fastest way to figure out if Alpine is right for you is to come meet a coach in person. Free, 45 minutes, no pressure."
+  body: "The fastest way to figure out if Alpine is right for you is to come meet a coach in person. Free, 30 minutes, no pressure."
   ctas:
     - { label: "Book my free No Sweat Intro", href: "/free-intro/", inlineStyle: "background:#000;color:#fff;" }
     - { label: "Or text (720) 964-1505", href: "sms:+17209641505", inlineStyle: "background:transparent;color:#000;border-color:#000;" }
@@ -65,7 +65,8 @@ finalCta:
           <li class="muted">Prime Vitality (55+)</li>
           <li class="muted">Personal training</li>
         </ul>
-        <a class="btn btn-secondary" href="/free-intro/">Start Free Intro</a>
+        <a class="btn btn-primary" href="https://app.chalkitpro.com/gymProductLink/754/prod_RqZAuGPM9QucII/8619/" target="_blank" rel="noopener">Buy Open Gym</a>
+        <p class="text-center mt-3" style="font-size:0.9rem;"><a href="/free-intro/">Or start with a free intro →</a></p>
       </div>
       <div class="card card-featured">
         <h3>Unlimited</h3>
@@ -98,22 +99,41 @@ finalCta:
 </section>
 
 <section class="section">
-  <div class="container container-narrow">
+  <div class="container">
     <span class="eyebrow">Try before you join</span>
     <h2 class="section-heading">Visit options.</h2>
-    <table>
-      <thead>
-        <tr><th>Option</th><th>Price</th><th>Best for</th></tr>
-      </thead>
-      <tbody>
-        <tr><td>Free No Sweat Intro</td><td>$0</td><td>Meeting a coach, seeing the gym, no-pressure conversation.</td></tr>
-        <tr><td>Drop-In Class</td><td>$30</td><td>Visiting from out of town or another affiliate.</td></tr>
-        <tr><td>Week Pass</td><td>$95</td><td>A full week to try Alpine before deciding.</td></tr>
-      </tbody>
-    </table>
-    <div class="text-center mt-8">
-      <a class="btn btn-primary btn-lg" href="/free-intro/">Book my free intro</a>
+    <p class="hero-dek">Pick your entry point. Brand new to fitness, experienced CrossFitter, dropping in, or trying us for a week — there's a right starting point for every situation.</p>
+    <div class="grid grid-4 mt-8">
+      <div class="card">
+        <h3>Free No Sweat Intro</h3>
+        <div class="price">$0<span class="price-unit">/once</span></div>
+        <p class="eyebrow" style="margin-top:var(--space-4);margin-bottom:var(--space-2);">Best for</p>
+        <p>Brand new to fitness or first-time Alpine visitor. 30-minute conversation, no workout, no pressure.</p>
+        <a class="btn btn-primary" href="/free-intro/">Book Free Intro</a>
+      </div>
+      <div class="card">
+        <h3>Experienced CrossFit Trial</h3>
+        <div class="price">Free<span class="price-unit">/one-time</span></div>
+        <p class="eyebrow" style="margin-top:var(--space-4);margin-bottom:var(--space-2);">Best for</p>
+        <p>Experienced CrossFitters trying Alpine for the first time. One free class on us — limited to one use per person.</p>
+        <a class="btn btn-primary" href="https://app.chalkitpro.com/dropIns/754/11814/x" target="_blank" rel="noopener">Book Free Class</a>
+      </div>
+      <div class="card">
+        <h3>Drop-In Class</h3>
+        <div class="price">$30<span class="price-unit">/class</span></div>
+        <p class="eyebrow" style="margin-top:var(--space-4);margin-bottom:var(--space-2);">Best for</p>
+        <p>Travelers, members of other affiliates, or anyone who's already used their free trial. A single class, no commitment.</p>
+        <a class="btn btn-primary" href="https://app.chalkitpro.com/gymProductLink/754/prod_TmRdqYxSRVMV2f/13440/" target="_blank" rel="noopener">Buy Drop-In</a>
+      </div>
+      <div class="card">
+        <h3>Week Pass</h3>
+        <div class="price">$95<span class="price-unit">/week</span></div>
+        <p class="eyebrow" style="margin-top:var(--space-4);margin-bottom:var(--space-2);">Best for</p>
+        <p>Getting the full Alpine experience before committing. Unlimited classes, wellness center, and full facility access for seven days.</p>
+        <a class="btn btn-primary" href="https://app.chalkitpro.com/gymProductLink/754/prod_TmRiaLLHwsRPig/13441/" target="_blank" rel="noopener">Buy Week Pass</a>
+      </div>
     </div>
+    <p class="text-center text-muted mt-8" style="font-size:0.9rem;">Brand new to fitness or unsure where to start? The free No Sweat Intro is a conversation, not a class — you'll leave with a clear recommendation.</p>
   </div>
 </section>
 
@@ -135,14 +155,4 @@ finalCta:
   <div class="container container-narrow">
     <span class="eyebrow">Pricing FAQ</span>
     <h2 class="section-heading">Common pricing questions.</h2>
-    <details class="faq-item"><summary>Is there an initiation or signup fee?</summary><div class="faq-answer">No. The price you see is the price you pay. No initiation fee, no annual fee, no equipment maintenance charge.</div></details>
-    <details class="faq-item"><summary>Is there a contract?</summary><div class="faq-answer">No. All memberships are month-to-month. Cancel anytime with 30 days written notice.</div></details>
-    <details class="faq-item"><summary>What's the No Sweat Intro?</summary><div class="faq-answer">A free 45-minute meeting with a coach. You'll tour the gym, talk through your goals, and we'll recommend the best starting point. Zero pressure and zero cost.</div></details>
-    <details class="faq-item"><summary>What's included in the $69 Open Gym tier?</summary><div class="faq-answer">Facility access, wellness center (sauna, cold plunge, compression, peptide therapy), and 24/7 entry. CrossFit classes and Prime Vitality are not included at this tier — those start at Unlimited.</div></details>
-    <details class="faq-item"><summary>How does the $999 Personal Training tier work?</summary><div class="faq-answer">12 one-on-one personal training sessions per month (roughly 3 per week), individualized programming built around your goals, plus everything in Unlimited — CrossFit classes, Prime Vitality, wellness center, and 24/7 access. It's designed for athletes with specific performance goals or anyone who wants the full coaching stack.</div></details>
-    <details class="faq-item"><summary>Can I freeze my membership?</summary><div class="faq-answer">Yes. Members can freeze for up to 90 days per year for travel, injury, or life events. No charge during a freeze.</div></details>
-    <details class="faq-item"><summary>Do you offer military, first responder, or student discounts?</summary><div class="faq-answer">Yes. Reach out and we'll share current offers.</div></details>
-    <details class="faq-item"><summary>How do I cancel?</summary><div class="faq-answer">Email us or tell your coach in person. 30 days notice and you're done — no cancellation fee.</div></details>
-    <details class="faq-item"><summary>What payment methods do you accept?</summary><div class="faq-answer">Credit card and ACH (bank draft). Memberships bill on the same date each month.</div></details>
-  </div>
-</section>
+    <details class="faq-item"><summary>Is there an initiation or signup fee?</summary><div class="faq-answer">No. The price you see is the price you pay. No initiation fee, no annual fee, no equipment maintenance charge.</div></deta

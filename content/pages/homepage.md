@@ -43,7 +43,7 @@ howToStart:
   eyebrow: "Getting started"
   heading: "Getting started is easy."
   steps:
-    - { heading: "1. Book a free No Sweat Intro.", body: "Come meet a coach for a 45-minute chat. We'll tour the gym, talk through your goals, and figure out the right starting point together. No pressure. No cost." }
+    - { heading: "1. Book a free No Sweat Intro.", body: "Come meet a coach for a 30-minute chat. We'll tour the gym, talk through your goals, and figure out the right starting point together. No pressure. No cost." }
     - { heading: "2. Try a class.", body: "Once we've matched you to the right program — CrossFit, personal training, or Prime Vitality for members 55+ — we'll get you into your first coached session." }
     - { heading: "3. Start training.", body: "Sign up for the membership that fits. Show up. We'll handle the rest." }
   ctaLabel: "Book my free intro"
@@ -99,13 +99,13 @@ scheduleSection:
 faqs:
   - { question: "Do I need to be in shape before I start?", answer: "No. Most new Alpine members start from scratch or come back after years away. Every class scales to your body. Your coach will never throw you into something you can't handle." }
   - { question: "How much does a CrossFit membership cost?", answer: "Memberships at Alpine range from $69/month (Open Gym: facility, wellness, 24/7) to $199/month (Unlimited: classes, wellness center, Prime Vitality, and 24/7 access). <a href=\"/pricing/\">See full pricing →</a>" }
-  - { question: "What is a No Sweat Intro?", answer: "A free 45-minute meeting with a coach. You'll tour the gym, talk through your goals, and we'll recommend the best starting point. No pressure, no cost." }
+  - { question: "What is a No Sweat Intro?", answer: "A free 30-minute meeting with a coach. You'll tour the gym, talk through your goals, and we'll recommend the best starting point. No pressure, no cost." }
   - { question: "Is there a contract?", answer: "No. All memberships are month-to-month. Cancel with 30 days written notice." }
   - { question: "Where are you located?", answer: "12090 West 50th Place, Wheat Ridge, CO 80033. About 5 minutes from Applewood and Arvada, 10 from Lakewood, and 12 from Golden." }
 faqMoreLink: "/faq/"
 finalCta:
   heading: "Come see the gym."
-  body: "The fastest way to figure out if Alpine is right for you is to meet a coach in person. It's free, it's 45 minutes, and there's no pressure to join."
+  body: "The fastest way to figure out if Alpine is right for you is to meet a coach in person. It's free, it's 30 minutes, and there's no pressure to join."
   ctas:
     - { label: "Book my free No Sweat Intro", href: "/free-intro/", inlineStyle: "background:#000;color:#fff;" }
     - { label: "Or text (720) 964-1505", href: "sms:+17209641505", inlineStyle: "background:transparent;color:#000;border-color:#000;" }

@@ -36,7 +36,7 @@ extraSchemas:
     }
 finalCta:
   heading: "Come see the gym."
-  body: "The best way to understand Alpine is to walk in. Your free No Sweat Intro is 45 minutes with a coach — tour, conversation, and a recommendation. No pressure, no cost."
+  body: "The best way to understand Alpine is to walk in. Your free No Sweat Intro is 30 minutes with a coach — tour, conversation, and a recommendation. No pressure, no cost."
   ctas:
     - { label: "Book my free No Sweat Intro", href: "/free-intro/", inlineStyle: "background:#000;color:#fff;" }
     - { label: "Or text (720) 964-1505", href: "sms:+17209641505", inlineStyle: "background:transparent;color:#000;border-color:#000;" }

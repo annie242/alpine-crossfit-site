@@ -21,11 +21,11 @@ faqGroups:
         },
         {
           question: "How do I get started at Alpine CrossFit?",
-          answer: "Every new member starts with a free No Sweat Intro — a 45-minute conversation with a CF-L2 coach where you'll tour the gym, talk through goals, and get matched to the right starting point. From there, most members move through our Foundations on-ramp."
+          answer: "Every new member starts with a free No Sweat Intro — a 30-minute conversation with a CF-L2 coach where you'll tour the gym, talk through goals, and get matched to the right starting point. From there, most members move through our Foundations on-ramp."
         },
         {
           question: "What is the No Sweat Intro?",
-          answer: "A free 45-minute meeting with a coach. You'll tour the gym, talk through your goals, and leave with a personalized recommendation. No workout, no pressure, no cost."
+          answer: "A free 30-minute meeting with a coach. You'll tour the gym, talk through your goals, and leave with a personalized recommendation. No workout, no pressure, no cost."
         },
         {
           question: "How long until I see results from CrossFit?",
