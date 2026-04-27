@@ -6,10 +6,10 @@ description: Alpine CrossFit is a Wheat Ridge, CO gym co-owned by two CF-L2
   Specialist (CSCS).
 eyebrow: About
 heading: About Alpine CrossFit
-dek: Alpine CrossFit is a community-focused CrossFit gym in Wheat Ridge,
-  Colorado, co-owned by CF-L2 coaches Megan Markee and Annie Brunner. It is the
-  only gym in Wheat Ridge with an all-professional coaching staff, and every
-  workout is programmed in-house by the owners who coach the classes.
+dek: Alpine CrossFit is a Wheat Ridge, CO gym co-owned by two CF-L2 coaches and
+  CrossFit Games competitors. Three professional, experienced & dedicated
+  full-time coaches on staff. In-house programming by a Certified Strength &
+  Conditioning Specialist (CSCS).
 heroCtas:
   - label: Book a Free Intro
     href: /free-intro/
