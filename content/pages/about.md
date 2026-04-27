@@ -1,13 +1,13 @@
 ---
 title: About Alpine CrossFit — Wheat Ridge's Community CrossFit Gym
-description: Alpine CrossFit is a Wheat Ridge, CO gym co-owned by two CF-L2
-  coaches and CrossFit Games competitors. Three professional full-time coaches
-  on staff. In-house programming by a Certified Strength & Conditioning
-  Specialist (CSCS).
+description: Alpine CrossFit is a Wheat Ridge, CO gym owned by CF Certified
+  Coaches, CrossFit Games competitors, and former team sport athletes. Three
+  professional full-time coaches on staff. In-house programming by a Certified
+  Strength & Conditioning Specialist (CSCS).
 eyebrow: About
 heading: About Alpine CrossFit
-dek: Alpine CrossFit is a Wheat Ridge, CO gym co-owned by two CF-L2 coaches and
-  CrossFit Games competitors. Three professional, experienced & dedicated
+dek: Alpine CrossFit is a Wheat Ridge, CO gym owned by CF Certified Coaches,
+  CrossFit Games competitors, and former team sport athletes. Three professional
   full-time coaches on staff. In-house programming by a Certified Strength &
   Conditioning Specialist (CSCS).
 heroCtas:
