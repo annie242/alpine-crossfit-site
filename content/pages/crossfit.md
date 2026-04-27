@@ -1,22 +1,33 @@
 ---
+title: CrossFit Classes in Wheat Ridge, CO — Alpine CrossFit
+description: Coach-led CrossFit classes in Wheat Ridge programmed in-house by an
+  active Quarterfinals competitor. Every class CF-L2 coached. $69-$999/month.
+  Free intro.
+eyebrow: CrossFit
+heading: Coach-led group classes.
+dek: Every Alpine CrossFit class is coached by a CF-L2 certified professional.
+  Workouts are programmed in-house by a 4× CrossFit Games Semifinalist and
+  Certified Strength & Conditioning Coach.
+heroCtas:
+  - label: Book your free intro
+    href: /free-intro/
+    style: btn-primary btn-lg
+  - label: See the schedule
+    href: /schedule/
+    style: btn-secondary btn-lg
+trustStrip: <span>Every class CF-L2 coached</span><span
+  class="sep">·</span><span>Capped at 15 athletes</span><span
+  class="sep">·</span><span>Scaled to every level</span>
+finalCta:
+  heading: Ready to train?
+  ctas:
+    - label: Book your free intro
+      href: /free-intro/
+      inlineStyle: background:#000;color:#fff;
 layout: layouts/page.njk
 permalink: /crossfit/
-title: "CrossFit Classes in Wheat Ridge, CO — Alpine CrossFit"
-description: "Coach-led CrossFit classes in Wheat Ridge programmed in-house by an active Quarterfinals competitor. Every class CF-L2 coached. $69-$999/month. Free intro."
-canonical: "https://alpinecrossfit.com/crossfit/"
-eyebrow: "CrossFit"
-heading: "Coach-led group classes."
-dek: "Every Alpine CrossFit class is coached by a CF-L2 certified professional. Workouts are programmed in-house by a 2× CrossFit Games Semifinalist."
-heroCtas:
-  - { label: "Book your free intro", href: "/free-intro/", style: "btn-primary btn-lg" }
-  - { label: "See the schedule", href: "/schedule/", style: "btn-secondary btn-lg" }
-trustStrip: '<span>Every class CF-L2 coached</span><span class="sep">·</span><span>Capped at 15 athletes</span><span class="sep">·</span><span>Scaled to every level</span>'
-finalCta:
-  heading: "Ready to train?"
-  ctas:
-    - { label: "Book your free intro", href: "/free-intro/", inlineStyle: "background:#000;color:#fff;" }
+canonical: https://alpinecrossfit.com/crossfit/
 ---
-
 <section class="section">
   <div class="container container-narrow">
     <span class="eyebrow">What you get</span>
@@ -59,3 +70,5 @@ finalCta:
     <p>If you already have CrossFit experience, you may be able to jump straight into classes after your free No Sweat Intro.</p>
   </div>
 </section>
+
+![](/assets/img/uploads/img_7558.jpg)
