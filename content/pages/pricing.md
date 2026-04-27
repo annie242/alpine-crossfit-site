@@ -1,44 +1,94 @@
 ---
+title: CrossFit Pricing in Wheat Ridge — Alpine CrossFit
+description: "Alpine CrossFit memberships: Open Gym $69/mo, Unlimited $199/mo,
+  Personal Training $999/mo. All include wellness center and 24/7 access. Free
+  No Sweat Intro."
+eyebrow: Pricing
+heading: Memberships Options at Alpine
+dek: Alpine memberships range from $69 to $999 per month. Every tier includes
+  the wellness center (sauna, cold plunges, compression boots, peptide therapy)
+  and 24/7 facility access. Higher tiers add coached classes and personal
+  training.
+heroCtas:
+  - label: Book a Free No Sweat Intro
+    href: /free-intro/
+    style: btn-primary btn-lg
+  - label: See class schedule →
+    href: /schedule/
+    style: btn-secondary btn-lg
+trustStrip: <span>Month-to-month</span><span class="sep">·</span><span>No
+  contracts</span><span class="sep">·</span><span>No initiation fees</span>
+finalCta:
+  heading: Still have questions?
+  body: The fastest way to figure out if Alpine is right for you is to come meet a
+    coach in person. Free, 30 minutes, no pressure.
+  ctas:
+    - label: Book my free No Sweat Intro
+      href: /free-intro/
+      inlineStyle: background:#000;color:#fff;
+    - label: Or text (720) 964-1505
+      href: sms:+17209641505
+      inlineStyle: background:transparent;color:#000;border-color:#000;
 layout: layouts/page.njk
 permalink: /pricing/
-title: "CrossFit Pricing in Wheat Ridge — Alpine CrossFit"
-description: "Alpine CrossFit memberships: Open Gym $69/mo, Unlimited $199/mo, Personal Training $999/mo. All include wellness center and 24/7 access. Free No Sweat Intro."
-canonical: "https://alpinecrossfit.com/pricing/"
-eyebrow: "Pricing"
-heading: "What it costs to train at Alpine CrossFit."
-dek: "Alpine memberships range from $69 to $999 per month. Every tier includes the wellness center (sauna, cold plunges, compression boots, peptide therapy) and 24/7 facility access. Higher tiers add coached classes and personal training."
-heroCtas:
-  - { label: "Book a Free No Sweat Intro", href: "/free-intro/", style: "btn-primary btn-lg" }
-  - { label: "See class schedule →", href: "/schedule/", style: "btn-secondary btn-lg" }
-trustStrip: "<span>Month-to-month</span><span class=\"sep\">·</span><span>No contracts</span><span class=\"sep\">·</span><span>No initiation fees</span>"
+canonical: https://alpinecrossfit.com/pricing/
 extraSchemas:
-  - {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        { "@type": "Question", "name": "Is there an initiation or signup fee?", "acceptedAnswer": { "@type": "Answer", "text": "No. The price you see is the price you pay. No initiation fee, no annual fee, no equipment maintenance charge." } },
-        { "@type": "Question", "name": "Is there a contract?", "acceptedAnswer": { "@type": "Answer", "text": "No. All memberships are month-to-month. Cancel anytime with 30 days written notice." } },
-        { "@type": "Question", "name": "What's the No Sweat Intro?", "acceptedAnswer": { "@type": "Answer", "text": "A free 30-minute meeting with a coach. You'll tour the gym, talk through your goals, and we'll recommend the best starting point. Zero pressure and zero cost." } },
-        { "@type": "Question", "name": "Can I freeze my membership?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Members can freeze for up to 90 days per year for travel, injury, or life events. No charge during a freeze." } },
-        { "@type": "Question", "name": "Do you offer military, first responder, or student discounts?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Reach out and we'll share current offers." } },
-        { "@type": "Question", "name": "How do I cancel?", "acceptedAnswer": { "@type": "Answer", "text": "Email us or tell your coach in person. 30 days notice and you're done — no cancellation fee." } },
-        { "@type": "Question", "name": "What payment methods do you accept?", "acceptedAnswer": { "@type": "Answer", "text": "Credit card and ACH (bank draft). Memberships bill on the same date each month." } }
-      ]
-    }
-  - {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://alpinecrossfit.com/"},
-        {"@type": "ListItem", "position": 2, "name": "Pricing", "item": "https://alpinecrossfit.com/pricing/"}
-      ]
-    }
-finalCta:
-  heading: "Still have questions?"
-  body: "The fastest way to figure out if Alpine is right for you is to come meet a coach in person. Free, 30 minutes, no pressure."
-  ctas:
-    - { label: "Book my free No Sweat Intro", href: "/free-intro/", inlineStyle: "background:#000;color:#fff;" }
-    - { label: "Or text (720) 964-1505", href: "sms:+17209641505", inlineStyle: "background:transparent;color:#000;border-color:#000;" }
+  - "@context": https://schema.org
+    "@type": FAQPage
+    mainEntity:
+      - "@type": Question
+        name: Is there an initiation or signup fee?
+        acceptedAnswer:
+          "@type": Answer
+          text: No. The price you see is the price you pay. No initiation fee, no annual
+            fee, no equipment maintenance charge.
+      - "@type": Question
+        name: Is there a contract?
+        acceptedAnswer:
+          "@type": Answer
+          text: No. All memberships are month-to-month. Cancel anytime with 30 days
+            written notice.
+      - "@type": Question
+        name: What's the No Sweat Intro?
+        acceptedAnswer:
+          "@type": Answer
+          text: A free 30-minute meeting with a coach. You'll tour the gym, talk through
+            your goals, and we'll recommend the best starting point. Zero
+            pressure and zero cost.
+      - "@type": Question
+        name: Can I freeze my membership?
+        acceptedAnswer:
+          "@type": Answer
+          text: Yes. Members can freeze for up to 90 days per year for travel, injury, or
+            life events. No charge during a freeze.
+      - "@type": Question
+        name: Do you offer military, first responder, or student discounts?
+        acceptedAnswer:
+          "@type": Answer
+          text: Yes. Reach out and we'll share current offers.
+      - "@type": Question
+        name: How do I cancel?
+        acceptedAnswer:
+          "@type": Answer
+          text: Email us or tell your coach in person. 30 days notice and you're done — no
+            cancellation fee.
+      - "@type": Question
+        name: What payment methods do you accept?
+        acceptedAnswer:
+          "@type": Answer
+          text: Credit card and ACH (bank draft). Memberships bill on the same date each
+            month.
+  - "@context": https://schema.org
+    "@type": BreadcrumbList
+    itemListElement:
+      - "@type": ListItem
+        position: 1
+        name: Home
+        item: https://alpinecrossfit.com/
+      - "@type": ListItem
+        position: 2
+        name: Pricing
+        item: https://alpinecrossfit.com/pricing/
 ---
 
 <section class="section">
