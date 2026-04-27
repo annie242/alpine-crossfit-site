@@ -1,8 +1,8 @@
 ---
 title: CrossFit Classes in Wheat Ridge, CO — Alpine CrossFit
 description: Coach-led CrossFit classes in Wheat Ridge programmed in-house by an
-  active Quarterfinals competitor. Every class CF-L2 coached. $69-$999/month.
-  Free intro.
+  active Semifinal competitor and Certified Strength & Conditioning Coach. Every
+  class CF-L2 coached. $69-$999/month. Free intro.
 eyebrow: CrossFit
 heading: Coach-led group classes.
 dek: Every Alpine CrossFit class is coached by a CF-L2 certified professional.
