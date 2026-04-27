@@ -1,19 +1,29 @@
 ---
+title: Wellness Center in Wheat Ridge — Sauna, Cold Plunge, Compression,
+  Peptides · Alpine CrossFit
+description: "Alpine's on-site wellness center: sauna, cold plunges, compression
+  boots, and peptide therapy. Recovery and performance for Alpine members.
+  Included with every tier."
+eyebrow: Wellness Center
+heading: Optimal recovery for optimal performance.
+dek: Sauna, cold plunges, compression boots, and peptide therapy. Included with
+  every membership.
+heroCtas:
+  - label: Join Alpine
+    href: /free-intro/
+    style: btn-primary btn-lg
+trustStrip: <span>Included with every tier</span><span
+  class="sep">·</span><span>No extra cost</span><span
+  class="sep">·</span><span>Open daily</span>
+finalCta:
+  heading: Ready to recover better?
+  ctas:
+    - label: Book your free intro
+      href: /free-intro/
+      inlineStyle: background:#000;color:#fff;
 layout: layouts/page.njk
 permalink: /wellness/
-title: "Wellness Center in Wheat Ridge — Sauna, Cold Plunge, Compression, Peptides · Alpine CrossFit"
-description: "Alpine's on-site wellness center: sauna, cold plunges, compression boots, and peptide therapy. Recovery and performance for Alpine members. Included with every tier."
-canonical: "https://alpinecrossfit.com/wellness/"
-eyebrow: "Wellness Center"
-heading: "Recovery and performance."
-dek: "Sauna, cold plunges, compression boots, and peptide therapy. Included with every membership."
-heroCtas:
-  - { label: "Join Alpine", href: "/free-intro/", style: "btn-primary btn-lg" }
-trustStrip: '<span>Included with every tier</span><span class="sep">·</span><span>No extra cost</span><span class="sep">·</span><span>Open daily</span>'
-finalCta:
-  heading: "Ready to recover better?"
-  ctas:
-    - { label: "Book your free intro", href: "/free-intro/", inlineStyle: "background:#000;color:#fff;" }
+canonical: https://alpinecrossfit.com/wellness/
 ---
 
 <section class="section">
