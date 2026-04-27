@@ -1,29 +1,35 @@
 ---
+title: Meet the Coaches & Owners — Alpine CrossFit Wheat Ridge
+description: Three CF-L2 coaches and two owner-athletes who train at Alpine
+  every day. Multiple CrossFit Games Semifinalists and Quarterfinalists.
+eyebrow: Coaches &amp; Owners
+heading: Three CF-L2 coaches. Two <span class="accent">owner-athletes</span>.
+  One standard.
+dek: Every class at Alpine is led by one of three CF-L2 certified coaches. Our
+  two owners — both active CrossFit competitors — don't coach group classes.
+  They train at Alpine every day alongside members, which is how the standard
+  gets set and how the programming stays honest.
+heroCtas:
+  - label: Book a Free Intro
+    href: /free-intro/
+    style: btn-primary btn-lg
 layout: layouts/page.njk
 permalink: /coaches/
-title: "Meet the Coaches & Owners — Alpine CrossFit Wheat Ridge"
-description: "Three CF-L2 coaches and two owner-athletes who train at Alpine every day. Multiple CrossFit Games Semifinalists and Quarterfinalists."
-canonical: "https://alpinecrossfit.com/coaches/"
-eyebrow: "Coaches &amp; Owners"
-heading: "Three CF-L2 coaches. Two <span class=\"accent\">owner-athletes</span>. One standard."
-dek: "Every class at Alpine is led by one of three CF-L2 certified coaches. Our two owners — both active CrossFit competitors — don't coach group classes. They train at Alpine every day alongside members, which is how the standard gets set and how the programming stays honest."
-heroCtas:
-  - { label: "Book a Free Intro", href: "/free-intro/", style: "btn-primary btn-lg" }
-bodyContainer: "wide"
+canonical: https://alpinecrossfit.com/coaches/
+bodyContainer: wide
 extraSchemas:
-  - "@context": "https://schema.org"
-    "@type": "BreadcrumbList"
+  - "@context": https://schema.org
+    "@type": BreadcrumbList
     itemListElement:
-      - "@type": "ListItem"
+      - "@type": ListItem
         position: 1
-        name: "Home"
-        item: "https://alpinecrossfit.com/"
-      - "@type": "ListItem"
+        name: Home
+        item: https://alpinecrossfit.com/
+      - "@type": ListItem
         position: 2
-        name: "Coaches"
-        item: "https://alpinecrossfit.com/coaches/"
+        name: Coaches
+        item: https://alpinecrossfit.com/coaches/
 ---
-
 <section class="section">
   <div class="container">
     <span class="eyebrow">The coaches</span>
@@ -81,3 +87,5 @@ extraSchemas:
     </div>
   </div>
 </section>
+
+![](/assets/img/uploads/498337266_18500679697049950_2919730149552376595_n.jpg)
