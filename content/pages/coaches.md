@@ -1,7 +1,7 @@
 ---
 title: Meet the Coaches & Owners — Alpine CrossFit Wheat Ridge
-description: Three CF-L2 coaches and two owner-athletes who train at Alpine
-  every day. Multiple CrossFit Games Semifinalists and Quarterfinalists.
+description: Three CF-L2 coaches and owner-athletes who train at Alpine every
+  day. Multiple CrossFit Games Semifinalists and Quarterfinalists.
 eyebrow: Coaches &amp; Owners
 heading: Three CF-L2 coaches. Two <span class="accent">owner-athletes</span>.
   One standard.
