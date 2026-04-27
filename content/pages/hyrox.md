@@ -1,21 +1,30 @@
 ---
+title: HYROX Training in Wheat Ridge — Alpine CrossFit · Official HYROX Affiliate
+description: Train for HYROX at Alpine CrossFit, Wheat Ridge — an official HYROX
+  affiliate. Coached programming, race-specific work, and Friday run clubs. Free
+  intro available.
+eyebrow: HYROX
+heading: Train for HYROX.
+dek: Alpine CrossFit is an official HYROX Training Center. Coached programming,
+  race-specific workouts, and Friday run clubs for athletes prepping for an
+  event.
+heroCtas:
+  - label: Book your free intro
+    href: /free-intro/
+    style: btn-primary btn-lg
+trustStrip: <span>Official HYROX affiliate</span><span
+  class="sep">·</span><span>Coached programming</span><span
+  class="sep">·</span><span>Friday run clubs</span>
+finalCta:
+  heading: Ready to train for HYROX?
+  ctas:
+    - label: Join Alpine
+      href: /free-intro/
+      inlineStyle: background:#000;color:#fff;
 layout: layouts/page.njk
 permalink: /hyrox/
-title: "HYROX Training in Wheat Ridge — Alpine CrossFit · Official HYROX Affiliate"
-description: "Train for HYROX at Alpine CrossFit, Wheat Ridge — an official HYROX affiliate. Coached programming, race-specific work, and Friday run clubs. Free intro available."
-canonical: "https://alpinecrossfit.com/hyrox/"
-eyebrow: "HYROX"
-heading: "Train for HYROX."
-dek: "Alpine CrossFit is an official HYROX Training Center. Coached programming, race-specific workouts, and Friday run clubs for athletes prepping for an event."
-heroCtas:
-  - { label: "Book your free intro", href: "/free-intro/", style: "btn-primary btn-lg" }
-trustStrip: '<span>Official HYROX affiliate</span><span class="sep">·</span><span>Coached programming</span><span class="sep">·</span><span>Friday run clubs</span>'
-finalCta:
-  heading: "Ready to train for HYROX?"
-  ctas:
-    - { label: "Join Alpine", href: "/free-intro/", inlineStyle: "background:#000;color:#fff;" }
+canonical: https://alpinecrossfit.com/hyrox/
 ---
-
 <section class="section">
   <div class="container container-narrow">
     <span class="eyebrow">What is HYROX</span>
@@ -47,3 +56,5 @@ finalCta:
     <p>Whether you're training solo or with a team, Friday run clubs prep you for race day.</p>
   </div>
 </section>
+
+![](/assets/img/uploads/img_7414.jpg)
