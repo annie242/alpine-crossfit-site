@@ -1,18 +1,23 @@
 ---
+title: Class Schedule — Alpine CrossFit Wheat Ridge
+description: Alpine CrossFit's weekly class schedule — CrossFit, Prime Vitality
+  (55+), and wellness center hours. 10+ classes a day in Wheat Ridge, CO.
+eyebrow: Schedule
+heading: 10+ classes a day, seven days a week.
+dek: Drop in anytime. Every class is coached by a CF-L2 certified professional.
+heroCtas:
+  - label: Book your free intro
+    href: /free-intro/
+    style: btn-primary btn-lg
 layout: layouts/page.njk
 permalink: /schedule/
-title: "Class Schedule — Alpine CrossFit Wheat Ridge"
-description: "Alpine CrossFit's weekly class schedule — CrossFit, Prime Vitality (55+), and wellness center hours. 10+ classes a day in Wheat Ridge, CO."
-canonical: "https://alpinecrossfit.com/schedule/"
-eyebrow: "Schedule"
-heading: "Ten-plus classes a day, seven days a week."
-dek: "Drop in anytime. Every class is coached by a CF-L2 certified professional."
-heroCtas:
-  - { label: "Book your free intro", href: "/free-intro/", style: "btn-primary btn-lg" }
+canonical: https://alpinecrossfit.com/schedule/
 finalCta:
-  heading: "Ready to train?"
+  heading: Ready to train?
   ctas:
-    - { label: "Book your free intro", href: "/free-intro/", inlineStyle: "background:#000;color:#fff;" }
+    - label: Book your free intro
+      href: /free-intro/
+      inlineStyle: background:#000;color:#fff;
 ---
 
 <section class="section">
