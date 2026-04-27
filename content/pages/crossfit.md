@@ -48,7 +48,7 @@ canonical: https://alpinecrossfit.com/crossfit/
   <div class="container container-narrow">
     <span class="eyebrow">In-house programming</span>
     <h2>Written by Megan Markee.</h2>
-    <p>Every workout at Alpine is programmed in-house by co-owner Megan Markee, a 2× CrossFit Games Semifinalist. Programming is not a franchise template, not a subscription service, and not a random WOD generator.</p>
+    <p>Every workout at Alpine is programmed in-house by Megan Markee, CSCS and 4× CrossFit Games Semifinalist. Programming is not a franchise template, not a subscription service, and not a random WOD generator.</p>
     <p>Megan trains at Alpine every day. She writes the programming, and she does the workouts herself. That keeps the programming honest and scaled appropriately for the range of athletes in the room.</p>
   </div>
 </section>
