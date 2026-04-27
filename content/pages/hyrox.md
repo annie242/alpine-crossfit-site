@@ -57,4 +57,4 @@ canonical: https://alpinecrossfit.com/hyrox/
   </div>
 </section>
 
-![](/assets/img/uploads/img_7414.jpg)
+![]()
