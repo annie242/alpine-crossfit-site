@@ -1,29 +1,21 @@
 ---
-title: Personal Training in Wheat Ridge — Alpine CrossFit
-description: One-on-one personal training in Wheat Ridge with CF-L2 coaches.
-  Injury recovery, sports performance, specific goals. Scoped to you. Free
-  consultation.
-eyebrow: Personal Training
-heading: One-on-one coaching.
-dek: Work 1-on-1 with a CF-L2 coach on your specific goals — injury recovery,
-  sports performance, or measurable strength.
-heroCtas:
-  - label: Book a consultation
-    href: /free-intro/
-    style: btn-primary btn-lg
-trustStrip: <span>12 sessions/month included</span><span
-  class="sep">·</span><span>Individualized programming</span><span
-  class="sep">·</span><span>CF-L2 coached</span>
-finalCta:
-  heading: Ready to start?
-  ctas:
-    - label: Schedule a consultation
-      href: /free-intro/
-      inlineStyle: background:#000;color:#fff;
 layout: layouts/page.njk
 permalink: /personal-training/
-canonical: https://alpinecrossfit.com/personal-training/
+title: "Personal Training in Wheat Ridge — Alpine CrossFit"
+description: "One-on-one personal training in Wheat Ridge with CF-L2 coaches. Injury recovery, sports performance, specific goals. Scoped to you. Free consultation."
+canonical: "https://alpinecrossfit.com/personal-training/"
+eyebrow: "Personal Training"
+heading: "One-on-one coaching."
+dek: "Work 1-on-1 with a CF-L2 coach on your specific goals — injury recovery, sports performance, or measurable strength."
+heroCtas:
+  - { label: "Book a consultation", href: "/free-intro/", style: "btn-primary btn-lg" }
+trustStrip: '<span>12 sessions/month included</span><span class="sep">·</span><span>Individualized programming</span><span class="sep">·</span><span>CF-L2 coached</span>'
+finalCta:
+  heading: "Ready to start?"
+  ctas:
+    - { label: "Schedule a consultation", href: "/free-intro/", inlineStyle: "background:#000;color:#fff;" }
 ---
+
 <section class="section">
   <div class="container container-narrow">
     <span class="eyebrow">What it is</span>
@@ -59,6 +51,6 @@ canonical: https://alpinecrossfit.com/personal-training/
   <div class="container container-narrow">
     <span class="eyebrow">Your coaches</span>
     <h2>CF-L2 professionals.</h2>
-    <p>Personal training at Alpine is coached by Megan Markee, Annie Brunner, Lisa Arcangel, Liz Kushner, or Dean Weeks — all CF-certified with years of one-on-one coaching experience. Your coach builds your program and coaches every session.</p>
+    <p>Personal training at Alpine is coached by Annie Brunner, Lisa Arcangel, Liz Kushner, or Dean Weeks — all CF-L2 certified with years of one-on-one coaching experience. Your coach builds your program and coaches every session.</p>
   </div>
 </section>
