@@ -1,20 +1,32 @@
 ---
+title: Free No Sweat Intro — Alpine CrossFit in Wheat Ridge
+description: Your free 30-minute intro with a CF-L2 coach at Alpine CrossFit,
+  Wheat Ridge. Tour, conversation, recommendation. Zero cost, zero pressure.
+eyebrow: Free · 30 Minutes · No Pressure
+heading: Your free No-Sweat Intro
+dek: A free 30-minute conversation with a CF-L2 coach at Alpine CrossFit in
+  Wheat Ridge, Colorado. You'll tour the gym, talk through your goals, and leave
+  with a clear recommendation — no class, no pressure, and no cost.
+heroCtas:
+  - label: Book my free intro
+    href: "#book-form"
+    id: open-popup
+    style: btn-primary btn-lg
+  - label: Or text (720) 964-1505
+    href: sms:+17209641505
+    style: btn-secondary btn-lg
+trustStrip: <span class="stars">★★★★★</span><span>5.0 from 175 Google
+  reviews</span><span class="sep">·</span><span>3 CF-L2 coaches</span><span
+  class="sep">·</span><span>Free, and you don't have to join</span>
+finalCta:
+  heading: Ready to book?
+  ctas:
+    - label: Book your free intro
+      href: "#book-form"
+      inlineStyle: background:#000;color:#fff;
 layout: layouts/page.njk
 permalink: /free-intro/
-title: "Free No Sweat Intro — Alpine CrossFit in Wheat Ridge"
-description: "Your free 30-minute intro with a CF-L2 coach at Alpine CrossFit, Wheat Ridge. Tour, conversation, recommendation. Zero cost, zero pressure."
-canonical: "https://alpinecrossfit.com/free-intro/"
-eyebrow: "Free · 30 Minutes · No Pressure"
-heading: "Your free No Sweat Intro."
-dek: "A free 30-minute conversation with a CF-L2 coach at Alpine CrossFit in Wheat Ridge, Colorado. You'll tour the gym, talk through your goals, and leave with a clear recommendation — no class, no pressure, and no cost."
-heroCtas:
-  - { label: "Book my free intro", href: "#book-form", id: "open-popup", style: "btn-primary btn-lg" }
-  - { label: "Or text (720) 964-1505", href: "sms:+17209641505", style: "btn-secondary btn-lg" }
-trustStrip: "<span class=\"stars\">★★★★★</span><span>5.0 from 175 Google reviews</span><span class=\"sep\">·</span><span>3 CF-L2 coaches</span><span class=\"sep\">·</span><span>Free, and you don't have to join</span>"
-finalCta:
-  heading: "Ready to book?"
-  ctas:
-    - { label: "Book your free intro", href: "#book-form", inlineStyle: "background:#000;color:#fff;" }
+canonical: https://alpinecrossfit.com/free-intro/
 ---
 
 <section class="section">
