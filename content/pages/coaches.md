@@ -66,7 +66,7 @@ extraSchemas:
       <div class="card">
         <h3>Megan Markee</h3>
         <p class="text-muted" style="text-transform:uppercase;letter-spacing:0.08em;font-size:0.75rem;font-weight:700;margin-bottom:var(--space-3);color:var(--color-alpine-green);">Owner · Head Programmer · CSCS · 2× CrossFit Semifinalist</p>
-        <p>Designs every workout Alpine members follow. Twice qualified for the CrossFit Games Semifinals — the top tier of the sport. Started CrossFit in 2011.</p>
+        <p>Designs every workout Alpine members follow. Twice qualified for the CrossFit Games Semifinals, and twice when they were called Regionals — the top tier of the sport. Started CrossFit in 2011.</p>
         <a href="/coaches/megan-markee/">Learn about Megan →</a>
       </div>
       <div class="card">
