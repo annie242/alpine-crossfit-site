@@ -25,7 +25,6 @@ layout: layouts/page.njk
 permalink: /wellness/
 canonical: https://alpinecrossfit.com/wellness/
 ---
-
 <section class="section">
   <div class="container container-narrow">
     <span class="eyebrow">What's here</span>
@@ -58,3 +57,5 @@ canonical: https://alpinecrossfit.com/wellness/
     <p style="margin-top: var(--space-4);">Unlimited members also have 24/7 facility access, including the wellness center.</p>
   </div>
 </section>
+
+![](/assets/img/uploads/img_7605.jpeg)
