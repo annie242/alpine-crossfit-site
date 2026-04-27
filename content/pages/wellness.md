@@ -42,10 +42,9 @@ canonical: https://alpinecrossfit.com/wellness/
   <div class="container container-narrow">
     <span class="eyebrow">Who uses it</span>
     <h2>Every Alpine member.</h2>
-    <p>Athletes use the wellness center after classes to speed recovery. Members use it on rest days to manage soreness and stress. Older adults use it to improve circulation and joint health.</p>
-    <p>You don't need to be an athlete to benefit — the wellness center is designed for every membership tier, from Open Gym to Personal Training.</p>
-  </div>
-</section>
+
+
+![](/assets/img/uploads/611322327_18546045085049950_7834528410816248291_n.jpg)
 
 <section class="section">
   <div class="container container-narrow">
