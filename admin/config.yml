@@ -295,6 +295,29 @@ collections:
           - {label: "Schema types", name: "schemaTypes", widget: "hidden", default: ["organization", "healthclub", "faq"]}
 
   # ====================================================================
+  # BLOG — folder collection. New posts auto-publish to /blog/<slug>/.
+  # The layout and URL are set automatically (content/blog/blog.json),
+  # so a post only needs a title, snippet, date, and body.
+  # ====================================================================
+  - name: "blog"
+    label: "Blog"
+    label_singular: "Blog post"
+    description: "Blog posts — training tips, gym news, workout of the day. Each one becomes a page at /blog/<slug>/."
+    folder: "content/blog"
+    create: true
+    delete: true
+    slug: "{{slug}}"
+    summary: "{{date}} — {{title}}"
+    sortable_fields: ["date", "title"]
+    media_folder: "/assets/img/uploads/blog"
+    public_folder: "/assets/img/uploads/blog"
+    fields:
+      - {label: "Title", name: "title", widget: "string", hint: "The post headline. Also shown in the browser tab and Google search results."}
+      - {label: "Search snippet", name: "description", widget: "text", hint: "1–2 sentences shown under the post in the blog list and in Google. ~155 characters works best."}
+      - {label: "Publish date", name: "date", widget: "datetime", date_format: "YYYY-MM-DD", time_format: false, picker_utc: true}
+      - {label: "Post body", name: "body", widget: "markdown", hint: "The post content. Use the rich-text editor or write Markdown directly."}
+
+  # ====================================================================
   # COACHES & OWNERS — folder collection (Lisa can add new coaches)
   # ====================================================================
   - name: "coaches"

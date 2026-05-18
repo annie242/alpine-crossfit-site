@@ -72,6 +72,14 @@ export default function (eleventyConfig) {
     api.getFilteredByGlob("content/pages/*.md")
   );
 
+  // Blog posts, newest first. Shared layout/permalink live in
+  // content/blog/blog.json so a post file only needs title/description/date.
+  eleventyConfig.addCollection("blog", (api) =>
+    api
+      .getFilteredByGlob("content/blog/*.md")
+      .sort((a, b) => b.date - a.date)
+  );
+
   // All published URLs (for the auto-generated sitemap)
   eleventyConfig.addCollection("sitemapEntries", (api) => {
     const all = api.getAll();
@@ -98,6 +106,18 @@ export default function (eleventyConfig) {
   eleventyConfig.addFilter("isoDate", (value) => {
     const d = value ? new Date(value) : new Date();
     return d.toISOString().slice(0, 10);
+  });
+
+  // Human-readable date for blog posts, e.g. "May 18, 2026". UTC avoids an
+  // off-by-one day when front-matter dates parse as midnight UTC.
+  eleventyConfig.addFilter("readableDate", (value) => {
+    const d = value ? new Date(value) : new Date();
+    return d.toLocaleDateString("en-US", {
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+      timeZone: "UTC",
+    });
   });
 
   eleventyConfig.addFilter("jsonStringify", (value) => JSON.stringify(value));

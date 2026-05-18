@@ -44,6 +44,7 @@ export default {
   primaryNav: [
     { label: "About", url: "/about/" },
     { label: "Pricing", url: "/pricing/" },
+    { label: "Blog", url: "/blog/" },
     { label: "Visit", url: "/visit/" },
   ],
 
@@ -62,6 +63,7 @@ export default {
       { label: "Coaches", url: "/coaches/" },
       { label: "Pricing", url: "/pricing/" },
       { label: "Schedule", url: "/schedule/" },
+      { label: "Blog", url: "/blog/" },
       { label: "FAQ", url: "/faq/" },
     ],
     areas: [
