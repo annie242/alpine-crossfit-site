@@ -1,66 +1,45 @@
 ---
-title: About Alpine CrossFit — Wheat Ridge's Community CrossFit Gym
-description: Alpine CrossFit is a Wheat Ridge, CO gym owned by CF Certified
-  Coaches, CrossFit Games competitors, and former team sport athletes. Three
-  professional full-time coaches on staff. In-house programming by a Certified
-  Strength & Conditioning Specialist (CSCS).
-eyebrow: About
-heading: About Alpine CrossFit
-dek: Alpine CrossFit is a Wheat Ridge, CO gym owned by CF Certified Coaches,
-  CrossFit Games competitors, and former team sport athletes. Three professional
-  full-time coaches on staff. In-house programming by a Certified Strength &
-  Conditioning Specialist (CSCS).
-heroCtas:
-  - label: Book a Free Intro
-    href: /free-intro/
-    style: btn-primary btn-lg
-  - label: Meet the coaches →
-    href: /coaches/
-    style: btn-secondary btn-lg
-trustStrip: <span>Founded 2010</span><span class="sep">·</span><span>Under
-  current ownership since 2016</span><span class="sep">·</span><span
-  class="stars">★★★★★</span><span>5.0 from 175 reviews</span>
-heroWithImage: true
-heroImage:
-  src: /assets/img/member-front-squat.jpg
-  alt: Alpine CrossFit members training during a coached class
-  slot: about_hero
-finalCta:
-  heading: Come see the gym.
-  body: The best way to understand Alpine is to walk in. Your free No Sweat Intro
-    is 30 minutes with a coach — tour, conversation, and a recommendation. No
-    pressure, no cost.
-  ctas:
-    - label: Book my free No Sweat Intro
-      href: /free-intro/
-      inlineStyle: background:#000;color:#fff;
-    - label: Or text (720) 964-1505
-      href: sms:+17209641505
-      inlineStyle: background:transparent;color:#000;border-color:#000;
 layout: layouts/page.njk
 permalink: /about/
-canonical: https://alpinecrossfit.com/about/
+title: "About Alpine CrossFit — Wheat Ridge's Community CrossFit Gym"
+description: "Alpine CrossFit is a Wheat Ridge, CO gym co-owned by two professionally certified coaches and CrossFit Games competitors. Three professional coaches. In-house programming."
+canonical: "https://alpinecrossfit.com/about/"
 loadImagesScript: true
+eyebrow: "About"
+heading: "About Alpine CrossFit."
+dek: "Alpine CrossFit is a community-focused CrossFit gym in Wheat Ridge, Colorado, co-owned by Megan Markee (CSCS, head programmer) and Annie Brunner (CF-L2). It is the only gym in Wheat Ridge with an all-professional coaching staff, and every workout is programmed in-house by the owners."
+heroCtas:
+  - { label: "Book a Free Intro", href: "/free-intro/", style: "btn-primary btn-lg" }
+  - { label: "Meet the coaches →", href: "/coaches/", style: "btn-secondary btn-lg" }
+heroImage:
+  src: "/assets/img/member-front-squat.jpg"
+  alt: "Alpine CrossFit members training during a coached class"
+  slot: "about_hero"
+heroWithImage: true
+trustStrip: '<span>Founded 2010</span><span class="sep">·</span><span>Under current ownership since 2016</span><span class="sep">·</span><span class="stars">★★★★★</span><span>5.0 from 180 reviews</span>'
 extraSchemas:
-  - "@context": https://schema.org
-    "@type": AboutPage
-    url: https://alpinecrossfit.com/about/
-    name: About Alpine CrossFit
-    description: Alpine CrossFit is a community-focused CrossFit gym in Wheat Ridge,
-      Colorado, co-owned by CF-L2 coaches Megan Markee and Annie Brunner.
-    mainEntity:
-      "@id": https://alpinecrossfit.com/#healthclub
-  - "@context": https://schema.org
-    "@type": BreadcrumbList
-    itemListElement:
-      - "@type": ListItem
-        position: 1
-        name: Home
-        item: https://alpinecrossfit.com/
-      - "@type": ListItem
-        position: 2
-        name: About
-        item: https://alpinecrossfit.com/about/
+  - {
+      "@context": "https://schema.org",
+      "@type": "AboutPage",
+      "url": "https://alpinecrossfit.com/about/",
+      "name": "About Alpine CrossFit",
+      "description": "Alpine CrossFit is a community-focused CrossFit gym in Wheat Ridge, Colorado, co-owned by Megan Markee (CSCS, head programmer) and Annie Brunner (CF-L2).",
+      "mainEntity": {"@id": "https://alpinecrossfit.com/#healthclub"}
+    }
+  - {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://alpinecrossfit.com/"},
+        {"@type": "ListItem", "position": 2, "name": "About", "item": "https://alpinecrossfit.com/about/"}
+      ]
+    }
+finalCta:
+  heading: "Come see the gym."
+  body: "The best way to understand Alpine is to walk in. Your free No Sweat Intro is 30 minutes with a coach — tour, conversation, and a recommendation. No pressure, no cost."
+  ctas:
+    - { label: "Book my free No Sweat Intro", href: "/free-intro/", inlineStyle: "background:#000;color:#fff;" }
+    - { label: "Or text (720) 964-1505", href: "sms:+17209641505", inlineStyle: "background:transparent;color:#000;border-color:#000;" }
 ---
 
 <section class="affiliations">
@@ -84,7 +63,7 @@ extraSchemas:
     <h2>A gym built by the people who coach you.</h2>
     <p>Alpine CrossFit was founded in 2010. In 2016, Annie Brunner and Megan Markee took over — drawn by a fierce belief in the methodology and a passion for the community they found inside. The longer they've run it, the more convinced they've become.</p>
     <p>Over the past decade under current ownership, Alpine has grown into a gym with a fully professional coaching staff and a facility refined around a single goal: getting members better results than any gym around us.</p>
-    <p>Both Annie and Megan are CF-L2 certified and active CrossFit competitors — Megan a 2× Semifinalist, Annie a 4× Quarterfinalist. They train at Alpine every day alongside members, and Megan writes the programming every Alpine member follows.</p>
+    <p>Annie is CF-L2 certified, Megan is CSCS certified, and both are active CrossFit competitors — Megan a 2× Semifinalist, Annie a 4× Quarterfinalist. They train at Alpine every day alongside members, and Megan writes the programming every Alpine member follows.</p>
   </div>
 </section>
 

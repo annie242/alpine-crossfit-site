@@ -19,7 +19,7 @@ hero:
     - { label: "See the schedule", href: "#schedule", style: "btn-secondary btn-lg" }
   trustItems:
     - { type: "stars" }
-    - { text: "5.0 from 175 Google reviews" }
+    - { text: "5.0 from 180 Google reviews" }
     - { text: "Month-to-month" }
     - { text: "No initiation fees" }
   image:
@@ -75,7 +75,7 @@ reviews:
     - { stars: 5, quote: "I've been to three different CrossFit gyms and this is by far the best. Every coach is welcoming, helpful, and has improved my performance.", attribution: "Jarrod M. · Experienced CrossFitter" }
     - { stars: 5, quote: "My wife and I dropped in to Alpine CrossFit today and had a great time… one of the best gyms we've been to. Super clean, Lisa was a fantastic coach.", attribution: "Brady S. · Drop-in visitor" }
   stats:
-    - { value: "5.0★", label: "From 175 Google reviews" }
+    - { value: "5.0★", label: "From 180 Google reviews" }
     - { value: "15", label: "Max athletes per class" }
     - { value: "5", label: "CF-L2 certified professionals" }
     - { value: "2010", label: "Founded" }

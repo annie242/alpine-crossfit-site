@@ -1,29 +1,20 @@
 ---
-trustStrip: <span class="stars">★★★★★</span><span>5.0 from 175 Google reviews</span>
-title: Visit Alpine CrossFit — Hours, Address, Parking in Wheat Ridge
-description: Alpine CrossFit is at 12090 W 50th Place, Wheat Ridge, CO 80033.
-  Free parking, tap-to-call (720) 964-1505. Hours, directions, and first-visit
-  info inside.
-eyebrow: Visit
-heading: Come Train with Us
-dek: 12090 West 50th Place, Wheat Ridge, CO 80033. Free parking. Unlimited
-  members have 24/7 access.
-heroCtas:
-  - label: Book a free intro
-    href: /free-intro/
-    style: btn-primary btn-lg
-  - label: Text (720) 964-1505
-    href: sms:+17209641505
-    style: btn-secondary btn-lg
 layout: layouts/page.njk
 permalink: /visit/
-canonical: https://alpinecrossfit.com/visit/
+title: "Visit Alpine CrossFit — Hours, Address, Parking in Wheat Ridge"
+description: "Alpine CrossFit is at 12090 W 50th Place, Wheat Ridge, CO 80033. Free parking, tap-to-call (720) 964-1505. Hours, directions, and first-visit info inside."
+canonical: "https://alpinecrossfit.com/visit/"
+eyebrow: "Visit"
+heading: "Come train at Alpine."
+dek: "12090 West 50th Place, Wheat Ridge, CO 80033. Free parking. Unlimited members have 24/7 access."
+heroCtas:
+  - { label: "Book a free intro", href: "/free-intro/", style: "btn-primary btn-lg" }
+  - { label: "Text (720) 964-1505", href: "sms:+17209641505", style: "btn-secondary btn-lg" }
+trustStrip: '<span class="stars">★★★★★</span><span>5.0 from 180 Google reviews</span>'
 finalCta:
-  heading: Ready to visit?
+  heading: "Ready to visit?"
   ctas:
-    - label: Book your free intro
-      href: /free-intro/
-      inlineStyle: background:#000;color:#fff;
+    - { label: "Book your free intro", href: "/free-intro/", inlineStyle: "background:#000;color:#fff;" }
 ---
 
 <section class="section">
