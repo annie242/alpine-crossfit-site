@@ -26,7 +26,7 @@ export default {
   instagram: "https://www.instagram.com/alpine_fitness_co/",
 
   // Reviews — surfaced in schema and on homepage
-  rating: { value: "5.0", count: "175" },
+  rating: { value: "5.0", count: "180" },
 
   // Hours, used by schedule schema
   hours: [
