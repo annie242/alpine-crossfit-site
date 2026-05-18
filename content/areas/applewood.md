@@ -11,7 +11,7 @@ dek: "Alpine CrossFit serves Applewood members from our Wheat Ridge location —
 heroCtas:
   - { label: "Book a Free Intro", href: "/free-intro/", style: "btn-primary btn-lg" }
   - { label: "Text (720) 964-1505", href: "sms:+17209641505", style: "btn-secondary btn-lg" }
-trustStrip: '<span>5 min from Applewood</span><span class="sep">·</span><span class="stars">★★★★★</span><span>5.0 from 175 reviews</span>'
+trustStrip: '<span>5 min from Applewood</span><span class="sep">·</span><span class="stars">★★★★★</span><span>5.0 from 180 reviews</span>'
 finalCtaHeading: "Book your free intro."
 serviceSchema:
   "@context": "https://schema.org"

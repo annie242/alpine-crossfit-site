@@ -2,7 +2,7 @@
 layout: layouts/area.njk
 permalink: /gym/wheat-ridge/
 title: "CrossFit Gym in Wheat Ridge, CO — Alpine CrossFit"
-description: "Alpine CrossFit is Wheat Ridge's locally-owned CrossFit gym. Three CF-L2 coaches, transparent pricing, 24/7 access. 5.0 from 175 reviews. Free intro available."
+description: "Alpine CrossFit is Wheat Ridge's locally-owned CrossFit gym. Three CF-L2 coaches, transparent pricing, 24/7 access. 5.0 from 180 reviews. Free intro available."
 canonical: "https://alpinecrossfit.com/gym/wheat-ridge/"
 city: "Wheat Ridge"
 eyebrow: "Wheat Ridge"
@@ -11,7 +11,7 @@ dek: "Alpine CrossFit is a locally-owned CrossFit gym in Wheat Ridge, CO, at 120
 heroCtas:
   - { label: "Book a Free Intro", href: "/free-intro/", style: "btn-primary btn-lg" }
   - { label: "Text (720) 964-1505", href: "sms:+17209641505", style: "btn-secondary btn-lg" }
-trustStrip: '<span>Founded 2010</span><span class="sep">·</span><span>Under current ownership since 2016</span><span class="sep">·</span><span class="stars">★★★★★</span><span>5.0 from 175 reviews</span>'
+trustStrip: '<span>Founded 2010</span><span class="sep">·</span><span>Under current ownership since 2016</span><span class="sep">·</span><span class="stars">★★★★★</span><span>5.0 from 180 reviews</span>'
 finalCtaHeading: "Book your free intro."
 serviceSchema:
   "@context": "https://schema.org"
@@ -81,7 +81,7 @@ serviceSchema:
     <span class="eyebrow">Wheat Ridge FAQ</span>
     <h2>Common questions.</h2>
     <details class="faq-item"><summary>Where exactly in Wheat Ridge is Alpine CrossFit?</summary><div class="faq-answer">We're at 12090 West 50th Place, Wheat Ridge, CO 80033 — just off I-70 near Kipling, minutes from the Wheat Ridge/Ward light rail station, Applewood, and the 38th Avenue corridor.</div></details>
-    <details class="faq-item"><summary>Is this the best CrossFit gym in Wheat Ridge?</summary><div class="faq-answer">We're the only CrossFit gym in Wheat Ridge with an all-professional coaching staff (three CF-L2 trainers), in-house programming, and a 5.0 rating across 175 Google reviews. Come judge for yourself — the first visit is free.</div></details>
+    <details class="faq-item"><summary>Is this the best CrossFit gym in Wheat Ridge?</summary><div class="faq-answer">We're the only CrossFit gym in Wheat Ridge with an all-professional coaching staff (three CF-L2 trainers), in-house programming, and a 5.0 rating across 180 Google reviews. Come judge for yourself — the first visit is free.</div></details>
     <details class="faq-item"><summary>What does membership cost?</summary><div class="faq-answer">$69/month (open gym), $165/month (12 classes/month), or $199/month (unlimited classes, wellness center, Prime Vitality, and 24/7 access). All month-to-month.</div></details>
     <details class="faq-item"><summary>Do you have classes for people over 55?</summary><div class="faq-answer">Yes. Our Prime Vitality program runs Monday, Wednesday, and Friday at 10 AM — the most strength-and-conditioning-oriented 55+ program in Wheat Ridge. Included with Unlimited membership.</div></details>
     <details class="faq-item"><summary>Is there free parking?</summary><div class="faq-answer">Yes. Free on-site parking for all members and guests.</div></details>
