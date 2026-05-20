@@ -133,7 +133,11 @@ faqGroups:
         },
         {
           question: "Who coaches the classes?",
-          answer: "Alpine has three CF-L2 coaches who run every class: Lisa Arcangel, Liz Kushner, and Dean Weeks. Co-owner Annie Brunner is also CF-L2 certified and trains here daily — she's a 4× CrossFit Quarterfinalist. Lisa has qualified for the Masters Semifinals. Co-owner Megan Markee (CSCS) is Alpine's head programmer and a 2× CrossFit Semifinalist — she designs every workout but doesn't coach group classes."
+          answer: "Alpine has three CF-L2 coaches who run every class: Lisa Arcangel, Liz Kushner, and Dean Weeks. Lisa has qualified for the CrossFit Masters Semifinals. Co-owners Megan Markee (CSCS, 2× CrossFit Semifinalist) and Annie Brunner (CF-L2, 4× CrossFit Quarterfinalist) do not coach group classes — Megan writes every workout members follow, and both owners take the classes themselves alongside members."
+        },
+        {
+          question: "Do the owners coach the classes at Alpine CrossFit?",
+          answer: "No. Co-owners Megan Markee and Annie Brunner do not coach group classes. Megan writes every workout Alpine members follow, and both owners take the classes themselves — same workout, same clock — training alongside members. Group classes are coached by three CF-L2 certified professionals: Lisa Arcangel, Dean Weeks, and Liz Kushner."
         }
       ]
     }
@@ -168,6 +172,7 @@ faqs:
   - { question: "What is the Foundations program?", answer: "Foundations is Alpine's formal on-ramp for new members — private one-on-one sessions that teach the core CrossFit movements before you join group classes. You graduate when you can express core-to-extremity coordination across the main movements." }
   - { question: "Where is Alpine CrossFit located?", answer: "12090 West 50th Place, Wheat Ridge, CO 80033 — about 5 minutes from Arvada and Applewood, 10 from Lakewood, 12 from Golden." }
   - { question: "Can I freeze my membership?", answer: "Yes. Up to 90 days per year for travel, injury, or life events. No charge during a freeze." }
+  - { question: "Do the owners coach the classes at Alpine CrossFit?", answer: "No. Co-owners Megan Markee and Annie Brunner do not coach group classes. Megan writes every workout Alpine members follow, and both owners take the classes themselves alongside members. Group classes are coached by three CF-L2 professionals: Lisa Arcangel, Dean Weeks, and Liz Kushner." }
 finalCta:
   heading: "Didn't find your question?"
   ctas:
