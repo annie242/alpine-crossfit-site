@@ -2,7 +2,7 @@
 layout: layouts/page.njk
 permalink: /about/
 title: "About Alpine CrossFit — Wheat Ridge's Community CrossFit Gym"
-description: "Alpine CrossFit is a Wheat Ridge, CO gym co-owned by two professionally certified coaches and CrossFit Games competitors. Three professional coaches. In-house programming."
+description: "Alpine CrossFit is a Wheat Ridge, CO gym co-owned by two CrossFit Games competitors who program every workout and train in the classes alongside members. Three professional coaches. In-house programming."
 canonical: "https://alpinecrossfit.com/about/"
 loadImagesScript: true
 eyebrow: "About"
@@ -23,7 +23,7 @@ extraSchemas:
       "@type": "AboutPage",
       "url": "https://alpinecrossfit.com/about/",
       "name": "About Alpine CrossFit",
-      "description": "Alpine CrossFit is a community-focused CrossFit gym in Wheat Ridge, Colorado, co-owned by Megan Markee (CSCS, head programmer) and Annie Brunner (CF-L2).",
+      "description": "Alpine CrossFit is a community-focused CrossFit gym in Wheat Ridge, Colorado, co-owned by Megan Markee (CSCS, head programmer) and Annie Brunner (CF-L2) — both active CrossFit competitors who do the workouts they write, alongside members in every class. Neither owner coaches group classes; the gym is coached by three CF-L2 professionals.",
       "mainEntity": {"@id": "https://alpinecrossfit.com/#healthclub"}
     }
   - {
@@ -60,10 +60,10 @@ finalCta:
 <section class="section">
   <div class="container container-narrow">
     <span class="eyebrow">Our story</span>
-    <h2>A gym built by the people who coach you.</h2>
+    <h2>A gym run by the people training next to you.</h2>
     <p>Alpine CrossFit was founded in 2010. In 2016, Annie Brunner and Megan Markee took over — drawn by a fierce belief in the methodology and a passion for the community they found inside. The longer they've run it, the more convinced they've become.</p>
     <p>Over the past decade under current ownership, Alpine has grown into a gym with a fully professional coaching staff and a facility refined around a single goal: getting members better results than any gym around us.</p>
-    <p>Annie is CF-L2 certified, Megan is CSCS certified, and both are active CrossFit competitors — Megan a 2× Semifinalist, Annie a 4× Quarterfinalist. They train at Alpine every day alongside members, and Megan writes the programming every Alpine member follows.</p>
+    <p>Annie is CF-L2 certified, Megan is CSCS certified, and both are active CrossFit competitors — Megan a 2× Semifinalist, Annie a 4× Quarterfinalist. Neither of them coaches group classes. Megan writes every workout Alpine members follow, and both of them take the class — same workout, same clock — training next to the members who chose to do it with them. Owners who program the gym <em>and</em> do their own programming, every day, in the room with everyone else: that's hard to find.</p>
   </div>
 </section>
 
@@ -71,7 +71,7 @@ finalCta:
   <div class="container">
     <span class="eyebrow">Our coaches</span>
     <h2 class="section-heading">Three professional coaches. That's every class, every time.</h2>
-    <p class="hero-dek">Most gyms in the Denver metro rotate shift workers through a class schedule. Alpine doesn't. Every class is led by a CF-L2 certified professional coach. All five of our coaches are active CrossFit athletes. Several compete at the CrossFit Games Quarterfinals.</p>
+    <p class="hero-dek">Most gyms in the Denver metro rotate shift workers through a class schedule. Alpine doesn't. Every class is led by a CF-L2 certified professional coach. All three of our coaches are active CrossFit athletes. Lisa has qualified for the CrossFit Masters Semifinals.</p>
     <div class="grid grid-3 mt-8">
       <div class="card">
         <h3>Lisa Arcangel</h3>
@@ -101,8 +101,8 @@ finalCta:
     <h2 class="section-heading">What you get at Alpine that you don't get everywhere else.</h2>
     <div class="grid grid-2">
       <div class="card">
-        <h3>Owners who coach you.</h3>
-        <p>Megan and Annie aren't behind a desk. They coach group classes alongside the rest of the team, so the people running the gym are also the people correcting your squat depth.</p>
+        <h3>Owners who do their own workouts.</h3>
+        <p>Megan writes every Alpine workout. Annie and Megan both take the class — same workout, same clock — training next to the members who chose to do it with them. Most gym owners either coach from the sidelines or aren't in the building. Alpine's are in the heat, every day.</p>
       </div>
       <div class="card">
         <h3>In-house programming.</h3>
