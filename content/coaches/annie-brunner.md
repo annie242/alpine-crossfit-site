@@ -2,15 +2,15 @@
 layout: layouts/coach.njk
 permalink: /coaches/annie-brunner/
 title: "Annie Brunner — Owner · Alpine CrossFit"
-description: "Annie Brunner is a co-owner of Alpine CrossFit and a pregnancy & postpartum certified coach. Former professional soccer player, CF-L2 trainer, and 4-time CrossFit Quarterfinals qualifier who trains at Alpine daily."
+description: "Annie Brunner is a co-owner of Alpine CrossFit and a Brianna Battles-certified Pregnancy & Postpartum Athleticism (PPA) Coach. Former professional soccer player, CF-L2 trainer, and 4-time CrossFit Quarterfinals qualifier who trains at Alpine daily."
 canonical: "https://alpinecrossfit.com/coaches/annie-brunner/"
 order: 1
 name: "Annie Brunner"
-credentialsLine: "Owner · CF-L2 · Pregnancy &amp; Postpartum Coach · Former Pro Soccer Player · 4× CrossFit Quarterfinalist"
-bio: "Annie Brunner is a co-owner of Alpine CrossFit in Wheat Ridge, Colorado, and a pregnancy & postpartum certified coach. A former professional soccer player and collegiate soccer coach, Annie trains at Alpine every single day alongside members — which is how the standard gets set. She competes annually at the CrossFit Games Quarterfinals, most recently qualifying in the 2026 season, and works directly with Alpine members through pregnancy and the return to training after birth."
+credentialsLine: "Owner · CF-L2 · Pregnancy &amp; Postpartum Athleticism (PPA) Coach · Former Pro Soccer Player · 4× CrossFit Quarterfinalist"
+bio: "Annie Brunner is a co-owner of Alpine CrossFit in Wheat Ridge, Colorado, and a Brianna Battles-certified Pregnancy & Postpartum Athleticism (PPA) Coach. A former professional soccer player and collegiate soccer coach, Annie trains at Alpine every single day alongside members — which is how the standard gets set. She competes annually at the CrossFit Games Quarterfinals, most recently qualifying in the 2026 season, and works with Alpine members through pregnancy and the return to training after birth using Brianna Battles' PPA framework."
 credentials:
   - "CrossFit Level 2 Trainer (CF-L2)"
-  - "Pregnancy &amp; Postpartum certified coach"
+  - "Pregnancy &amp; Postpartum Athleticism (PPA) Coach — certified by Brianna Battles"
   - "Co-owner of Alpine CrossFit"
   - "Former professional soccer player"
   - "Former collegiate soccer coach"
@@ -47,7 +47,8 @@ personSchema:
     - {
         "@type": "EducationalOccupationalCredential",
         "credentialCategory": "certification",
-        "name": "Pregnancy & Postpartum Coaching Certification"
+        "name": "Pregnancy & Postpartum Athleticism (PPA) Coaching Certification",
+        "recognizedBy": {"@type": "Organization", "name": "Brianna Battles", "url": "https://briannabattles.com/"}
       }
   "knowsAbout": ["CrossFit", "Competitive CrossFit", "Soccer coaching", "Strength and conditioning", "Pregnancy and postpartum fitness", "Postpartum return to training"]
   "url": "https://alpinecrossfit.com/coaches/annie-brunner/"
