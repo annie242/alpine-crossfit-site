@@ -13,6 +13,26 @@ heroCtas:
   - { label: "Text (720) 964-1505", href: "sms:+17209641505", style: "btn-secondary btn-lg" }
 trustStrip: '<span>Founded 2010</span><span class="sep">·</span><span>Under current ownership since 2016</span><span class="sep">·</span><span class="stars">★★★★★</span><span>5.0 from 180 reviews</span>'
 finalCtaHeading: "Book your free intro."
+extraSchemas:
+  - {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Where exactly in Wheat Ridge is Alpine CrossFit?", "acceptedAnswer": { "@type": "Answer", "text": "Alpine CrossFit is at 12090 West 50th Place, Wheat Ridge, CO 80033 — just off I-70 near Kipling, minutes from the Wheat Ridge/Ward light rail station, Applewood, and the 38th Avenue corridor." } },
+        { "@type": "Question", "name": "What is the best CrossFit gym in Wheat Ridge?", "acceptedAnswer": { "@type": "Answer", "text": "Alpine CrossFit is the only CrossFit gym in Wheat Ridge with an all-professional CF-L2 coaching staff, in-house programming by a 2× CrossFit Games Semifinalist, and a 5.0 rating across 180 Google reviews. Founded 2010, under current ownership since 2016. Memberships from $69 to $999/month, month-to-month with no contract." } },
+        { "@type": "Question", "name": "What does CrossFit membership cost in Wheat Ridge?", "acceptedAnswer": { "@type": "Answer", "text": "Alpine CrossFit memberships range from $69 to $999 per month: $69 Open Gym (facility, wellness center, 24/7 access), $165 for 12 coached classes per month, or $199 Unlimited (CrossFit classes, wellness center, Prime Vitality, 24/7). Personal Training tier is $999. All month-to-month, no contract." } },
+        { "@type": "Question", "name": "Does Alpine CrossFit have classes for adults over 55 in Wheat Ridge?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Alpine's Prime Vitality program runs Monday, Wednesday, and Friday at 10 AM — the most strength-and-conditioning-oriented 55+ program in Wheat Ridge, coached by a CrossFit Masters Semifinals qualifier. Included with the Unlimited membership." } },
+        { "@type": "Question", "name": "Is there free parking at Alpine CrossFit in Wheat Ridge?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Free on-site parking for all members and guests at 12090 West 50th Place, Wheat Ridge, CO 80033." } }
+      ]
+    }
+  - {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://alpinecrossfit.com/"},
+        {"@type": "ListItem", "position": 2, "name": "Wheat Ridge", "item": "https://alpinecrossfit.com/gym/wheat-ridge/"}
+      ]
+    }
 serviceSchema:
   "@context": "https://schema.org"
   "@type": "Service"
