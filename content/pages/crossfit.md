@@ -6,7 +6,7 @@ description: Coach-led CrossFit classes in Wheat Ridge programmed in-house by an
 eyebrow: CrossFit
 heading: Coach-led group classes.
 dek: Every Alpine CrossFit class is coached by a CF-L2 certified professional.
-  Workouts are programmed in-house by a 4× CrossFit Games Semifinalist and
+  Workouts are programmed in-house by a 2× CrossFit Games Semifinalist and
   Certified Strength & Conditioning Coach.
 heroCtas:
   - label: Book your free intro
@@ -48,7 +48,7 @@ canonical: https://alpinecrossfit.com/crossfit/
   <div class="container container-narrow">
     <span class="eyebrow">In-house programming</span>
     <h2>Written by Megan Markee.</h2>
-    <p>Every workout at Alpine is programmed in-house by Megan Markee, CSCS and 4× CrossFit Games Semifinalist. Programming is not a franchise template, not a subscription service, and not a random WOD generator.</p>
+    <p>Every workout at Alpine is programmed in-house by Megan Markee, CSCS and 2× CrossFit Games Semifinalist. Programming is not a franchise template, not a subscription service, and not a random WOD generator.</p>
     <p>Megan trains at Alpine every day. She writes the programming, and she does the workouts herself. That keeps the programming honest and scaled appropriately for the range of athletes in the room.</p>
   </div>
 </section>
