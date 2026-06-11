@@ -1,5 +1,0 @@
-{
-  "layout": "layouts/post.njk",
-  "permalink": "/blog/{{ page.filePathStem | split('/') | last }}/",
-  "ogType": "article"
-}
