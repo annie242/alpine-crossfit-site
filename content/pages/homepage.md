@@ -13,7 +13,7 @@ schemaTypes: ["organization", "healthclub", "faq"]
 hero:
   eyebrow: "Wheat Ridge · Lakewood · Arvada · Applewood · Golden"
   heading: "CrossFit for <span class=\"accent\">every body</span> in Wheat Ridge."
-  dek: "Alpine CrossFit is a locally-owned CrossFit gym in Wheat Ridge, Colorado, serving Wheat Ridge, Lakewood, Arvada, Applewood, and Golden with coach-led classes for every experience level, a wellness center, and 24/7 member access."
+  dek: "Alpine CrossFit is a locally-owned CrossFit gym + Official HYROX Training Center in Wheat Ridge, Colorado, serving Wheat Ridge, Lakewood, Arvada, Applewood, and Golden. Coach-led classes, an in-house wellness center (sauna, cold plunge, compression, peptide therapy), and 24/7 member access."
   ctas:
     - { label: "Book a Free Intro", href: "/free-intro/", style: "btn-primary btn-lg" }
     - { label: "See the schedule", href: "#schedule", style: "btn-secondary btn-lg" }

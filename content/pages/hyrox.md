@@ -32,6 +32,19 @@ extraSchemas:
         {"@type": "ListItem", "position": 2, "name": "HYROX Training", "item": "https://alpinecrossfit.com/hyrox/"}
       ]
     }
+  - {
+      "@context": "https://schema.org",
+      "@type": "SportsEvent",
+      "name": "HYROX Denver 2026",
+      "startDate": "2026-11-12",
+      "endDate": "2026-11-15",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "location": { "@type": "Place", "name": "Colorado Convention Center", "address": { "@type": "PostalAddress", "streetAddress": "700 14th Street", "addressLocality": "Denver", "addressRegion": "CO", "postalCode": "80202", "addressCountry": "US" } },
+      "organizer": { "@type": "Organization", "name": "HYROX", "url": "https://hyrox.com" },
+      "sport": "HYROX",
+      "url": "https://alpinecrossfit.com/hyrox-denver-2026/"
+    }
 finalCta:
   heading: "Ready to train for HYROX?"
   body: "Book a free No Sweat Intro — 30 minutes with a coach to talk through your race goal and the right starting point."

@@ -49,8 +49,50 @@ finalCta:
     </script>
 
     <p class="text-muted mt-6" style="font-size:0.9rem;">
-      Widget slow to load? <a href="sms:+17209641505">Text us (720) 964-1505</a> and we'll book it for you.
+      Widget slow to load or can't find a time? <a href="sms:+17209641505">Text us (720) 964-1505</a> — we answer in under 5 minutes during gym hours and will book it for you.
     </p>
+  </div>
+</section>
+
+<section class="section section-dark">
+  <div class="container">
+    <span class="eyebrow">What new members say</span>
+    <h2 class="section-heading" style="max-width:36ch;">A few recent reviews.</h2>
+    <div class="grid grid-3">
+      <div class="testimonial">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-quote">"I have never been in such a supportive fitness environment! Everyone has been so welcoming and helpful to me as someone totally new to CrossFit."</p>
+        <div class="testimonial-attribution">— Monica G. · New to CrossFit</div>
+      </div>
+      <div class="testimonial">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-quote">"Outstanding CrossFit box! The quality coaches are truly exceptional, providing expert guidance and support."</p>
+        <div class="testimonial-attribution">— Taylor W.</div>
+      </div>
+      <div class="testimonial">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-quote">"The quality of instruction is excellent, the workouts are varied and well designed, and I've met some really cool people."</p>
+        <div class="testimonial-attribution">— Jeff W-B. · Member</div>
+      </div>
+    </div>
+    <p class="text-center text-muted mt-8" style="font-size:0.85rem;">★★★★★ 5.0 from 180 Google reviews · Updated April 2026</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container container-narrow">
+    <span class="eyebrow">Before you come in</span>
+    <h2>What to wear &amp; where to park.</h2>
+    <div class="grid grid-2">
+      <div class="card">
+        <h3>What to wear</h3>
+        <p>Nothing special for the No Sweat Intro — you won't be working out. Come in whatever you're already wearing.</p>
+      </div>
+      <div class="card">
+        <h3>Where to park</h3>
+        <p>Free on-site parking. Pull into the lot at 12090 W 50th Pl. The Alpine entrance is on the front of the building.</p>
+      </div>
+    </div>
   </div>
 </section>
 

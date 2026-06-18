@@ -51,6 +51,11 @@ finalCta:
       <li><strong>Compression boots</strong> — sequential pneumatic compression that speeds lactate clearance and blood flow after hard training.</li>
       <li><strong>Peptide therapy</strong> — peptide-based recovery support for athletes focused on performance optimization.</li>
     </ul>
+    <div style="margin-top:var(--space-8);padding:var(--space-6);border-left:3px solid var(--color-alpine-green);background:rgba(113,176,53,0.06);border-radius:var(--radius);">
+      <p style="font-weight:700;text-transform:uppercase;letter-spacing:0.1em;font-size:0.75rem;color:var(--color-alpine-green);margin-bottom:var(--space-3);">Peptide therapy notice</p>
+      <p style="font-size:0.9rem;margin-bottom:var(--space-2);">Peptide therapy at Alpine is administered under qualified medical supervision. Every protocol is preceded by a screening consultation that reviews your health history, current medications, training goals, and eligibility.</p>
+      <p style="font-size:0.9rem;margin-bottom:0;color:var(--color-text-muted);">Peptide therapy is not a substitute for medical advice or treatment of medical conditions. Consult your healthcare provider before starting any new therapy. Not all members are candidates — eligibility is determined during your consultation.</p>
+    </div>
   </div>
 </section>
 
