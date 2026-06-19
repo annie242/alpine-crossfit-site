@@ -56,13 +56,26 @@ finalCta:
     <h2>Send it to me.</h2>
     <p>Drop your email and race date below. We'll send the plan immediately and check in along the way. No spam — and you can unsubscribe with one click.</p>
 
+    <!-- Gymnetics / GoHighLevel HYROX Prep Plan Request form -->
     <div class="form-wrap" style="margin-top:var(--space-6); background:#fff; border-radius:var(--radius-lg); overflow:hidden; max-width:640px;">
-      <div style="padding:var(--space-8); text-align:center; color:#000;">
-        <p style="font-weight:600; margin-bottom:var(--space-3);">Gymnetics form embed goes here.</p>
-        <p style="font-size:0.9rem; color:#666; margin-bottom:var(--space-4);">Annie: in your Gymnetics/GHL dashboard, create a new form titled "HYROX Prep Plan Request" with fields: First name, Email, Phone (optional), Race date (date picker). Set the redirect/success URL to send the plan PDF or trigger the email automation. Paste the iframe embed code here.</p>
-        <a class="btn btn-primary" href="sms:+17209641505" style="background:var(--color-alpine-green); color:#000;">Or text us to request it</a>
-      </div>
+      <iframe
+        src="https://link.gymntx.com/widget/form/85V8YzhsYi8B5JFGDAT1"
+        id="inline-85V8YzhsYi8B5JFGDAT1"
+        style="width:100%; min-height:600px; border:none; display:block;"
+        data-layout="{'id':'INLINE'}"
+        data-trigger-type="alwaysShow"
+        data-activation-type="alwaysActivated"
+        data-deactivation-type="neverDeactivate"
+        data-form-name="HYROX Prep Plan Request"
+        data-height="600"
+        data-layout-iframe-id="inline-85V8YzhsYi8B5JFGDAT1"
+        data-form-id="85V8YzhsYi8B5JFGDAT1"
+        title="HYROX Prep Plan Request">
+      </iframe>
     </div>
+    <script src="https://link.gymntx.com/js/form_embed.js"></script>
+
+    <p class="text-muted mt-6" style="font-size:0.85rem;">Form slow to load or having trouble? <a href="sms:+17209641505">Text us (720) 964-1505</a> and we'll get the plan to you.</p>
 
     <p class="text-muted mt-6" style="font-size:0.85rem;">Prefer to start training in person? <a href="/hyrox/">See our HYROX classes →</a> or <a href="/free-intro/">book a free intro</a>.</p>
   </div>
