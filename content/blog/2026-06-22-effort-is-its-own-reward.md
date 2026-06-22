@@ -58,7 +58,7 @@ _Score: Load_
 **E4MOM x 3 sets:**
 -6 Barbell Stiff-Leg RDLs @ 20X0
 -12 Foot-in-rings Hamstring Curls @ 20X0
--25 Seated Banded Hamstring Curls
+-25 Banded Hamstring Curls
 
 ### CARMEN SAN DIEGO
 _Score: Time_
