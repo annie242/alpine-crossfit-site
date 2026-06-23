@@ -61,7 +61,7 @@ _Score: Calories_
 
 L1= 600m run and/or 45/36 Cals
 L2= as written
-L3= 56/45 cals and/or 1000m Run= 600m run and/or 45/36 Cals
+L3= 56/45 cals and/or 1000m Run
 
 Modify for 2-3 minutes on the bike. First round may be easy but remember there is no rest between rounds.
 
