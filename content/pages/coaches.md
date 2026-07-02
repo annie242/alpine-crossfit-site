@@ -29,6 +29,52 @@ extraSchemas:
         position: 2
         name: Coaches
         item: https://alpinecrossfit.com/coaches/
+  - "@context": https://schema.org
+    "@type": ItemList
+    name: Alpine CrossFit coaches and owners
+    itemListOrder: https://schema.org/ItemListOrderAscending
+    numberOfItems: 5
+    itemListElement:
+      - "@type": ListItem
+        position: 1
+        item:
+          "@type": Person
+          name: Lisa Arcangel
+          jobTitle: Coach
+          url: https://alpinecrossfit.com/coaches/lisa-arcangel/
+          worksFor: { "@id": "https://alpinecrossfit.com/#organization" }
+      - "@type": ListItem
+        position: 2
+        item:
+          "@type": Person
+          name: Dean Weeks
+          jobTitle: Coach
+          url: https://alpinecrossfit.com/coaches/dean-weeks/
+          worksFor: { "@id": "https://alpinecrossfit.com/#organization" }
+      - "@type": ListItem
+        position: 3
+        item:
+          "@type": Person
+          name: Liz Kushner
+          jobTitle: Coach
+          url: https://alpinecrossfit.com/coaches/liz-kushner/
+          worksFor: { "@id": "https://alpinecrossfit.com/#organization" }
+      - "@type": ListItem
+        position: 4
+        item:
+          "@type": Person
+          name: Megan Markee
+          jobTitle: Owner and Head Programmer
+          url: https://alpinecrossfit.com/coaches/megan-markee/
+          worksFor: { "@id": "https://alpinecrossfit.com/#organization" }
+      - "@type": ListItem
+        position: 5
+        item:
+          "@type": Person
+          name: Annie Brunner
+          jobTitle: Owner
+          url: https://alpinecrossfit.com/coaches/annie-brunner/
+          worksFor: { "@id": "https://alpinecrossfit.com/#organization" }
 ---
 <section class="section">
   <div class="container">

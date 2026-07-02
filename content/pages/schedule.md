@@ -12,6 +12,25 @@ heroCtas:
 layout: layouts/page.njk
 permalink: /schedule/
 canonical: https://alpinecrossfit.com/schedule/
+extraSchemas:
+  - {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://alpinecrossfit.com/"},
+        {"@type": "ListItem", "position": 2, "name": "Schedule", "item": "https://alpinecrossfit.com/schedule/"}
+      ]
+    }
+  - {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "How often should I come to Alpine CrossFit per week?", "acceptedAnswer": { "@type": "Answer", "text": "3–4 times per week is the sweet spot for most Alpine members. 2× per week works for maintenance. 5–6 days per week is typical for competitive athletes. Consistency matters more than frequency." } },
+        { "@type": "Question", "name": "Can I drop in to an Alpine CrossFit class without scheduling?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, but 24 hours notice is ideal so we can plan for space. Call or text (720) 964-1505 and we'll fit you in. Drop-in classes are $30, or $95 for a week pass. Visiting from another CrossFit affiliate? Your first class is free." } },
+        { "@type": "Question", "name": "What are Alpine CrossFit's group class times?", "acceptedAnswer": { "@type": "Answer", "text": "Monday–Friday CrossFit classes at 5:30, 6:30, and 8:00 AM plus 12:00, 3:30, 4:30, and 5:30 PM. Saturday classes at 8:00 and 9:00 AM. Sunday at 9:00 AM. Prime Vitality (55+) runs Monday, Wednesday, and Friday at 10:00 AM. Every class is capped at 15 athletes and coached by a CF-L2 professional." } },
+        { "@type": "Question", "name": "What are the wellness center hours?", "acceptedAnswer": { "@type": "Answer", "text": "The wellness center is open Monday–Friday 5:30 AM – 6:30 PM, Saturday 8:00–10:00 AM, and Sunday 8:00–9:00 AM. Unlimited members have 24/7 facility access, including the wellness center." } }
+      ]
+    }
 finalCta:
   heading: Ready to train?
   ctas:

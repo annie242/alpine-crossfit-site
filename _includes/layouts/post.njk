@@ -6,7 +6,46 @@ layout: layouts/base.njk
    - title (post headline + browser title) — required
    - description (meta description + listing blurb) — required
    - date (publish date, YYYY-MM-DD) — required
-   - The markdown body becomes the post content. #}
+   - The markdown body becomes the post content.
+#}
+
+{# JSON-LD emitted from the template body so {{ title }} and page.date
+   are evaluated at render time. Google reads JSON-LD anywhere in the
+   HTML — it doesn't have to live in <head>. #}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": {{ title | jsonStringify | safe }},
+  "description": {{ description | jsonStringify | safe }},
+  "datePublished": "{{ page.date | isoDate }}",
+  "dateModified": "{{ page.date | isoDate }}",
+  "author": {
+    "@type": "Organization",
+    "@id": "{{ site.url }}/#organization",
+    "name": "{{ site.name }}"
+  },
+  "publisher": { "@id": "{{ site.url }}/#organization" },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ site.url }}{{ page.url }}"
+  },
+  "inLanguage": "en-US",
+  "isPartOf": { "@id": "{{ site.url }}/blog/#blog" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "{{ site.url }}/" },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "{{ site.url }}/blog/" },
+    { "@type": "ListItem", "position": 3, "name": {{ title | jsonStringify | safe }}, "item": "{{ site.url }}{{ page.url }}" }
+  ]
+}
+</script>
+
 <section class="hero">
   <div class="container container-narrow">
     <p class="hero-eyebrow"><a href="/blog/" style="color:var(--color-alpine-green);">← All posts</a></p>

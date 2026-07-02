@@ -11,6 +11,27 @@ heroCtas:
   - { label: "Book a free intro", href: "/free-intro/", style: "btn-primary btn-lg" }
   - { label: "Text (720) 964-1505", href: "sms:+17209641505", style: "btn-secondary btn-lg" }
 trustStrip: '<span class="stars">★★★★★</span><span>5.0 from 180 Google reviews</span>'
+extraSchemas:
+  - {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://alpinecrossfit.com/"},
+        {"@type": "ListItem", "position": 2, "name": "Visit", "item": "https://alpinecrossfit.com/visit/"}
+      ]
+    }
+  - {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Do I need an appointment to visit Alpine CrossFit?", "acceptedAnswer": { "@type": "Answer", "text": "Yes for the free No Sweat Intro — that's a scheduled 30-minute conversation with a coach. For a drop-in class, 24 hours notice is helpful but not required — text or call (720) 964-1505 and we'll fit you in." } },
+        { "@type": "Question", "name": "What should I bring to my first Alpine CrossFit visit?", "acceptedAnswer": { "@type": "Answer", "text": "Workout clothes, athletic shoes, and a water bottle. Alpine provides everything else — towels, sanitizing spray, movement modifications, and coaching. Nothing to bring for the free No Sweat Intro since it isn't a workout." } },
+        { "@type": "Question", "name": "What if I'm brand new to CrossFit?", "acceptedAnswer": { "@type": "Answer", "text": "Every Alpine class is scaled to the athlete. Your coach modifies movements and weights to match your level, and no one will judge you for it — every member in the room was new once. Most new members start with a private Foundations on-ramp before joining group classes." } },
+        { "@type": "Question", "name": "Can I watch a class before I join Alpine?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Your free No Sweat Intro includes a tour of the gym and time to observe a class in progress if you'd like." } },
+        { "@type": "Question", "name": "Where is Alpine CrossFit located?", "acceptedAnswer": { "@type": "Answer", "text": "Alpine CrossFit is at 12090 West 50th Place, Wheat Ridge, CO 80033 — just off I-70 near Kipling. Free on-site parking. 5 minutes from downtown Arvada or Applewood, 10 from Belmar in Lakewood, 12 from downtown Golden." } },
+        { "@type": "Question", "name": "What are Alpine CrossFit's hours?", "acceptedAnswer": { "@type": "Answer", "text": "Staffed hours are Monday–Friday 5:30 AM – 6:30 PM, Saturday 8:00–10:00 AM, and Sunday 8:00–10:00 AM. Unlimited members have 24/7 facility access." } }
+      ]
+    }
 finalCta:
   heading: "Ready to visit?"
   ctas:

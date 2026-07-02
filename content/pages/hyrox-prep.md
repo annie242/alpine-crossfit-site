@@ -18,6 +18,65 @@ extraSchemas:
         {"@type": "ListItem", "position": 2, "name": "HYROX Prep Plan", "item": "https://alpinecrossfit.com/hyrox-prep/"}
       ]
     }
+  - {
+      "@context": "https://schema.org",
+      "@type": "Course",
+      "@id": "https://alpinecrossfit.com/hyrox-prep/#course",
+      "name": "12-Week HYROX Prep Plan",
+      "alternateName": "Free 12-week HYROX training program",
+      "description": "A complete 12-week training plan built to prepare CrossFit-fit athletes for a HYROX race. Includes week-by-week programming, compromised running protocols, station-specific work (sled push, sled pull, sandbag lunge, wall ball, SkiErg, row, farmers carry, burpee broad jumps), race-pace targets for Open/Pro/Doubles divisions, three full-race simulation weeks, taper protocol, and race-day pacing strategy. Written by a 2× CrossFit Games Semifinalist for HYROX Denver 2026.",
+      "provider": {
+        "@type": "Organization",
+        "@id": "https://alpinecrossfit.com/#organization",
+        "name": "Alpine CrossFit",
+        "sameAs": "https://alpinecrossfit.com/"
+      },
+      "educationalCredentialAwarded": null,
+      "educationalLevel": "Intermediate",
+      "learningResourceType": "Training program",
+      "timeRequired": "P12W",
+      "teaches": [
+        "HYROX race preparation",
+        "Compromised running under fatigue",
+        "Sled push and sled pull technique",
+        "Sandbag lunge pacing",
+        "Wall ball capacity",
+        "SkiErg and row pacing",
+        "Farmers carry mechanics",
+        "Burpee broad jump strategy",
+        "Race-day pacing and taper protocols"
+      ],
+      "inLanguage": "en-US",
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "CrossFit athletes preparing for a HYROX race"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "url": "https://alpinecrossfit.com/hyrox-prep/",
+        "category": "Free training program"
+      },
+      "hasCourseInstance": {
+        "@type": "CourseInstance",
+        "courseMode": "Online",
+        "courseWorkload": "P12W",
+        "instructor": {
+          "@type": "Person",
+          "name": "Megan Markee",
+          "jobTitle": "Head Programmer",
+          "url": "https://alpinecrossfit.com/coaches/megan-markee/",
+          "worksFor": {"@id": "https://alpinecrossfit.com/#organization"}
+        }
+      },
+      "about": {
+        "@type": "SportsEvent",
+        "name": "HYROX Denver 2026",
+        "url": "https://alpinecrossfit.com/hyrox-denver-2026/"
+      }
+    }
 finalCta:
   heading: "HYROX Denver is coming."
   body: "12 weeks of structured prep starts now."
