@@ -18,7 +18,43 @@ Embrace the grind. The real reward isn't just the result, but the person you bec
 
 ---
 
-## WOD — PRVN STAMINA
+## Workout of the Day
+
+### Warm Up
+
+**@5:00 GENERAL WARMUP**
+
+-200m Run
+
+2 Rounds:
+
+-40s Scap Clocks
+
+-30s Standing Psoas March
+
+**@9:00 SPECIFIC WARMUP**
+
+2 Rounds:
+
+-20s Abmat sit-ups  / GHD’s
+
+-1:00 Strict Press + Push Press / Push Jerk
+
+**2 Round:**
+
+-150m Run
+
+-1:00 Build Weight
+
+-8 Sit-ups or GHD’s
+
+@25:00
+
+PRVN STAMINA
+
+**@50:00**
+
+DB ROW
 
 ### PRVN STAMINA
 _Score: Time_
