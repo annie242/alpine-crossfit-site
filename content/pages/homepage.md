@@ -9,7 +9,7 @@ ogDescription: "Locally-owned CrossFit gym in Wheat Ridge. Three CF-L2 coaches, 
 ogImage: "https://alpinecrossfit.com/assets/img/hero-alpine-wall.jpg"
 ogType: "website"
 loadImagesScript: true
-schemaTypes: ["organization", "healthclub", "faq"]
+schemaTypes: ["website", "organization", "healthclub", "faq"]
 hero:
   eyebrow: "Wheat Ridge · Lakewood · Arvada · Applewood · Golden"
   heading: "CrossFit for <span class=\"accent\">every body</span> in Wheat Ridge."

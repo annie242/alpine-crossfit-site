@@ -13,6 +13,20 @@
   the FAQ entries and the JSON-LD updates automatically.
 #}
 
+{% if schemaTypes and 'website' in schemaTypes %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "{{ site.url }}/#website",
+  "url": "{{ site.url }}/",
+  "name": "{{ site.name }}",
+  "publisher": { "@id": "{{ site.url }}/#organization" },
+  "inLanguage": "en-US"
+}
+</script>
+{% endif %}
+
 {% if schemaTypes and 'organization' in schemaTypes %}
 <script type="application/ld+json">
 {
@@ -42,6 +56,7 @@
   "@id": "{{ site.url }}/#healthclub",
   "name": "{{ site.name }}",
   "foundingDate": "{{ site.founded }}",
+  "dateModified": "{{ page.date | isoDate }}",
   "url": "{{ site.url }}/",
   "telephone": "{{ site.phone }}",
   "priceRange": "$69-$999/month",
@@ -118,4 +133,33 @@
 {{ s | jsonStringify | safe }}
 </script>
 {%- endfor %}
+{% endif %}
+
+{# Sitewide WebPage — fires on every page. Carries dateModified so every
+   URL emits a fresh-answer signal to Google + AI answer engines.
+   Skips thank-you / noindex pages via the `noindex` frontmatter flag. #}
+{% if not noindex %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "{{ site.url }}{{ page.url }}#webpage",
+  "url": "{{ canonical or (site.url + page.url) }}",
+  "name": {{ (ogTitle or title) | jsonStringify | safe }},
+  "description": {{ (ogDescription or description) | jsonStringify | safe }},
+  "isPartOf": { "@id": "{{ site.url }}/#website" },
+  "about": { "@id": "{{ site.url }}/#healthclub" },
+  "inLanguage": "en-US",
+  "datePublished": "{{ page.date | isoDate }}",
+  "dateModified": "{{ page.date | isoDate }}",
+  "primaryImageOfPage": {
+    "@type": "ImageObject",
+    "url": "{{ ogImage or (site.url + '/assets/img/hero-alpine-wall.jpg') }}"
+  }{% if speakable %},
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": [".hero-dek", ".faq-answer", ".short-answer"]
+  }{% endif %}
+}
+</script>
 {% endif %}

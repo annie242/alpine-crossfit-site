@@ -4,6 +4,7 @@ permalink: /best-crossfit-gym-wheat-ridge/
 title: "Best CrossFit Gym in Wheat Ridge: How Alpine Compares"
 description: "An honest comparison of Alpine CrossFit and other CrossFit gyms in the Wheat Ridge and Arvada area. In-house programming, all-pro coaching staff, wellness center, transparent pricing."
 canonical: "https://alpinecrossfit.com/best-crossfit-gym-wheat-ridge/"
+speakable: true
 eyebrow: "Compare CrossFit gyms near Wheat Ridge"
 heading: "How Alpine compares to other CrossFit gyms in the Wheat Ridge area."
 dek: "An honest breakdown of what Alpine CrossFit offers, what we don't, who we're built for, and how we stack up against other CrossFit gyms in Wheat Ridge, Arvada, Lakewood, Applewood, and Golden. Written by the owners — not a marketing team."
