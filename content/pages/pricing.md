@@ -17,6 +17,7 @@ extraSchemas:
       "@type": "FAQPage",
       "mainEntity": [
         { "@type": "Question", "name": "How much does Alpine CrossFit cost?", "acceptedAnswer": { "@type": "Answer", "text": "Alpine CrossFit memberships range from $69 to $999 per month. Open Gym is $69/month (facility access, wellness center, 24/7 entry). Unlimited is $199/month (everything in Open Gym plus unlimited CrossFit classes and Prime Vitality). Personal Training is $999/month (everything in Unlimited plus 12 one-on-one PT sessions). All month-to-month, no contracts." } },
+        { "@type": "Question", "name": "Which Alpine CrossFit membership should I pick?", "acceptedAnswer": { "@type": "Answer", "text": "Pick by how you'll actually train. If you're new to fitness or CrossFit, start with the free No Sweat Intro. If you want facility and wellness center access without coached classes, choose Open Gym at $69/month. If you'll train 3+ times per week in coached classes, choose Unlimited at $199/month — this is what roughly two-thirds of Alpine members pick. If you have a specific performance goal (HYROX race, return-to-sport, competition), choose Personal Training at $999/month. If you're traveling or trying Alpine short-term, use a Drop-In ($30/class) or Week Pass ($95/week). All memberships are month-to-month with no contracts, so upgrading later takes about 30 seconds." } },
         { "@type": "Question", "name": "Is the Unlimited membership worth it at $199 per month?", "acceptedAnswer": { "@type": "Answer", "text": "Unlimited is our most popular membership at $199/month. It includes unlimited CrossFit classes, Prime Vitality (55+), the wellness center (sauna, cold plunge, compression, peptide therapy), and 24/7 facility access. Roughly two-thirds of Alpine members choose it because the bundle saves over per-class costs and unlocks recovery amenities." } },
         { "@type": "Question", "name": "What is included in the Alpine CrossFit wellness center?", "acceptedAnswer": { "@type": "Answer", "text": "The Alpine wellness center includes sauna, cold plunges, compression boots, and peptide therapy. It is included in every membership tier ($69 Open Gym, $199 Unlimited, $999 Personal Training). Peptide therapy is scoped during consultation." } },
         { "@type": "Question", "name": "Does Alpine CrossFit offer drop-in classes?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Drop-in classes are $30 and a week pass is $95. Visiting from another CrossFit affiliate? Your first class is free." } },
@@ -101,6 +102,67 @@ finalCta:
       </div>
     </div>
     <p class="text-center text-muted mt-8">Unlimited is our most popular membership — coached classes, recovery, and 24/7 access bundled into one price.</p>
+  </div>
+</section>
+
+<section class="section" id="which-membership">
+  <div class="container">
+    <span class="eyebrow">Not sure which one?</span>
+    <h2 class="section-heading">Which Alpine membership fits you?</h2>
+    <p class="short-answer" style="max-width:70ch;">Pick the row that sounds most like you. If you're between two, start with the cheaper one — Alpine is month-to-month, so upgrading later takes about 30 seconds.</p>
+
+    <div class="grid grid-3 mt-8">
+      <div class="card">
+        <p class="eyebrow" style="color:var(--color-alpine-green);margin-bottom:var(--space-2);">If you are…</p>
+        <h3>New to fitness or CrossFit</h3>
+        <p>You've never trained at a CrossFit gym, or you're returning after a long time off. You want a coach to look at where you are and recommend a real path — not sell you a tier.</p>
+        <p class="eyebrow" style="margin-top:var(--space-4);margin-bottom:var(--space-2);">Start with</p>
+        <p><strong>Free No Sweat Intro</strong> — 30 minutes with a coach, no workout, no pressure. You'll leave with a clear recommendation.</p>
+        <a class="btn btn-primary mt-3" href="/free-intro/">Book Free Intro</a>
+      </div>
+      <div class="card">
+        <p class="eyebrow" style="color:var(--color-alpine-green);margin-bottom:var(--space-2);">If you are…</p>
+        <h3>Just here for the sauna and the gym floor</h3>
+        <p>You want facility access and the wellness center — sauna, cold plunge, compression, peptide therapy — without coached classes. You'll train on your own schedule.</p>
+        <p class="eyebrow" style="margin-top:var(--space-4);margin-bottom:var(--space-2);">Your pick</p>
+        <p><strong>Open Gym — $69/month.</strong> Facility + wellness center + 24/7 access. Add classes anytime.</p>
+        <a class="btn btn-primary mt-3" href="https://app.chalkitpro.com/gymProductLink/754/prod_RqZAuGPM9QucII/8619/" target="_blank" rel="noopener">Buy Open Gym</a>
+      </div>
+      <div class="card card-featured">
+        <p class="eyebrow" style="color:var(--color-alpine-green);margin-bottom:var(--space-2);">If you are…</p>
+        <h3>Committed to 3+ classes per week</h3>
+        <p>You want coached CrossFit classes, structured programming, and the recovery amenities to back it up. You'll train at the gym, not on your own.</p>
+        <p class="eyebrow" style="margin-top:var(--space-4);margin-bottom:var(--space-2);">Your pick</p>
+        <p><strong>Unlimited — $199/month.</strong> Unlimited classes, wellness center, 24/7 access. What most Alpine members choose.</p>
+        <a class="btn btn-primary mt-3" href="/free-intro/">Start Free Intro</a>
+      </div>
+      <div class="card">
+        <p class="eyebrow" style="color:var(--color-alpine-green);margin-bottom:var(--space-2);">If you are…</p>
+        <h3>Chasing a specific performance goal</h3>
+        <p>You have a HYROX race, a return-to-sport, or a competition on your calendar and you want individualized 1:1 coaching to get there.</p>
+        <p class="eyebrow" style="margin-top:var(--space-4);margin-bottom:var(--space-2);">Your pick</p>
+        <p><strong>Personal Training — $999/month.</strong> 12 one-on-one sessions + everything in Unlimited.</p>
+        <a class="btn btn-primary mt-3" href="/free-intro/">Start Free Intro</a>
+      </div>
+      <div class="card">
+        <p class="eyebrow" style="color:var(--color-alpine-green);margin-bottom:var(--space-2);">If you are…</p>
+        <h3>Traveling or trying us for a week</h3>
+        <p>You're in Wheat Ridge briefly, member of another CrossFit affiliate, or want to sample Alpine before committing to a monthly membership.</p>
+        <p class="eyebrow" style="margin-top:var(--space-4);margin-bottom:var(--space-2);">Your pick</p>
+        <p><strong>Drop-In ($30/class)</strong> or <strong>Week Pass ($95/week)</strong>. Both include the wellness center.</p>
+        <a class="btn btn-primary mt-3" href="https://app.chalkitpro.com/gymProductLink/754/prod_TmRiaLLHwsRPig/13441/" target="_blank" rel="noopener">Buy Week Pass</a>
+      </div>
+      <div class="card">
+        <p class="eyebrow" style="color:var(--color-alpine-green);margin-bottom:var(--space-2);">If you are…</p>
+        <h3>55+ and rebuilding strength</h3>
+        <p>You want real strength training and conditioning scaled for your body — not a chair-Yoga class. Prime Vitality is CrossFit's methodology, coached, in a group your age.</p>
+        <p class="eyebrow" style="margin-top:var(--space-4);margin-bottom:var(--space-2);">Your pick</p>
+        <p><strong>Unlimited — $199/month.</strong> Prime Vitality runs Mon/Wed/Fri 10 AM and is included.</p>
+        <a class="btn btn-primary mt-3" href="/prime-vitality/">Learn about Prime Vitality</a>
+      </div>
+    </div>
+
+    <p class="text-center text-muted mt-8" style="font-size:0.9rem;max-width:60ch;margin-left:auto;margin-right:auto;">Still not sure? The <a href="/free-intro/">free No Sweat Intro</a> is 30 minutes with a coach — you'll leave with the right recommendation. Zero pressure.</p>
   </div>
 </section>
 

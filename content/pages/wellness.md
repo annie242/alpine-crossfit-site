@@ -21,7 +21,8 @@ extraSchemas:
         { "@type": "Question", "name": "How much does it cost to use the sauna and cold plunge at Alpine?", "acceptedAnswer": { "@type": "Answer", "text": "There is no per-visit fee. Access to the sauna, cold plunges, and compression boots is included with every Alpine membership. The entry point is the $69/month Open Gym tier; the $199/month Unlimited tier adds CrossFit classes and 24/7 facility access. All memberships are month-to-month with no contract." } },
         { "@type": "Question", "name": "Where is Alpine's wellness center located?", "acceptedAnswer": { "@type": "Answer", "text": "Alpine CrossFit's wellness center is at 12090 West 50th Place, Wheat Ridge, CO 80033 — just off I-70, about five minutes from Arvada and Applewood, ten minutes from Lakewood, and twelve from Golden." } },
         { "@type": "Question", "name": "What are the wellness center's hours?", "acceptedAnswer": { "@type": "Answer", "text": "The wellness center is open Monday–Friday 5:30 AM to 6:30 PM, Saturday 8:00 to 10:00 AM, and Sunday 8:00 to 9:00 AM. Unlimited members have 24/7 facility access, including the wellness center." } },
-        { "@type": "Question", "name": "Is contrast therapy (sauna and cold plunge) good for recovery?", "acceptedAnswer": { "@type": "Answer", "text": "Many athletes use sauna and cold-plunge contrast routines to support recovery, circulation, and stress management between training days. At Alpine, the sauna, cold plunges, and compression boots are all on-site, so a full contrast-and-compression routine takes one stop." } }
+        { "@type": "Question", "name": "Is contrast therapy (sauna and cold plunge) good for recovery?", "acceptedAnswer": { "@type": "Answer", "text": "Many athletes use sauna and cold-plunge contrast routines to support recovery, circulation, and stress management between training days. At Alpine, the sauna, cold plunges, and compression boots are all on-site, so a full contrast-and-compression routine takes one stop." } },
+        { "@type": "Question", "name": "Is Alpine's wellness center cheaper than a standalone Denver sauna studio?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Standalone sauna studios in the Denver metro typically charge $149–$199/month for unlimited infrared sauna access alone; multi-service recovery clinics run $199–$349/month for a mix of sauna, cold plunge, or compression as add-ons. Alpine's $69/month Open Gym membership bundles steam sauna, cold plunges, compression boots, and peptide therapy — plus 24/7 facility access — into a single flat rate with no per-visit booking." } }
       ]
     }
   - {
@@ -68,17 +69,37 @@ finalCta:
   </div>
 </section>
 
-<section class="section">
-  <div class="container container-narrow">
+<section class="section" id="compare">
+  <div class="container">
     <span class="eyebrow">How it compares</span>
-    <h2>Wellness center vs. a standalone sauna studio.</h2>
-    <p>Drop-in sauna and cold-plunge studios around the Denver metro typically charge per visit, or a monthly fee for that one service. Alpine's approach is different: one membership, every recovery tool, unlimited use during open hours.</p>
-    <ul class="feature-list">
-      <li>Sauna <em>and</em> cold plunge <em>and</em> compression — not a single modality.</li>
-      <li>Flat monthly cost from $69, with no per-visit charges.</li>
-      <li>24/7 access for Unlimited members — recover on your own schedule.</li>
-      <li>On-site with a full strength-and-conditioning gym, if you ever want coached training too.</li>
-    </ul>
+    <h2 class="section-heading">Alpine wellness vs standalone Denver studios.</h2>
+    <p class="short-answer" style="max-width:70ch;">In the Denver metro, sauna, cold plunge, and compression are usually spread across three separate businesses at $149–$249/month each. Alpine bundles all three — plus peptide therapy and a full strength-and-conditioning gym — into one flat membership starting at $69/month.</p>
+
+    <div style="overflow-x:auto; margin-top:var(--space-6); border-radius:var(--radius); background:#0e0e0e; padding:var(--space-4);">
+      <table style="min-width:640px;">
+        <thead>
+          <tr>
+            <th></th>
+            <th>Alpine<br>Open Gym<br><span style="color:var(--color-text-muted);font-weight:400;font-size:0.85em;">$69/mo</span></th>
+            <th>Alpine<br>Unlimited<br><span style="color:var(--color-text-muted);font-weight:400;font-size:0.85em;">$199/mo</span></th>
+            <th>Sauna-only<br>studio<br><span style="color:var(--color-text-muted);font-weight:400;font-size:0.85em;">~$149–199/mo</span></th>
+            <th>Multi-service<br>recovery clinic<br><span style="color:var(--color-text-muted);font-weight:400;font-size:0.85em;">~$199–349/mo</span></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Steam sauna</td><td>✓</td><td>✓</td><td>Usually infrared</td><td>✓</td></tr>
+          <tr><td>Cold plunge</td><td>✓</td><td>✓</td><td>—</td><td>Sometimes</td></tr>
+          <tr><td>Compression boots</td><td>✓</td><td>✓</td><td>—</td><td>Sometimes (add-on)</td></tr>
+          <tr><td>Peptide therapy</td><td>✓ (screened)</td><td>✓ (screened)</td><td>—</td><td>Sometimes (add-on)</td></tr>
+          <tr><td>CrossFit + coached classes</td><td>—</td><td>✓ unlimited</td><td>—</td><td>—</td></tr>
+          <tr><td>24/7 facility access</td><td>✓</td><td>✓</td><td>—</td><td>—</td></tr>
+          <tr><td>Per-visit booking</td><td>Not required</td><td>Not required</td><td>Usually required</td><td>Usually required</td></tr>
+          <tr><td>Month-to-month, no contract</td><td>✓</td><td>✓</td><td>Varies</td><td>Varies</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="text-muted mt-4" style="font-size:0.85rem; max-width:70ch;">Standalone-studio price ranges reflect typical Denver-metro rates for unlimited-visit memberships as of 2026. Alpine pricing is fixed and published in full on the <a href="/pricing/">pricing page</a>.</p>
   </div>
 </section>
 
