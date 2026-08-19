@@ -1,22 +1,31 @@
 /* ========================================================================
    Alpine CrossFit — design system
-   Brand: Alpine CF Playbook 2025
-   Primary colors: Black, Alpine Green (#71b035), American Basin (#006fba)
+   Brand: Alpine 2026 refresh (April & Tori DiGiannantonio)
+   Primary palette: Tan (#c19a6b), Forest (#365211), Brick (#9d3e3e), Slate (#403d3d), Haze (#f3f4f4)
    Headline font: Barlow Condensed (italic) — substitute for Antique Olive Compact Italic
    Body font: Archivo — substitute for Noka
    ======================================================================== */
 
 :root {
-  /* Primary brand */
+  /* Primary brand — Alpine 2026 palette (Pantone refs in parens) */
   --color-black: #000000;
-  --color-alpine-green: #71b035;
-  --color-alpine-green-dark: #5a8c2a;
-  --color-american-basin: #006fba;
+  --color-tan: #c19a6b;              /* Pantone 4655 C — primary brand */
+  --color-tan-dark: #a08258;         /* Darker tan (derived) */
+  --color-tan-light: #d0b085;        /* Lighter tan for hover (derived) */
+  --color-forest: #365211;           /* Pantone 5743 C — secondary */
+  --color-forest-dark: #253809;      /* Darker forest (derived) */
+  --color-brick: #9d3e3e;            /* Pantone 7622 C — alert / emphasis */
+  --color-slate: #403d3d;            /* Pantone 19-0000 TCX — dark neutral */
+  --color-haze: #f3f4f4;             /* Pantone 11-3900 TCX — off-white */
 
-  /* Secondary / tertiary from playbook */
+  /* Aliases to old brand names — kept so downstream files auto-update */
+  --color-alpine-green: var(--color-tan);
+  --color-alpine-green-dark: var(--color-tan-dark);
+  --color-american-basin: var(--color-forest);
+  --color-rubble: var(--color-slate);
+
+  /* Legacy accents from prior playbook (not in new palette — kept for compat) */
   --color-icicle: #b8dde5;
-  --color-haze: #f3f4f4;
-  --color-rubble: #3d3c35;
   --color-hops: #e4ea59;
   --color-heliotrope: #8f82ff;
   --color-clementine: #fa803d;
@@ -28,11 +37,11 @@
   --color-text: #ffffff;
   --color-text-muted: #a8a8a3;
   --color-border: #2a2a28;
-  --color-accent: var(--color-alpine-green);
-  --color-accent-hover: var(--color-alpine-green-dark);
-  --color-secondary: var(--color-american-basin);
+  --color-accent: var(--color-tan);
+  --color-accent-hover: var(--color-tan-light);
+  --color-secondary: var(--color-forest);
   --color-gold: var(--color-hops);
-  --color-success: var(--color-alpine-green);
+  --color-success: var(--color-forest);
 
   /* Type */
   --font-sans: "Archivo", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -153,7 +162,7 @@ strong { font-weight: 700; color: var(--color-text); }
   color: var(--color-black);
 }
 .btn-primary:hover {
-  background: #8dc850;
+  background: var(--color-accent-hover);
   color: var(--color-black);
 }
 
