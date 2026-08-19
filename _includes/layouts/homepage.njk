@@ -20,6 +20,18 @@ speakable: true
      - finalCta: { heading, body, ctas[{ label, href, inlineStyle }] }
 #}
 
+{% if announcement %}
+<!-- ANNOUNCEMENT BANNER -->
+<section class="announcement-banner" style="background: var(--color-alpine-green); color: var(--color-black); padding: 12px 0; text-align: center;">
+  <div class="container">
+    <p style="margin: 0; font-size: 14px; line-height: 1.5;">
+      {% if announcement.eyebrow %}<strong>{{ announcement.eyebrow }}</strong> — {% endif %}{{ announcement.text | safe }}
+      {% if announcement.href %}<a href="{{ announcement.href }}" style="color: var(--color-black); font-weight: 600; text-decoration: underline; margin-left: 6px;">{{ announcement.linkLabel or 'Read more →' }}</a>{% endif %}
+    </p>
+  </div>
+</section>
+{% endif %}
+
 <!-- HERO -->
 <section class="hero">
   <div class="container hero-with-image">

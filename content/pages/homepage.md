@@ -10,6 +10,11 @@ ogImage: "https://alpinecrossfit.com/assets/img/hero-alpine-wall.jpg"
 ogType: "website"
 loadImagesScript: true
 schemaTypes: ["website", "organization", "healthclub", "faq"]
+announcement:
+  eyebrow: "New ownership"
+  text: "After 10 years, Annie & Megan are passing Alpine to April & Tori DiGiannantonio. Everything you love stays the same."
+  href: "/blog/hi-from-april-and-tori/"
+  linkLabel: "Meet the new owners →"
 hero:
   eyebrow: "Wheat Ridge · Lakewood · Arvada · Applewood · Golden"
   heading: "CrossFit for <span class=\"accent\">every body</span> in Wheat Ridge."
