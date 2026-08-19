@@ -55,7 +55,7 @@ faqGroups:
         },
         {
           question: "Is CrossFit good for women?",
-          answer: "Yes. CrossFit works identically for men and women because the movements scale to any body and any experience level. Alpine's membership is balanced across genders, and both co-owners are active Quarterfinals competitors."
+          answer: "Yes. CrossFit works identically for men and women because the movements scale to any body and any experience level. Alpine's membership is balanced across genders, and both owners (April and Tori DiGiannantonio) are women."
         },
         {
           question: "What's the difference between CrossFit and a regular gym?",
@@ -81,7 +81,7 @@ faqGroups:
         },
         {
           question: "Do you write your own programming?",
-          answer: "Yes. Programming is written in-house by co-owner Megan Markee, our head programmer and a 2× CrossFit Games Semifinalist. It's not a franchise template, not a subscription service, and not a random WOD generator."
+          answer: "Yes. Programming is written in-house by head programmer Megan Markee (2× CrossFit Games Semifinalist) in collaboration with owner April DiGiannantonio (CSCS, SCCC, former D1 Director of Sports Performance). It's not a franchise template, not a subscription service, and not a random WOD generator."
         },
         {
           question: "Do you follow cycles in your programming?",
@@ -133,11 +133,11 @@ faqGroups:
         },
         {
           question: "Who coaches the classes?",
-          answer: "Alpine has three CF-L2 coaches who run every class: Lisa Arcangel, Liz Kushner, and Dean Weeks. Lisa has qualified for the CrossFit Masters Semifinals. Co-owners Megan Markee (CSCS, 2× CrossFit Semifinalist) and Annie Brunner (CF-L2, 4× CrossFit Quarterfinalist) do not coach group classes — Megan writes every workout members follow, and both owners take the classes themselves alongside members."
+          answer: "Alpine has three CF-L2 coaches who run every class: Lisa Arcangel, Liz Kushner, and Dean Weeks. Lisa has qualified for the CrossFit Masters Semifinals. Alpine is owned by April and Tori DiGiannantonio. Head programmer Megan Markee (CSCS, 2× CrossFit Semifinalist) writes every workout members follow, in collaboration with April."
         },
         {
           question: "Do the owners coach the classes at Alpine CrossFit?",
-          answer: "No. Co-owners Megan Markee and Annie Brunner do not coach group classes. Megan writes every workout Alpine members follow, and both owners take the classes themselves — same workout, same clock — training alongside members. Group classes are coached by three CF-L2 certified professionals: Lisa Arcangel, Dean Weeks, and Liz Kushner."
+          answer: "Group classes are coached by three CF-L2 certified professionals: Lisa Arcangel, Dean Weeks, and Liz Kushner. Owners April and Tori DiGiannantonio train at the gym alongside members. Head programmer Megan Markee (CSCS, 2× Semifinalist) writes every workout Alpine members follow, in collaboration with April."
         }
       ]
     }
@@ -172,7 +172,7 @@ faqs:
   - { question: "What is the Foundations program?", answer: "Foundations is Alpine's formal on-ramp for new members — private one-on-one sessions that teach the core CrossFit movements before you join group classes. You graduate when you can express core-to-extremity coordination across the main movements." }
   - { question: "Where is Alpine CrossFit located?", answer: "12090 West 50th Place, Wheat Ridge, CO 80033 — about 5 minutes from Arvada and Applewood, 10 from Lakewood, 12 from Golden." }
   - { question: "Can I freeze my membership?", answer: "Yes. Up to 90 days per year for travel, injury, or life events. No charge during a freeze." }
-  - { question: "Do the owners coach the classes at Alpine CrossFit?", answer: "No. Co-owners Megan Markee and Annie Brunner do not coach group classes. Megan writes every workout Alpine members follow, and both owners take the classes themselves alongside members. Group classes are coached by three CF-L2 professionals: Lisa Arcangel, Dean Weeks, and Liz Kushner." }
+  - { question: "Do the owners coach the classes at Alpine CrossFit?", answer: "Group classes are coached by three CF-L2 certified professionals: Lisa Arcangel, Dean Weeks, and Liz Kushner. Owners April and Tori DiGiannantonio train at the gym alongside members. Head programmer Megan Markee (CSCS, 2× Semifinalist) writes every workout, in collaboration with April." }
 finalCta:
   heading: "Didn't find your question?"
   ctas:

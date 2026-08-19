@@ -212,7 +212,7 @@ finalCta:
     <ul class="feature-list" style="font-size:1rem;">
       <li><strong>Wellness center access.</strong> Sauna, cold plunges, compression boots, and peptide therapy — recovery tools usually reserved for high-end recovery clinics, bundled into every tier.</li>
       <li><strong>24/7 facility access.</strong> Train on your schedule, not ours.</li>
-      <li><strong>A gym where the owners train every day.</strong> Megan Markee (2× CrossFit Semifinalist) and Annie Brunner (4× Quarterfinalist) aren't behind a desk — they're in the room setting the standard.</li>
+      <li><strong>A gym where the owners train alongside you.</strong> Alpine is owned by April and Tori DiGiannantonio — in the room, not behind a desk. Programming stays in-house, written by head programmer Megan Markee (2× CrossFit Semifinalist) in collaboration with April.</li>
       <li><strong>No hidden fees.</strong> No initiation, no annual fee, no surcharges. The price you see is the price you pay.</li>
       <li><strong>Month-to-month freedom.</strong> No contracts. Cancel with 30 days notice.</li>
     </ul>

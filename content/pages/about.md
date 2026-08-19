@@ -7,7 +7,7 @@ canonical: "https://alpinecrossfit.com/about/"
 loadImagesScript: true
 eyebrow: "About"
 heading: "About Alpine CrossFit."
-dek: "Alpine CrossFit is a community-focused CrossFit gym in Wheat Ridge, Colorado, co-owned by Megan Markee (CSCS, head programmer) and Annie Brunner (CF-L2). It is the only gym in Wheat Ridge with an all-professional coaching staff, and every workout is programmed in-house by the owners."
+dek: "Alpine CrossFit is a community-focused CrossFit gym in Wheat Ridge, Colorado, owned by April and Tori DiGiannantonio. April brings a decade of CrossFit gym ownership plus five-plus years as a Division I Director of Sports Performance; Tori brings a career in mental performance coaching (LCSW, CMPC) and endurance sport. Programming remains in-house, led by head programmer Megan Markee (CSCS) in collaboration with April."
 heroCtas:
   - { label: "Book a Free Intro", href: "/free-intro/", style: "btn-primary btn-lg" }
   - { label: "Meet the coaches →", href: "/coaches/", style: "btn-secondary btn-lg" }
@@ -16,14 +16,14 @@ heroImage:
   alt: "Alpine CrossFit members training during a coached class"
   slot: "about_hero"
 heroWithImage: true
-trustStrip: '<span>Founded 2010</span><span class="sep">·</span><span>Under current ownership since 2016</span><span class="sep">·</span><span class="stars">★★★★★</span><span>5.0 from 180 reviews</span>'
+trustStrip: '<span>Founded 2010</span><span class="sep">·</span><span>Under current ownership since 2026</span><span class="sep">·</span><span class="stars">★★★★★</span><span>5.0 from 180 reviews</span>'
 extraSchemas:
   - {
       "@context": "https://schema.org",
       "@type": "AboutPage",
       "url": "https://alpinecrossfit.com/about/",
       "name": "About Alpine CrossFit",
-      "description": "Alpine CrossFit is a community-focused CrossFit gym in Wheat Ridge, Colorado, co-owned by Megan Markee (CSCS, head programmer) and Annie Brunner (CF-L2) — both active CrossFit competitors who do the workouts they write, alongside members in every class. Neither owner coaches group classes; the gym is coached by three CF-L2 professionals.",
+      "description": "Alpine CrossFit is a community-focused CrossFit gym in Wheat Ridge, Colorado, owned by April DiGiannantonio (CSCS, SCCC, CrossFit Trainer, former Director of Sports Performance for a Division I program) and Tori DiGiannantonio (LCSW, CMPC, yoga instructor, ultrarunner). Programming is in-house, led by head programmer Megan Markee (CSCS, CF-L2, 2× CrossFit Games Semifinalist) in collaboration with April. Group classes are coached by three CF-L2 professionals.",
       "mainEntity": {"@id": "https://alpinecrossfit.com/#healthclub"}
     }
   - {
@@ -60,10 +60,11 @@ finalCta:
 <section class="section">
   <div class="container container-narrow">
     <span class="eyebrow">Our story</span>
-    <h2>A gym run by the people training next to you.</h2>
-    <p>Alpine CrossFit was founded in 2010. In 2016, Annie Brunner and Megan Markee took over — drawn by a fierce belief in the methodology and a passion for the community they found inside. The longer they've run it, the more convinced they've become.</p>
-    <p>Over the past decade under current ownership, Alpine has grown into a gym with a fully professional coaching staff and a facility refined around a single goal: getting members better results than any gym around us.</p>
-    <p>Annie is CF-L2 certified, Megan is CSCS certified, and both are active CrossFit competitors — Megan a 2× Semifinalist, Annie a 4× Quarterfinalist. Neither of them coaches group classes. Megan writes every workout Alpine members follow, and both of them take the class — same workout, same clock — training next to the members who chose to do it with them. Owners who program the gym <em>and</em> do their own programming, every day, in the room with everyone else: that's hard to find.</p>
+    <h2>Under new ownership, same standard.</h2>
+    <p>Alpine CrossFit was founded in 2010. In 2016, Annie Brunner and Megan Markee took over — and over the next decade they grew Alpine into a gym with a fully professional coaching staff and a facility refined around a single goal: getting members better results than any gym around. In 2026, they passed the torch to April and Tori DiGiannantonio, who now own and lead the gym while preserving what makes Alpine, Alpine.</p>
+    <p>April brings a decade in fitness and sports performance. She opened her first CrossFit gym in Denver in 2013, later served as a Division I Director of Sports Performance for over five years, and holds the CSCS and SCCC credentials on top of her CrossFit certifications.</p>
+    <p>Tori comes at fitness from a different angle: a lifelong athlete and ultrarunner, a former firefighter and paramedic, and now a therapist (LCSW) and mental performance coach (CMPC) working primarily with first responders. Her work lives at the intersection of physical capacity and mental resilience.</p>
+    <p>Megan Markee remains as head programmer. Every workout Alpine members follow is written by Megan (2× CrossFit Games Semifinalist) in collaboration with April.</p>
   </div>
 </section>
 
@@ -101,12 +102,12 @@ finalCta:
     <h2 class="section-heading">What you get at Alpine that you don't get everywhere else.</h2>
     <div class="grid grid-2">
       <div class="card">
-        <h3>Owners who do their own workouts.</h3>
-        <p>Megan writes every Alpine workout. Annie and Megan both take the class — same workout, same clock — training next to the members who chose to do it with them. Most gym owners either coach from the sidelines or aren't in the building. Alpine's are in the heat, every day.</p>
+        <h3>Ownership in the room.</h3>
+        <p>Alpine is owned by April and Tori DiGiannantonio, who train at the gym alongside members. April's collegiate S&amp;C background and Tori's mental performance work are woven into the programming and the culture. Most gym owners either coach from the sidelines or aren't in the building. Alpine's are in the room.</p>
       </div>
       <div class="card">
         <h3>In-house programming.</h3>
-        <p>Every workout at Alpine is written by Megan Markee, our head programmer and a 2× CrossFit Games Semifinalist. No franchise templates. No random WOD generators.</p>
+        <p>Every workout at Alpine is written by head programmer Megan Markee (2× CrossFit Games Semifinalist) in collaboration with owner April DiGiannantonio (CSCS, SCCC, former D1 Director of Sports Performance). No franchise templates. No random WOD generators.</p>
       </div>
       <div class="card">
         <h3>All professional coaches.</h3>

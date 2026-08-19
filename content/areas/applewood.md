@@ -64,7 +64,7 @@ serviceSchema:
     <ul class="feature-list">
       <li>10+ classes a day, 7 days a week</li>
       <li>Every class coached by a CF-L2 professional</li>
-      <li>In-house programming by Megan Markee, a 2× CrossFit Games Semifinalist</li>
+      <li>In-house programming by head programmer Megan Markee (2× CrossFit Games Semifinalist) and owner April DiGiannantonio (CSCS, SCCC)</li>
       <li>Wellness center — steam sauna, cold plunges, compression boots, peptide therapy</li>
       <li>Prime Vitality program for adults 55+ (Mon/Wed/Fri 10 AM)</li>
       <li>Month-to-month memberships from $69 to $999</li>

@@ -20,7 +20,7 @@ export default {
   phoneDisplay: "(720) 964-1505",
   phoneSms: "+17209641505",
   founded: "2010",
-  ownershipSince: "2016",
+  ownershipSince: "2026",
 
   // Social
   instagram: "https://www.instagram.com/alpine_fitness_co/",
