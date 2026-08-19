@@ -1,4 +1,5 @@
 ---
+permalink: "/blog/action-over-distraction-2026-07-01/"
 title: "Action Over Distraction"
 description: "It's easy to get overwhelmed, whether by a daunting WOD or the sheer volume of tasks on your plate."
 date: 2026-07-01

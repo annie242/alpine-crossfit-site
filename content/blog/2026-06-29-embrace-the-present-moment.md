@@ -1,4 +1,5 @@
 ---
+permalink: "/blog/embrace-the-present-moment-2026-06-29/"
 title: "Embrace The Present Moment"
 description: "That feeling of dread when you look at the whiteboard and see a brutal WOD?"
 date: 2026-06-29

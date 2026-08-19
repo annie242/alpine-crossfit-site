@@ -1,4 +1,5 @@
 ---
+permalink: "/blog/practice-makes-permanent-2026-06-26/"
 title: "Practice Makes Permanent"
 description: "Think about the movements you perform daily, both inside and outside the gym."
 date: 2026-06-26

@@ -1,4 +1,5 @@
 ---
+permalink: "/blog/build-your-inner-strength-2026-07-16/"
 title: "Build Your Inner Strength"
 description: "True freedom isn't about having no rules or obligations."
 date: 2026-07-16

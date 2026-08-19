@@ -1,4 +1,5 @@
 ---
+permalink: "/blog/focus-on-what-you-control-2026-06-25/"
 title: "Focus On What You Control"
 description: "You step into the gym, eyes on the whiteboard."
 date: 2026-06-25

@@ -1,4 +1,5 @@
 ---
+permalink: "/blog/effort-is-its-own-reward-2026-06-22/"
 title: "Effort Is Its Own Reward"
 description: "That feeling of hitting a new PR, or just finishing a brutal WOD, isn't from one perfect rep."
 date: 2026-06-22

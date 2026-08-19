@@ -1,4 +1,5 @@
 ---
+permalink: "/blog/embrace-the-struggle-2026-07-10/"
 title: "Embrace The Struggle"
 description: "Think about the moments in a WOD when you want to quit."
 date: 2026-07-10

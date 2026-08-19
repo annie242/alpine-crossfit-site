@@ -1,4 +1,5 @@
 ---
+permalink: "/blog/master-your-impulses-2026-08-04/"
 title: "Master Your Impulses"
 description: "That moment when the WOD gets tough, when the bar feels heavy, or the clock ticks too slow."
 date: 2026-08-04

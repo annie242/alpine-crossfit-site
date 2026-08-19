@@ -1,4 +1,5 @@
 ---
+permalink: "/blog/embrace-the-struggle-2026-07-30/"
 title: "Embrace the Struggle"
 description: "Think about the last time you hit a wall in a workout."
 date: 2026-07-30

@@ -1,4 +1,5 @@
 ---
+permalink: "/blog/the-power-of-habit-2026-08-07/"
 title: "The Power of Habit"
 description: "Think about your best lifts, your fastest WODs, or that skill you finally nailed."
 date: 2026-08-07

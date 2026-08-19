@@ -1,4 +1,5 @@
 ---
+permalink: "/blog/the-value-of-discomfort-2026-07-07/"
 title: "The Value Of Discomfort"
 description: "Think about the last time you truly struggled in a workout."
 date: 2026-07-07

@@ -1,4 +1,5 @@
 ---
+permalink: "/blog/master-your-inner-self-2026-07-04/"
 title: "Master Your Inner Self"
 description: "The weight on the bar, the clock ticking down, the burning lungs — these are external challenges."
 date: 2026-07-04

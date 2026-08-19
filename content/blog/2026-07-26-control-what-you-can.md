@@ -1,4 +1,5 @@
 ---
+permalink: "/blog/control-what-you-can-2026-07-26/"
 title: "Control What You Can"
 description: "That moment when the barbell feels impossibly heavy, or the clock is ticking down, and you know you can't control the weight on the bar or the speed of time."
 date: 2026-07-26

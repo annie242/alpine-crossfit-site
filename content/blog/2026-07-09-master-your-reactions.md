@@ -1,4 +1,5 @@
 ---
+permalink: "/blog/master-your-reactions-2026-07-09/"
 title: "Master Your Reactions"
 description: "That moment when the WOD gets announced and your heart sinks, or when the barbell feels heavier than yesterday."
 date: 2026-07-09
