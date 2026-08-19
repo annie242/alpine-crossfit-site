@@ -1,13 +1,14 @@
 ---
 name: Megan Markee
 credentialsLine: Head Programmer · CF-L1 · CSCS ·  4 × CrossFit Semifinalist · Masters Athlete
-bio: "Megan Markee, CSCS, CFL1 is the gym's head programmer. As an athlete, she
-  has twice qualified for the CrossFit Games Semifinals Individually and twice
-  for Crossfit Games Regionals on a Team, and took home Gold at Legends Masters
-  Event. She trains at Alpine every day alongside members, which is how the
-  programming stays honest: she writes it, and she does it herself. She has
-  received additional certifications in CF Programming, CF Running, CF
-  Nutrition."
+bio: "Megan Markee, CSCS, CF-L1, is Alpine's head programmer, collaborating
+  with owner April DiGiannantonio on the gym's in-house programming. As an
+  athlete, she has twice qualified for the CrossFit Games Semifinals
+  Individually and twice for CrossFit Games Regionals on a Team, and took
+  home Gold at Legends Masters Event. She trains at Alpine every day alongside
+  members, which is how the programming stays honest — she writes it, and she
+  does it herself. She has received additional certifications in CF
+  Programming, CF Running, and CF Nutrition."
 credentials:
   - CrossFit Level 2 Trainer (CF-L2)
   - Alpine's head programmer
@@ -36,7 +37,7 @@ title: Megan Markee — Head Programmer · Alpine CrossFit
 description: Megan Markee is the head programmer at Alpine CrossFit. A 4-time
   CrossFit Games Semifinalist, she designs the workouts every Alpine member
   follows.
-order: 2
+order: 3
 layout: layouts/coach.njk
 canonical: https://alpinecrossfit.com/coaches/megan-markee/
 permalink: /coaches/megan-markee/
@@ -59,5 +60,5 @@ personSchema:
     - https://www.instagram.com/megan_markee/
     - https://games.crossfit.com/athlete/244983
   "@type": Person
-  jobTitle: Owner & Head Programmer
+  jobTitle: Head Programmer
 ---

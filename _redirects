@@ -18,3 +18,6 @@
 # Trailing slash normalization (Netlify handles this automatically
 # for folders with index.html, but uncomment if needed)
 # /about  /about/   301!
+
+# 2026 ownership transition — removed coach pages redirect to the coaches index
+/coaches/annie-brunner/   /coaches/   301

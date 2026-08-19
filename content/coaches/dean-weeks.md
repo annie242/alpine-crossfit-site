@@ -4,7 +4,7 @@ permalink: /coaches/dean-weeks/
 title: "Dean Weeks — Coach · Alpine CrossFit"
 description: "Dean Weeks is a CrossFit Level 2 Trainer at Alpine CrossFit with a decade of training and competition experience, known for empathy and an unparalleled ability to motivate."
 canonical: "https://alpinecrossfit.com/coaches/dean-weeks/"
-order: 3
+order: 4
 name: "Dean Weeks"
 credentialsLine: "Coach · CF-L2 · 10+ years training · Active competitor"
 bio: "Dean Weeks is a CrossFit Level 2 Trainer (CF-L2) at Alpine CrossFit with over a decade of CrossFit training and competition experience. Members know Dean for his empathy and his unparalleled ability to motivate athletes of every experience level to push further than they thought possible. He coaches group classes and one-on-one sessions across the full Alpine programming."

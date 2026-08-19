@@ -4,7 +4,7 @@ permalink: /coaches/lisa-arcangel/
 title: "Lisa Arcangel — Coach · Alpine CrossFit"
 description: "Lisa Arcangel is a CrossFit Level 2 Trainer with 15+ years of coaching experience and a CrossFit Games Masters Semifinalist."
 canonical: "https://alpinecrossfit.com/coaches/lisa-arcangel/"
-order: 4
+order: 5
 name: "Lisa Arcangel"
 credentialsLine: "Coach · CF-L2 · 15+ years coaching · CrossFit Games Masters Semifinalist"
 bio: "Lisa Arcangel is a CrossFit Level 2 Trainer (CF-L2) at Alpine CrossFit with more than 15 years of coaching experience. A former collegiate basketball and softball player, Lisa has competed in the CrossFit Open every season since 2012 and has qualified for the CrossFit Games Masters Semifinals — the top tier of Masters-division competition worldwide."
